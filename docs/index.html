@@ -255,7 +255,7 @@ table code, table pre {
 <aside class="note">
 <p>The following classes are included in EPOS-DCAT-AP:</p>
 <ul>
-<li>+<a href="#address-kind">Address (Kind)</a></li>
+<li>+<a href="#address">Address</a></li>
 <li>+<a href="#equipment">Equipment</a></li>
 <li>+<a href="#facility">Facility</a></li>
 <li>+<a href="#iritemplate">IriTemplate</a></li>
@@ -298,81 +298,80 @@ A property which is not mentioned but would be applicable for a class according 
 
 <p>Examples on the use of these properties, encoded in [[Turtle]], are included in the relevant sections. The examples are also available in [[Turtle]], RDF/XML [[RDF-SYNTAX-GRAMMAR]], and JSON-LD [[JSON-LD11]] from a <a href="./examples/">separate folder</a>.</p>
 
-<!-- Activity -->
+<!-- Activity
 
 <section id="properties-for-activity">
 
-<h3>+Activity</h3>
+  <h3>+Activity</h3>
 
-<aside class="note">
-<p>This class is not included in [[DCAT-AP-20200608]].</p>
-</aside>
+  <aside class="note">
+  <p>This class is not included in [[DCAT-AP-20200608]].</p>
+  </aside>
 
-<div data-include-format="html" data-include-replace="true" data-include="./tables/class-activity.html"></div>
+  <div data-include-format="html" data-include-replace="true" data-include="./tables/class-activity.html"></div>
 
-<p>The use of this class in GeoDCAT-AP is illustrated in <a class="no-sectionRef" href="#conformance-test-results"></a>.</p>
+  <p>The use of this class in GeoDCAT-AP is illustrated in <a class="no-sectionRef" href="#conformance-test-results"></a>.</p>
 
-<section id="mandatory-properties-for-activity">
+  <section id="mandatory-properties-for-activity">
 
-<h4>Mandatory properties for Activity</h4>
+  <h4>Mandatory properties for Activity</h4>
 
-<aside class="note">
-<p>The following properties are not included in [[DCAT-AP-20200608]]:</p>
-<ul>
-<li>+<a href="#activity-generated">generated</a></li>
-<li>+<a href="#activity-qualified-association">qualified association</a></li>
-<li>+<a href="#activity-used">used</a></li>
-</ul>
-</aside>
+  <aside class="note">
+  <p>The following properties are not included in [[DCAT-AP-20200608]]:</p>
+  <ul>
+  <li>+<a href="#activity-generated">generated</a></li>
+  <li>+<a href="#activity-qualified-association">qualified association</a></li>
+  <li>+<a href="#activity-used">used</a></li>
+  </ul>
+  </aside>
 
-<div data-include-format="html" data-include-replace="true" data-include="./tables/mandatory-properties-for-activity.html"></div>
+  <div data-include-format="html" data-include-replace="true" data-include="./tables/mandatory-properties-for-activity.html"></div>
+
+  </section>
+
+  <section id="examples-for-activity">
+
+  <h4>Examples for Activity</h4>
+
+  <p><a href="#ex-activity"></a> shows the use of class <code>prov:Activity</code> to specify the results of a testing activity assessing the conformance of a given resource against a given specification - as illustrated in <a class="no-sectionRef" href="#conformance-test-results"></a>.</p>
+
+  <aside class="example" id="ex-activity" title="A testing activity">
+  <pre data-include-format="text" data-include="./examples/activity.ttl"></pre>
+  </aside>
+
+  </section>
 
 </section>
 
-<section id="examples-for-activity">
-
-<h4>Examples for Activity</h4>
-
-<p><a href="#ex-activity"></a> shows the use of class <code>prov:Activity</code> to specify the results of a testing activity assessing the conformance of a given resource against a given specification - as illustrated in <a class="no-sectionRef" href="#conformance-test-results"></a>.</p>
-
-<aside class="example" id="ex-activity" title="A testing activity">
-<pre data-include-format="text" data-include="./examples/activity.ttl"></pre>
-</aside>
-
-</section>
-
-</section>
-
-
+-->
 
 <!-- Address (Kind)-->
 
-<section id="properties-for-address-kind">
+<section id="properties-for-address">
 
-<h3>+Address (Kind)</h3>
+<h3>Address</h3>
 
 <aside class="note">
 <p>This class is not included in [[DCAT-AP-20200608]].</p>
 </aside>
 
-<div data-include-format="html" data-include-replace="true" data-include="./tables/class-address-kind.html"></div>
+<div data-include-format="html" data-include-replace="true" data-include="./tables/class-address.html"></div>
 
-<section id="recommended-properties-for-address-kind">
+<section id="mandatory-properties-for-address">
 
-<h4>Recommended properties for Address (Kind)</h4>
+<h4>Mandatory properties for Address</h4>
 
 <aside class="note">
 <p>The following properties are not included in [[DCAT-AP-20200608]]:</p>
 <ul>
-<li>+<a href="#address-kind-administrative-area">administrative area</a></li>
-<li>+<a href="#address-kind-city">city</a></li>
-<li>+<a href="#address-kind-country">country</a></li>
-<li>+<a href="#address-kind-postal-code">postal code</a></li>
-<li>+<a href="#address-kind-street-address">street address</a></li>
+<li>+<a href="#address-country-name">country-name</a></li>
+<li>+<a href="#address-locality">locality</a></li>
+<li>+<a href="#address-postal-code">postal-code</a></li>
+<li>+<a href="#address-street-address">street-address </a></li>
 </ul>
 </aside>
 
-<div data-include-format="html" data-include-replace="true" data-include="./tables/recommended-properties-for-address-kind.html"></div>
+<div data-include-format="html" data-include-replace="true" data-include="./tables/mandatory-properties-for-address.html"></div>
 
 </section>
 
@@ -1346,44 +1345,45 @@ A property which is not mentioned but would be applicable for a class according 
 
 <section id="properties-for-postaladdress">
 
-<h3>PostalAddress</h3>
+  <h3>PostalAddress</h3>
 
-<aside class="note">
-<p>This class is not included in [[DCAT-AP-20200608]].</p>
-</aside>
+  <aside class="note">
+  <p>This class is not included in [[DCAT-AP-20200608]].</p>
+  </aside>
 
-<div data-include-format="html" data-include-replace="true" data-include="./tables/class-postaladdress.html"></div>
+  <div data-include-format="html" data-include-replace="true" data-include="./tables/class-postaladdress.html"></div>
 
-<section id="mandatory-properties-for-postaladdress">
+  <section id="mandatory-properties-for-postaladdress">
 
-<h4>Recommended properties for Address (Agent)</h4>
+      <h4>Mandatory properties for Address</h4>
 
-<aside class="note">
-<p>The following properties are not included in [[DCAT-AP-20200608]]:</p>
-<ul>
-<li>+<a href="#postaladdress-addresscountry">addressCountry</a></li>
-<li>+<a href="#postaladdress-addresslocality">addressLocality</a></li>
-<li>+<a href="#postaladdress-postalcode">postalCode</a></li>
-<li>+<a href="#postaladdress-streetaddress">streetAddress</a></li>
-</ul>
-</aside>
+      <aside class="note">
+      <p>The following properties are not included in [[DCAT-AP-20200608]]:</p>
+      <ul>
+      <li>+<a href="#postaladdress-addresscountry">addressCountry</a></li>
+      <li>+<a href="#postaladdress-addresslocality">addressLocality</a></li>
+      <li>+<a href="#postaladdress-postalcode">postalCode</a></li>
+      <li>+<a href="#postaladdress-streetaddress">streetAddress</a></li>
+      </ul>
+      </aside>
 
-<div data-include-format="html" data-include-replace="true" data-include="./tables/mandatory-properties-for-postaladdress.html"></div>
+      <div data-include-format="html" data-include-replace="true" data-include="./tables/mandatory-properties-for-postaladdress.html"></div>
+
+  </section>
+
+  <section id="examples-for-address-agent">
+
+    <h4>Examples for Address (Agent)</h4>
+
+    <aside class="example" id="ex-address-agent" title="Address (Agent)">
+    <p>The address in this example is the same of <a href="#ex-address-kind"></a>, but represented by using [[LOCN]].</p>
+    <pre data-include-format="text" data-include="./examples/address-agent.ttl"></pre>
+    </aside>
+
+  </section>
 
 </section>
 
-<section id="examples-for-address-agent">
-
-<h4>Examples for Address (Agent)</h4>
-
-<aside class="example" id="ex-address-agent" title="Address (Agent)">
-<p>The address in this example is the same of <a href="#ex-address-kind"></a>, but represented by using [[LOCN]].</p>
-<pre data-include-format="text" data-include="./examples/address-agent.ttl"></pre>
-</aside>
-
-</section>
-
-</section>
 <!-- Provenance Statement -->
 
 <section id="properties-for-provenance-statement">
