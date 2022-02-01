@@ -1,8 +1,7 @@
 var respecConfig = {
 //	preProcess: [dfn_index],
-//    logos: [
-//    {
-////      src: './images/eu-isa-programme.png',
+    logos: [
+   {    src: 'https://www.epos-eu.org/themes/epos/logo.svg',
 //      src: "./images/eu-isa2-programme.jpg",
 ////      url: 'https://ec.europa.eu/isa',
 //      url: "https://ec.europa.eu/isa2",
@@ -13,8 +12,8 @@ var respecConfig = {
 //      width: 150,
 ////      height: 42,
 //      id: 'logo-eu-isa-programme',
-//    }
-//    ],
+   }
+   ],
 //    includePermalinks: true,
     addSectionLinks: true,
     maxTocLevel: 3,
