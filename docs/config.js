@@ -186,7 +186,7 @@ var respecConfig = {
          "title":"HYDRA"
         },
         "HYDRA1":{
-          "href":"http://api.verint.com/w3c/hydra#";
+          "href":"http://api.verint.com/w3c/hydra#",
           "title":"HYDRA"
          },
       "ADMS-SKOS":{
