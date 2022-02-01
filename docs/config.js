@@ -2,7 +2,7 @@ var respecConfig = {
 //	preProcess: [dfn_index],
 logos: [
     {
-    //src: "./img/epos-logo.png",
+      src: "https://www.epos-eu.org/themes/epos/logo.svg",
       url: "https://www.epos-eu.org/",
       //alt: "The Example company",
       width: 100,
