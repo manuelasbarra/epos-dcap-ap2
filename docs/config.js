@@ -173,6 +173,19 @@ var respecConfig = {
     inlineCSS: "true",
     lint: "false",
     localBiblio: {
+      "EPOS": {
+        "href":"https://www.epos-eu.org/epos-dcat-ap#",
+        "title":"EPOS",
+        "publisher":"TBD"
+      },
+      "HTTP":{
+        "href":"http://www.w3.org/2006/http#",
+        "title":"HTTP"
+       },
+       "HYDRA":{
+         "href":"http://www.w3.org/ns/hydra/core#",
+         "title":"HYDRA"
+        },
       "ADMS-SKOS":{
         "href":"https://joinup.ec.europa.eu/svn/adms/ADMS_v1.00/ADMS_SKOS_v1.00.html",
         "title":"Joinup. ADMS Controlled Vocabularies",
