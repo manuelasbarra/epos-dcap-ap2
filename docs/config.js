@@ -5,7 +5,7 @@ var respecConfig = {
 //      src: "./images/eu-isa2-programme.jpg",
 ////      url: 'https://ec.europa.eu/isa',
 //      url: "https://ec.europa.eu/isa2",
-////      alt: "EU ISA Programme",
+       alt: "EPOS",
 ////      title: "EU ISA Programme",
 //      alt: "EU ISA² Programme",
 //      title: "EU ISA² Programme",
