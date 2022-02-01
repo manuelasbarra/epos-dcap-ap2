@@ -4,7 +4,7 @@ logos: [
     {
       src: "https://www.epos-eu.org/themes/epos/logo.svg",
       url: "https://www.epos-eu.org/",
-      //alt: "The Example company",
+      alt: "EPOS",
       width: 100,
       height: 42,
       id: "epos-logo",
