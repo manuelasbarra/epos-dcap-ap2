@@ -185,6 +185,10 @@ var respecConfig = {
          "href":"http://www.w3.org/ns/hydra/core#",
          "title":"HYDRA"
         },
+        "HYDRA1":{
+          "href":"http://api.verint.com/w3c/hydra#";
+          "title":"HYDRA"
+         },
       "ADMS-SKOS":{
         "href":"https://joinup.ec.europa.eu/svn/adms/ADMS_v1.00/ADMS_SKOS_v1.00.html",
         "title":"Joinup. ADMS Controlled Vocabularies",
