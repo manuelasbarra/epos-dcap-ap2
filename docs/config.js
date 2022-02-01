@@ -89,8 +89,8 @@ var respecConfig = {
     latestVersionURI:     "TBD",
 /* SEMICEU specific - end   */
     edDraftURI:           "TDB",
-    issueBase:            "https://github.com/",
-    github:               "https://github.com/",
+  //  issueBase:            "https://github.com/",
+  //  github:               "https://github.com/",
     formerEditors: [{
       name:   "Rossana Paciello",
       orcid:  "0000-0002-6975-1991",
