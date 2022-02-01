@@ -1,32 +1,37 @@
 var respecConfig = {
 //	preProcess: [dfn_index],
-logos: [
-    {
-      src: "https://www.epos-eu.org/themes/epos/logo.svg",
-      url: "https://www.epos-eu.org/",
-      alt: "EPOS",
-      width: 100,
-      height: 42,
-      id: "epos-logo",
-    },
-  ],
+//    logos: [
+//    {
+////      src: './images/eu-isa-programme.png',
+//      src: "./images/eu-isa2-programme.jpg",
+////      url: 'https://ec.europa.eu/isa',
+//      url: "https://ec.europa.eu/isa2",
+////      alt: "EU ISA Programme",
+////      title: "EU ISA Programme",
+//      alt: "EU ISA² Programme",
+//      title: "EU ISA² Programme",
+//      width: 150,
+////      height: 42,
+//      id: 'logo-eu-isa-programme',
+//    }
+//    ],
 //    includePermalinks: true,
     addSectionLinks: true,
     maxTocLevel: 3,
     doJsonLd: true,
-    noRecTrack: false,
-    subtitle: "An extension of the DCAT Application Profile for Research Infrastructures in the solid-Earth domain",
-  /*  copyrightHolder: "European Union",
-    copyrightURL: "https://europa.eu/",
-    copyrightStart: 2022,*/
-    publishDate: "2022-02-23",
+    noRecTrack: false,    
+    subtitle: "A geospatial extension for the DCAT application profile for data portals in Europe",
+//    copyrightHolder: "European Union",
+//    copyrightURL: "https://europa.eu/",
+    copyrightStart: 2020,
+    publishDate: "2020-12-23",
 
-  /*  alternateFormats: [
-
+    alternateFormats: [
+/*
     {
       label: "PDF (TBD)",
       uri: "./geodcat-ap_v2.0.0.pdf",
-    },
+    }, 
     {
       label: "DOCX (TBD)",
       uri: "./geodcat-ap_v2.0.0.docx",
@@ -35,7 +40,7 @@ logos: [
       label: "ODT (TBD)",
       uri: "./geodcat-ap_v2.0.0.odt",
     },
-
+*/
     {
       label: "RDF/XML",
       uri: "./geodcat-ap.rdf",
@@ -52,75 +57,77 @@ logos: [
       label: "SHACL (Turtle)",
       uri: "./geodcat-ap.shacl.ttl",
     }
-    ],*/
+    ],    
 //    implementationReportURI:"https://joinup.ec.europa.eu/document/geodcat-ap-implementations",
     errata:"https://github.com/SEMICeu/GeoDCAT-AP/issues?q=is%3Aissue+label%3Atype%3Aerratum+label%3Arelease%3A2.0.0",
-    specStatus: "unofficial",
-  //  specStatus: "ED",
+//    specStatus: "unofficial",
+    specStatus: "ED",
 //    specStatus: "FPWD",
 //    specStatus: "WD",
 //    specStatus: "LC",
 //    specStatus: "PR",
 //    specStatus: "REC",
-//    crEnd:"2020-10-12"
+//    crEnd:"2020-10-12",
 //    prEnd:"2020-12-23",
-    shortName: "epos-dcat-ap",
-    canonicalURI: "TBD",
+    shortName: "geodcat-ap",
+    canonicalURI: "https://semiceu.github.io/GeoDCAT-AP/drafts/latest/",
 //    canonicalURI: "https://semiceu.github.io/GeoDCAT-AP/drafts/2.0.0-draft-0.1/",
 //    canonicalURI: "https://semiceu.github.io/GeoDCAT-AP/releases/2.0.0/",
 //    canonicalURI: "https://semiceu.github.io/GeoDCAT-AP/releases/",
 //    prevRecURI: "https://joinup.ec.europa.eu/release/geodcat-ap/101",
 //    prevRecURI: "https://semiceu.github.io/GeoDCAT-AP/releases/1.0.1/",
-    prevRecURI: "TBD",
+    prevRecURI: "https://semiceu.github.io/GeoDCAT-AP/releases/2.0.0/",
 //    previousPublishDate:  "2016-08-02",
 //    previousMaturity:     "final",
 //    previousURI:          "https://joinup.ec.europa.eu/release/geodcat-ap/101",
-/* SEMICEU specific - start */
+/* SEMICEU specific - start */	
 //    thisVersionURI:       "https://semiceu.github.io/GeoDCAT-AP/drafts/latest/",
 //    thisVersionURI:       "https://semiceu.github.io/GeoDCAT-AP/drafts/2.0.0-draft-0.1/",
-    thisVersionURI:       "TBD",
+    thisVersionURI:       "https://semiceu.github.io/GeoDCAT-AP/releases/2.0.0/",
 //    prevVersionURI:       "https://semiceu.github.io/GeoDCAT-AP/drafts/latest/",
-    prevVersionURI:       "TBD",
+    prevVersionURI:       "https://semiceu.github.io/GeoDCAT-AP/drafts/2.0.0-draft-0.1/",
 //    latestVersionURI:     "https://semiceu.github.io/GeoDCAT-AP/releases/2.0.0/",
-    latestVersionURI:     "TBD",
-/* SEMICEU specific - end   */
-    edDraftURI:           "TBD",
+    latestVersionURI:     "https://semiceu.github.io/GeoDCAT-AP/releases/",
+/* SEMICEU specific - end   */	
+    edDraftURI:           "https://semiceu.github.io/GeoDCAT-AP/drafts/latest/",
     issueBase:            "https://github.com/semiceu/geodcat-ap/issues/",
     github:               "https://github.com/semiceu/geodcat-ap/",
     formerEditors: [{
-      name:   "Rossana Paciello",
-      orcid:  "0000-0002-6975-1991",
-      company:    "INGV - Istituto Nazionale Geofisisca e Vulcanologia, Italy"
+      name:       "Andrea Perego",
+      company:    "European Commission, Joint Research Centre",
+      orcid:      "0000-0001-9300-2694",
 //      companyURL: "https://ec.europa.eu/jrc/"
     },{
-      name: 	"Manuela Sbarra",
-      orcid:  "0000-0001-7746-6309",
-      company:    "INGV - Istituto Nazionale Geofisisca e Vulcanologia, Italy"
+      name: "Stijn Goedertier",
+      company: "PwC EU Services",
+//      companyURL: "https://www.pwc.com/gx/en/services/european-union.html"
+    },{
+      name: "Antonio Rotundo",
+      company: "Agenzia per l'Italia Digitale",
+      url: "",
+//      companyURL: "http://www.agid.gov.it/"
     }],
-    editors: [{
-        name:   "Rossana Paciello",
-        orcid:  "0000-0002-6975-1991",
-        company:    "INGV - Istituto Nazionale Geofisisca e Vulcanologia, Italy",
-        //url: "http://imati.cnr.it/mypage/people/AlbertoniRiccardo.htm",
-        companyURL: "www.ingv.it.it/"
-        //w3cid: 72458
-      },{
-        name: 	"Manuela Sbarra",
-        orcid:  "0000-0001-7746-6309",
-        company:    "INGV - Istituto Nazionale Geofisisca e Vulcanologia, Italy",
-        companyURL: "www.ingv.it.it/"
-       // note: 	"Previously at Refinitiv.com",
-       // w3cid: 98704
-     }
+    editors: [
+      {
+        name:    "Andrea Perego",
+        company: "External Consultant, European Commission, Joint Research Centre",
+        orcid:   "0000-0001-9300-2694",
+//        companyURL: "https://ec.europa.eu/jrc/"
+      },
+      {
+        name: "Bert van Nuffelen",
+        company: "TenForce",
+//        companyURL: ""
+      }
     ],
     authors: [
     {
-      name: "EPOS-DCAT-AP Working Group",
-      url: "TDB",
-      company: "EPOS",
-      companyURL: "https://www.epos-eu.org/"
+      name: "GeoDCAT-AP Working Group",
+      url: "https://github.com/semiceu/geodcat-ap/",
+      company: "EU ISA² Programme",
+      companyURL: "https://ec.europa.eu/isa2/"
     },
-    ],
+    ],    
     otherLinks: [
     {
       key: "Document status",
@@ -135,21 +142,21 @@ logos: [
       key: "Document version",
       data: [
       {
-        value: "0.2"
-
+//        value: "0.2"
+        value: "1.0"
       }
       ]
     },
-
+	    
     {
       key: "Reviewed by",
       data: [
       {
-        value: "TBD",
+        value: "Pavlina Fragkou (European Commission)",
 //        href: "https://ec.europa.eu/"
       },
       {
-        value: "TBD",
+        value: "Seth van Hooland (European Commission)",
 //        href: "https://ec.europa.eu/"
       },
       ]
@@ -158,15 +165,19 @@ logos: [
       key: "Approved by",
       data: [
       {
-        value: "TBD",
+        value: "Pavlina Fragkou (European Commission)",
 //        href: "https://ec.europa.eu/"
-      }
+      },
+      {
+        value: "Seth van Hooland (European Commission)",
+//        href: "https://ec.europa.eu/"
+      },
       ]
     }
-
+      
     ],
-    wg: "EPOS-DCAT-AP Working Group",
-    wgURI: "https://github.com/",
+    wg: "GeoDCAT-AP Working Group",
+    wgURI: "https://github.com/semiceu/geodcat-ap/",
 //    wgURI: "https://joinup.ec.europa.eu/solution/geodcat-ap",
 //    wgPublicList: "",
 //    wgPatentURI: "",
@@ -326,14 +337,6 @@ logos: [
         "href":"http://geonames.org/",
         "title":"Geonames"
        },
-       "HTTP":{
-         "href":"http://www.w3.org/2006/http#",
-         "title":"HTTP"
-        },
-        "HYDRA":{
-          "href":"http://www.w3.org/ns/hydra/core#",
-          "title":"HYDRA"
-         },
       "iiWAS17-JRC": {
         "href": "https://doi.org/10.1145/3151759.3151810",
         "title": "The JRC multidisciplinary research data infrastructure",
@@ -596,7 +599,7 @@ logos: [
          "date":"17 April 2018",
          "publisher":"OpenSearch"
       },
-/*
+/*      
       "POWDER-S": {
         "href":"https://www.w3.org/2007/05/powder-s",
         "title":"Protocol for Web Description Resources (POWDER): POWDER-S Vocabulary (WDRS)",
@@ -605,7 +608,7 @@ logos: [
         "status":"Namespace Document",
         "date":"8 November 2010"
       },
-*/
+*/      
       "SCHEMA-ORG":{
         "href":"http://schema.org/",
         "title":"Schema.org"
@@ -752,11 +755,6 @@ logos: [
         "href":"https://joinup.ec.europa.eu/solution/asset-description-metadata-schema-adms",
         "title":"Joinup. Asset Description Metadata Schema (ADMS)",
         "publisher":"European Commission"
-      },
-      "EPOS": {
-        "href":"TBD",
-        "title":"TBD",
-        "publisher":"TBD"
       },
       "CERIF-VOCS": {
         "href":"http://www.eurocris.org/Uploads/Web%20pages/CERIF-1.5/CERIF1.5_Semantics.xhtml",

@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="en-GB">
 <head>
-<title>EPOS-DCAT-AP</title>
+<title>GeoDCAT-AP - Version 2.0.0</title>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-<script class="remove" src="https://www.w3.org/Tools/respec/respec-w3c"></script>
+<script class="remove" src="https://semiceu.github.io/respec/builds/respec-semiceu.js"></script>
 <script class="remove" src="./config.js"></script>
-
-<link rel="stylesheet" href="./css/style.css">
 <style>
 table.simple {width:100%;}
 table.definition {width:100%;}
@@ -44,17 +42,26 @@ table code, table pre {
 
 <h2>Abstract</h2>
 
-<p>This document is the result of the update process starting from EPOS-DCAT-AP version 1.0
-  with the purpose of aligning it with DCAT-AP version 2.1.0</p>
+<p>GeoDCAT-AP is an extension of the DCAT application profile for data portals in Europe (DCAT-AP) for describing geospatial datasets, dataset series, and services. Its basic use case is to make spatial datasets, dataset series, and services searchable on general data portals, thereby making geospatial information better findable across borders and sectors. For this purpose, GeoDCAT-AP provides an RDF vocabulary and the corresponding RDF syntax binding for the union of metadata elements of the core profile of ISO 19115:2003 and those defined in the framework of the <abbr title="Infrastructure for spatial information in Europe">INSPIRE</abbr> Directive of the European Union.</p>
+
+<p>This document is the result of the major change release process described in the Change and Release Management Policy for DCAT-AP and was built starting from GeoDCAT-AP version 1.0.1.</p>
+
+<p>Comments and queries should be sent via <a href="https://github.com/semiceu/geodcat-ap/issues/">the issue tracker of the dedicated GitHub repository</a>.</p>
+
 </section>
 
 <section id="disclaimer" class="introductory">
 
 <h2>Disclaimer</h2>
 
-<p>This specification was developed in the framework of European Plate Observing System (EPOS). </p>
-<p>This project has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement N° 676564.</p>
-<p>The content of this document reflects only the author’s view and EPOS is not responsible for any use that may be made of the information it contains.</p>
+<p>The views expressed in this document are purely those of the Author(s) and may not, in any circumstances, be interpreted as stating an official position of the European Commission.</p>
+
+<p>The European Commission does not guarantee the accuracy of the information included in this study, nor does it accept any responsibility for any use thereof.</p>
+
+<p>Reference herein to any specific products, specifications, process, or service by trade name, trademark, manufacturer, or otherwise, does not necessarily constitute or imply its endorsement, recommendation, or favouring by the European Commission.</p>
+
+<p>All care has been taken by the author to ensure that s/he has obtained, where necessary, permission to use any parts of manuscripts including illustrations, maps, and graphs, on which intellectual property rights already exist from the titular holder(s) of such rights or from her/his or their legal representative.</p>
+
 </section>
 
 <section id="sotd" class="introductory">
@@ -78,43 +85,57 @@ table code, table pre {
 
 <h2>Introduction</h2>
 
-<p>This document contains version 2.0 of the specification for EPOS-DCAT-AP, an extension of the DCAT application profile  for Research Infrastructures in the solid-Earth domain.</p>
+<p>This document contains version 2.0.0 of the specification for GeoDCAT-AP, an extension of the DCAT application profile for data portals in Europe (DCAT-AP) [[DCAT-AP]] for describing geospatial datasets, dataset series, and services.</p>
+
+<p>Its basic use case is to make spatial datasets, dataset series, and services searchable on general data portals, thereby making geospatial information better findable across borders and sectors. For this purpose, GeoDCAT-AP provides an RDF vocabulary and the corresponding RDF syntax binding for the union of metadata elements of the core profile of ISO 19115:2003 [[ISO-19115]] and those defined in the framework of the INSPIRE Directive [[INSPIRE-DIR]].</p>
+
+<p><strong>The GeoDCAT-AP specification does not replace the INSPIRE Metadata Regulation</strong> [[?INSPIRE-MD-REG]] <strong>nor the INSPIRE Metadata technical guidelines</strong> [[INSPIRE-MD]] <strong>based on ISO 19115 and ISO 19119.</strong> Its purpose is to give owners of geospatial metadata the possibility to achieve more by providing the means of an <em>additional</em> implementation through harmonised RDF syntax bindings. Conversion rules to RDF syntax would allow Member States to maintain their collections of INSPIRE-relevant datasets following the INSPIRE Metadata technical guidelines based on [[ISO-19115]] and [[ISO-19119]], while at the same time publishing these collections on [[DCAT-AP]]-conformant data portals. A conversion to an RDF representation allows additional metadata elements to be displayed on general-purposed data portals, provided that such data portals are capable of displaying additional metadata elements. Additionally, data portals may be capable of providing machine-to-machine interfaces where additional metadata could be provided.</p>
 
 <section id="context">
 
 <h3>Context</h3>
 
-<p>EPOS-DCAT-AP was developed in the framework of European Plate Observing System  (EPOS). </p>
-<p>A major challenge in EPOS is the integration of multi-disciplinary, multi-organisational, distributed resources and community assets into a single overarching Research Infrastructure - the EPOS Integrated Core Services (ICS). </p>
-<p>ICS aggregate and harmonise descriptions of datasets, data products, software and services provided by different Thematic Core Services (TCS). TCS adopt heterogeneous formats, vocabularies, protocols and standards to represent and make their assets available.</p>
-<p>The exchange of metadata between ICS and TCS is crucial to achieve integration and interoperability in EPOS. </p>
-<p>In order to capture, organise and harmonise information from different sources and to enable semantic interoperability, an application profile has been developed and adopted, namely EPOS-DCAT-AP.</p>
-<p>EPOS-DCAT-AP is the result of a collaborative work that brought together diverse expertise. It has been applied successfully in a research infrastructure for solid-Earth sciences, i.e. EPOS, however, the set of requirements addressed make this model suitable to be adopted by other research infrastructures and to be applied in different contexts.
-</p>
-<p>This document was built starting from EPOS-DCAT-AP version 1.0 with the purpose of aligning it with DCAT-AP version 2.1.0.
+<p>With a view to fostering Europe's digital transformation, the European Commission is investing in frameworks and agreements to provide governments and businesses with the appropriate resources to digitalise their services. There are, for instance, building blocks available for creating a single market for data, where data flows freely within the EU and across sectors for the benefit of businesses, researchers and public administrations.</p>
+
+<p>To this direction, the European Commission launched the European Data Strategy [[DataStrategy]], as part of the European Commission's priorities for 2019-2024 in order to make the EU a leader in a data-driven society.</p>
+
+<p>Studies previously conducted on behalf of the European Commission (e.g., [[Vickery]]) shed light on the importance of having data findable and available in machine readable format in order to stimulate its reuse. This vision led to several legislative actions to reduce barriers and promote data sharing, such as the Open Data Directive [[OPENDATA-DIR]], which turned out to be a driving force towards a more transparent and fair access to government data.</p>
+
+<p>With this regard, the wide range of (open) data portals developed by European public administrations is the result of this mission. These Web-based interfaces allow access to data by providing users means to explore a catalogue of datasets. To facilitate the sharing, discovery and re-use of the data beyond the (open) data portal, common agreements for the exchange of catalogues of datasets are needed. These interoperability agreements enable to connect (open) data catalogues into a pan-european catalogue of datasets.</p>
+
+<p>The DCAT-AP application profile specifies the generic agreements for (open) data portals operated by public administrations in Europe. This specification extends DCAT-AP with additional requirements for geospatial data.</p>
+
+<p>The current document is the result of the major semantic change release process described in the Change and Release Management Policy for DCAT-AP [[DCAT-AP-CRMP]] and was built starting from GeoDCAT-AP version 1.0.1 [[GeoDCAT-AP-20160802]], with the purpose of aligning it with DCAT-AP version 2.0.1 [[DCAT-AP-20200608]] and with version 2.0.1 of the INSPIRE Metadata Technical Guidelines [[INSPIRE-MD-20170302]].</p>
+
+<p>This work has been carried out in the context of Action 1.1 – Improving semantic interoperability in European eGovernment systems [[SEMIC]] of the European Commission’s Interoperability solutions for public administrations, businesses and citizens (ISA²) Programme [[ISA2]], and it is the result of the major semantic change release process described in the Change and Release Management Policy for DCAT-AP [[DCAT-AP-CRMP]] and was built starting from GeoDCAT-AP version 1.0.1 [[GeoDCAT-AP-20160802]], with the purpose of aligning it with DCAT-AP version 2.0.1 [[DCAT-AP-20200608]] and with version 2.0.1 of the INSPIRE Metadata Technical Guidelines [[INSPIRE-MD-20170302]].</p>
 
 </section>
-</p>
+
 <section id="scope-of-the-revision">
 
 <h3>Scope of the revision</h3>
-<!--
-<p>The objective of this work is to produce an updated release of GeoDCAT-AP based on requests for change coming from real-world implementations of the specification and an alignment with [[DCAT-AP-20200608]] and [[INSPIRE-MD-20170302]].</p>
 
-<p>As [[DCAT-AP-20200608]], the Application Profile specified in this document is based on the specification of the <strong>Data Catalog Vocabulary</strong> (DCAT), originally  developed under the responsibility of the Government Linked Data Working Group [[GLD]] at W3C, and significantly revised in 2020 by the W3C Dataset Exchange Working Group [[DXWG]]. DCAT is an RDF [[RDF11-CONCEPTS]] vocabulary designed to facilitate interoperability between data catalogues published on the Web. Additional classes and properties from other well-known vocabularies are re-used where necessary.</p>
+<p>The objective of this work is to produce an updated release of GeoDCAT-AP based on requests for change coming from real-world implementations of the specification and an alignment with [[DCAT-AP-20200608]] and [[INSPIRE-MD-20170302]].</p> 
 
-<p>The work does not cover implementation issues like mechanisms for exchange of data and expected behaviour of systems implementing the Application Profile other than what is defined in the Conformance Statement in <a class="no-sectionRef" href="#conformance"></a>.</p>
+<p>As [[DCAT-AP-20200608]], the Application Profile specified in this document is based on the specification of the <strong>Data Catalog Vocabulary</strong> (DCAT), originally  developed under the responsibility of the Government Linked Data Working Group [[GLD]] at W3C, and significantly revised in 2020 by the W3C Dataset Exchange Working Group [[DXWG]]. DCAT is an RDF [[RDF11-CONCEPTS]] vocabulary designed to facilitate interoperability between data catalogues published on the Web. Additional classes and properties from other well-known vocabularies are re-used where necessary.</p> 
 
-<p>The Application Profile is intended to facilitate data exchange and therefore the classes and properties defined in this document are only relevant for the data to be exchanged; there are no requirements for communicating systems to implement specific technical environments. The only requirement is that the systems can export and import data in RDF in conformance with this Application Profile.</p>
--->
+<p>The work does not cover implementation issues like mechanisms for exchange of data and expected behaviour of systems implementing the Application Profile other than what is defined in the Conformance Statement in <a class="no-sectionRef" href="#conformance"></a>.</p> 
+
+<p>The Application Profile is intended to facilitate data exchange and therefore the classes and properties defined in this document are only relevant for the data to be exchanged; there are no requirements for communicating systems to implement specific technical environments. The only requirement is that the systems can export and import data in RDF in conformance with this Application Profile.</p> 
+
 </section>
 
 <section id="specification">
 
 <h3>A DCAT-AP extension</h3>
-<p>The EPOS-DCAT-AP specification is designed as an extension of DCAT-AP in conformance with the guidelines for the creation of DCAT-AP extensions. </p>
 
-<p>The DCAT-AP Application Profile on which this document is based is the DCAT-AP v2.1.0. </p>
+<!--
+<p>The DCAT-AP Application Profile defined in this document is based on the specification of the Data Catalog Vocabulary (DCAT) of 16 January 2014 [[VOCAB-DCAT-20140116]], and the Data Catalog Vocabulary (DCAT) - Version 2, W3C Candidate Recommendation 03 October 2019 [[VOCAB-DCAT-2-20191003]].</p>
+-->
+
+<p>The GeoDCAT-AP specification is designed as an extension of DCAT-AP in conformance with the guidelines for the creation of DCAT-AP extensions [[DCAT-AP-EG]]. The DCAT-AP Application Profile on which this document is based is the DCAT-AP specification of 8 June 2020 [[DCAT-AP-20200608]].  According to the same principles DCAT-AP is in itself an extension of DCAT.</p>
+
+<p>This dependency must be taken into account while reading and using this specification. When implementing GeoDCAT-AP, these specifications should be consulted first, to fill in any missing gaps in this document.</p> 
 
 </section>
 
@@ -126,7 +147,7 @@ table code, table pre {
 
 <p>A <strong>Vocabulary</strong> is a specification that determines the semantics of terms (classes and properties) in a broad context of information exchange. The defined terms are higly reusable.</p>
 
-<p>A <strong>Controlled Vocabulary</strong> is an organised arrangement of words and phrases used to index content and/or to retrieve content through browsing or searching. It typically includes preferred and variant terms and has a defined scope or describes a specific domain [[?GETTY]]. Within this specification, it is also used as a synonym for a codelist.
+<p>A <strong>Controlled Vocabulary</strong> is an organised arrangement of words and phrases used to index content and/or to retrieve content through browsing or searching. It typically includes preferred and variant terms and has a defined scope or describes a specific domain [[?GETTY]]. Within this specification, it is also used as a synonym for a codelist. 
 
 <p>An <strong>Application Profile</strong> is a specification that re-uses terms from one or more base standards (vocabularies), adding more specificity by identifying mandatory, recommended and optional elements to be used for a particular application, as well as recommendations for controlled vocabularies to be used.</p>
 
@@ -164,15 +185,15 @@ table code, table pre {
 
 <p>Classes no longer included in this version of the specification, or replaced with other ones, are classified as ‘Deprecated’ in <a class="no-sectionRef" href="#deprecated-classes"></a>.</p>
 
-<p>Finally, classes and properties added in this Application Profile and extending [[DCAT-AP]] are marked with a prepended &ldquo;plus&rdquo; sign (+), and summarised in the reference table in <a class="no-secRef" href="#eposdcat-ap-classes-and-properties"></a>.</p>
+<p>Finally, classes and properties added in this Application Profile and extending [[DCAT-AP]] are marked with a prepended &ldquo;plus&rdquo; sign (+), and summarised in the reference table in <a class="no-secRef" href="#geodcat-ap-classes-and-properties"></a>.</p>
 
 <section id="namespaces">
 
 <h3>Namespaces</h3>
 
-<p>The namespace for EPOS-DCAT-AP is: <code>https://www.epos-eu.org/epos-dcat-ap</code></p>
+<p>The namespace for GeoDCAT-AP is: <code>http://data.europa.eu/930/</code></p>
 
-<p>The suggested namespace prefix is: <code>epos</code></p>
+<p>The suggested namespace prefix is: <code>geodcat</code></p>
 
 <p>The Application Profile reuses terms from various existing specifications, following <a data-cite="?DWBP#dataVocabularies">established best practices</a> [[?DWBP]]. The following table indicates the full list of corresponding namespaces used in this document.</p>
 
@@ -199,8 +220,8 @@ table code, table pre {
 <p>The list of deprecated classes and properties is summarised in <a class="no-sectionRef" href="#deprecated-classes-and-properties"></a>.</p>
 
 <p><a href="#fig-geodcat-ap-uml-class-diagram"></a> shows a UML diagram of the classes and properties included in the Application Profile.</p>
-
-<aside class="note">
+  
+<aside class="note">	
 <p>For legibility, the diagram does not visualise all the classes as boxes. Supportive classes, as <code>skos:Concept</code>, are directly mentioned as the range of properties. The figure, therefore, might not highlight all the constraints and recommendations for these supportive classes, which are documented in the following sections. Moreover, the figure does not include the agent role properties defined in the GeoDCAT-AP namespace (<a class="no-secRef" href="#agent-roles"></a>), and whose use is illustrated in <a class="no-secRef" href="#properties"></a>.</p>
 </aside>
 
@@ -1658,7 +1679,7 @@ A property which is not mentioned but would be applicable for a class according 
 
 <h3>Licence vocabularies</h3>
 
-<p>Concerning licence vocabularies, implementers are encouraged to use widely recognised licences such as Creative Commons licences [[?CC]], and in particular the CC Zero Public Domain Dedication [[?CC0]] or CC-BY Attribution 4.0 International [[?CC-BY]], or  the Open Data Commons Public Domain Dedication and License (PDDL) [[?PDDL]].
+<p>Concerning licence vocabularies, implementers are encouraged to use widely recognised licences such as Creative Commons licences [[?CC]], and in particular the CC Zero Public Domain Dedication [[?CC0]] or CC-BY Attribution 4.0 International [[?CC-BY]], or  the Open Data Commons Public Domain Dedication and License (PDDL) [[?PDDL]]. 
 Often there is applicable legislation or a licency policy in place which determine the set of licences to be used. They may recommend the use of an open government licence such as the UK Open Government Licence [[?UKOGL]].</p>
 
 <p>Further activities in this area are undertaken by the Open Data Institute [[?ODI]] with the Open Data Rights Statement Vocabulary [[?ODRS]] and by the Open Digital Rights Language (ODRL) Initiative [[VOCAB-ODRL]].</p>
@@ -1718,7 +1739,7 @@ Often there is applicable legislation or a licency policy in place which determi
 
 <h2>Agent Roles</h2>
 
-<!--
+<!--  
 <p>GeoDCAT-AP supports the 11 agent roles defined in [[INSPIRE-MD-REG]] and [[ISO-19115]] by using the relevant properties from [[DCAT-AP-20200608]] and [[DCTERMS]] - namely, <code>dcat:contactPoint</code>, <code>dct:creator</code>, <code>dct:publisher</code>, and <code>dct:rightsHolder</code> (not supported in [[DCAT-AP-20200608]]) - and by defining new properties for the roles not covered by those vocabularies - namely, <code>geodcat:custodian</code>, <code>geodcat:distributor</code>, <code>geodcat:originator</code>, <code>geodcat:principalInvestigator</code>, <code>geodcat:processor</code>, <code>geodcat:resourceProvider</code>, and <code>geodcat:user</code>.</p>
 
 <p>It is important to note that, following [[INSPIRE-MD-REG]] and [[ISO-19115]], in GeoDCAT-AP all these agent roles can be specified on Catalogues, Catalogue Records, Datasets, and Data Services.</p>
@@ -1730,7 +1751,7 @@ Often there is applicable legislation or a licency policy in place which determi
 <p>However, differently from the approach based on [[DCAT-AP-20200608]] and [[DCTERMS]], its use is not mandatory. Depending on their requirements, data providers may decide to use only the approach based on [[DCAT-AP-20200608]] and [[DCTERMS]], or complement it with the one based on [[PROV-O]] for the roles not covered by the former, or use both approaches concurrently.</p>
 
 <p>More details on these solutions are available in <a class="no-sectionRef" href="#responsible-party-and-metadata-point-of-contact---dataset-responsible-party-and-metadata-point-of-contact"></a>.</p>
--->
+-->  
 
 <p>GeoDCAT-AP supports the 11 agent roles defined in [[INSPIRE-MD-REG]] and [[ISO-19115]] by using two different but not mutually exclusive approaches.</p>
 
@@ -1744,11 +1765,11 @@ Often there is applicable legislation or a licency policy in place which determi
 
 <p>More details on these solutions are available in <a class="no-sectionRef" href="#responsible-party-and-metadata-point-of-contact---dataset-responsible-party-and-metadata-point-of-contact"></a>.</p>
 
-<!--
+<!--  
 <aside class="note">
 <p>The approach based on [[PROV-O]] is meant to give data providers for a mechanism to specify, in a harmonised way, all the roles defined in INSPIRE, thus ensuring interoperability as well as compliance with [[INSPIRE-MD-REG]].</p>
 <p>However, differently from the approach based on [[DCAT-AP-20200608]] and [[DCTERMS]], its use is not mandatory. Depending on their requirements, data providers may decide to use only the approach based on [[DCAT-AP-20200608]] and [[DCTERMS]], or complement it with the one based on [[PROV-O]] for the roles not covered by the former, or use both approaches concurrently.</p>
-</aside>
+</aside>  
 -->
 
 <div class="issue" data-number="39"></div>
@@ -1765,7 +1786,7 @@ Often there is applicable legislation or a licency policy in place which determi
 
 <p>Following [[INSPIRE-MD-REG]] and [[ISO-19115]], GeoDCAT-AP supports the specification of test results to assess the degree of conformity of a resource (i.e., a Catalogue, a Dataset, a Data Service) with a given specification (e.g., a standard, a set of implementing rules, a set of data quality or interoperability criteria).</p>
 
-<p>For this purpose, GeoDCAT-AP makes use of two different but not mutually exclusive approaches. More precisely, property <code>dct:conformsTo</code> is used when the test result states that a resource is conformant with a given specification. The more general approach is based on [[PROV-O]], and it specifies conformance test results as a testing activity (<code>prov:Activity</code>) that generates a result (specified with property <code>prov:generated</code>), corresponding to one of the degrees of conformity defined in [[INSPIRE-MD-REG]], and available from the INSPIRE Registry [[INSPIRE-DoC]]. The specification against which the testing activity is carried out is specified via a &ldquo;qualified association&rdquo; (<code>prov:qualifiedAssociation</code>), linked to a &ldquo;plan&rdquo; (<code>prov:hadPlan</code>) derived from (<code>prov:wasDerivedFrom</code>) the specification itself.</p>
+<p>For this purpose, GeoDCAT-AP makes use of two different but not mutually exclusive approaches. More precisely, property <code>dct:conformsTo</code> is used when the test result states that a resource is conformant with a given specification. The more general approach is based on [[PROV-O]], and it specifies conformance test results as a testing activity (<code>prov:Activity</code>) that generates a result (specified with property <code>prov:generated</code>), corresponding to one of the degrees of conformity defined in [[INSPIRE-MD-REG]], and available from the INSPIRE Registry [[INSPIRE-DoC]]. The specification against which the testing activity is carried out is specified via a &ldquo;qualified association&rdquo; (<code>prov:qualifiedAssociation</code>), linked to a &ldquo;plan&rdquo; (<code>prov:hadPlan</code>) derived from (<code>prov:wasDerivedFrom</code>) the specification itself.</p> 
 
 <p>This pattern is illustrated in <a href="#ex-activity"></a>.</p>
 
@@ -1773,7 +1794,7 @@ Often there is applicable legislation or a licency policy in place which determi
 
 </section>
 
-<!-- Accessibility and Multilingual Aspects -->
+<!-- Accessibility and Multilingual Aspects --> 
 
 <section id="accessibility-and-multilingual-aspects" class="informative">
 
@@ -1816,7 +1837,7 @@ Often there is applicable legislation or a licency policy in place which determi
 
 <section id="ack">
 
-<!-- Acknowledgements -->
+<!-- Acknowledgements --> 
 
 <h2>Acknowledgements</h2>
 
@@ -1833,39 +1854,39 @@ Often there is applicable legislation or a licency policy in place which determi
 <div data-include-format="html" data-include-replace="true" data-include="./tables/geodcat-ap-wg-members.html"></div>
 -->
 <p>
-  This work was elaborated by the <a href="https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/geodcat-application-profile-data-portals-europe/members">GeoDCAT-AP Working Group</a> under the ISA² programme.
+  This work was elaborated by the <a href="https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/geodcat-application-profile-data-portals-europe/members">GeoDCAT-AP Working Group</a> under the ISA² programme. 
 </p>
 <p>
-  The ISA² Programme of the European Commission was represented by <strong>Pavlina Fragkou</strong> and <strong>Seth van Hooland</strong>.
-  <strong>Andrea Perego</strong> and <strong>Bert van Nuffelen</strong> were the editors of the specification.
+  The ISA² Programme of the European Commission was represented by <strong>Pavlina Fragkou</strong> and <strong>Seth van Hooland</strong>. 
+  <strong>Andrea Perego</strong> and <strong>Bert van Nuffelen</strong> were the editors of the specification. 
 </p>
 <p>
   Contributors: Andreas Kuckartz, Antonio Rotundo, Danny Vandenbroucke, Fabian Kirstein, Franck Cotton, Hannes Reuter, Jakub Klímek, James Passmore, Matthias Palmér, Riccardo Albertoni, Simon Cox.
 </p>
-
+  
 </section>
 
 <!-- Annexes -->
 
 <section id="quick-reference-of-classes-and-properties" class="appendix">
 
-<!-- Quick Reference of Classes and Properties -->
+<!-- Quick Reference of Classes and Properties --> 
 
 <h2>Quick Reference of Classes and Properties</h2>
 
 <div data-include-format="html" data-include-replace="true" data-include="./tables/quick-reference-of-classes-and-properties.html"></div>
 
-<!-- Classes and Properties added by EPOS-DCAT-AP -->
+<!-- Classes and Properties added by GeoDCAT-AP --> 
 
-<section id="eposdcat-ap-classes-and-properties">
+<section id="geodcat-ap-classes-and-properties">
 
-<h2>Classes and properties added by EPOS-DCAT-AP</h2>
+<h2>Classes and properties added by GeoDCAT-AP</h2>
 
 <div data-include-format="html" data-include-replace="true" data-include="./tables/geodcat-ap-classes-and-properties.html"></div>
 
 </section>
 
-<!-- Deprecated classes and properties -->
+<!-- Deprecated classes and properties --> 
 
 <section id="deprecated-classes-and-properties">
 
@@ -1877,7 +1898,7 @@ Often there is applicable legislation or a licency policy in place which determi
 
 </section>
 
-<!-- INSPIRE and ISO 19115 Mappings -->
+<!-- INSPIRE and ISO 19115 Mappings --> 
 
 <section id="inspire-and-iso-19115-mappings" class="appendix">
 
@@ -1887,7 +1908,7 @@ Often there is applicable legislation or a licency policy in place which determi
 
 </section>
 
-<!-- Controlled Vocabularies Mappings -->
+<!-- Controlled Vocabularies Mappings --> 
 <!--
 <section id="controlled-vocabularies-mappings" class="appendix">
 
@@ -1899,7 +1920,7 @@ Often there is applicable legislation or a licency policy in place which determi
 
 </section>
 -->
-<!-- Conformance with INSPIRE and ISO 19115 -->
+<!-- Conformance with INSPIRE and ISO 19115 --> 
 <!--
 <section id="conformance-with-inspire-and-iso-19115" class="appendix">
 
@@ -1911,7 +1932,7 @@ Often there is applicable legislation or a licency policy in place which determi
 
 </section>
 -->
-<!-- Change Log -->
+<!-- Change Log --> 
 
 <section id="changes" class="appendix">
 

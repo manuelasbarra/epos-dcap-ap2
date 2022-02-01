@@ -42,7 +42,7 @@ console.log(i);
       cName.innerHTML = prefix + '<a href="#' + id + '">' + name + '</a>';
       var cURI = row.insertCell(1);
       cURI.innerHTML = '<code>' + uri + '</code>';
-
+ 
       for (var j = 0, k = 2; j < property_selectors.length; j++, k++) {
         var c = row.insertCell(k);
         if (prop != '') {
@@ -65,7 +65,7 @@ console.log(i);
     }
   }
 };
-
+	
 //document.addEventListener("DOMContentLoaded", () => {
 $(document).ready( function() {
 
@@ -119,7 +119,7 @@ waitForEl('#maintenance-information---not-in-iso19115-core', function() {
     var cMP = row.insertCell(2);
     var cRP = row.insertCell(3);
     var cOP = row.insertCell(4);
-
+ 
     if (prop != '') {
 
       var prows = document.querySelectorAll(prop + ' tr:not(.deprecated).property.mandatory'), pi;

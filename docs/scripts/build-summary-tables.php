@@ -28,7 +28,7 @@
         $chref = '';
         if ($nodes[$ck]->getElementsByTagName('td')->item(0)->getElementsByTagName('a')->length > 0) {
           $chref = $nodes[$ck]->getElementsByTagName('td')->item(0)->getElementsByTagName('a')->item(0)->getAttribute('href');
-        }
+        }	
         $curi = trim($nodes[$ck]->getElementsByTagName('td')->item(2)->nodeValue);
 
         $c[$cid]['id'] = $cid;
@@ -46,11 +46,11 @@
           $c[$cid]['replaced-by-href'] = '';
           if ($nodes[$ck]->getElementsByTagName('td')->item(3)->getElementsByTagName('a')->length > 0) {
             $c[$cid]['replaced-by-href'] = $nodes[$ck]->getElementsByTagName('td')->item(3)->getElementsByTagName('a')->item(0)->getAttribute('href');
-          }
+          }	
           $c[$cid]['deprecated-in'] = trim($nodes[$ck]->getElementsByTagName('td')->item(4)->nodeValue);
 
           $deprecated[$cid] = $c[$cid];
-/*
+/*	  
           $deprecated[$cid]['domain-id'] = '';
           $deprecated[$cid]['domain-name'] = '';
           $deprecated[$cid]['domain-types'] = '';
@@ -71,7 +71,7 @@
               $phref = '';
               if ($pnodes[$pk]->getElementsByTagName('td')->item(0)->getElementsByTagName('a')->length > 0) {
                 $phref = $pnodes[$pk]->getElementsByTagName('td')->item(0)->getElementsByTagName('a')->item(0)->getAttribute('href');
-              }
+              }	
               $puri = trim($pnodes[$pk]->getElementsByTagName('td')->item(1)->nodeValue);
 
               $p[$pid]['id'] = $pid;
@@ -85,7 +85,7 @@
                 $p[$pid]['replaced-by-href'] = '';
                 if ($pnodes[$pk]->getElementsByTagName('td')->item(2)->getElementsByTagName('a')->length > 0) {
                   $p[$pid]['replaced-by-href'] = $pnodes[$pk]->getElementsByTagName('td')->item(2)->getElementsByTagName('a')->item(0)->getAttribute('href');
-                }
+                }	
                 $p[$pid]['deprecated-in'] = trim($pnodes[$pk]->getElementsByTagName('td')->item(3)->nodeValue);
               }
 
@@ -126,22 +126,22 @@
   foreach ($c as $k => $v) {
     if (isset($c[$k]['prop-mandatory'])) {
       array_multisort(array_column($c[$k]['prop-mandatory'], 'uri'), $c[$k]['prop-mandatory']);
-    }
+    } 
     if (isset($c[$k]['prop-recommended'])) {
       array_multisort(array_column($c[$k]['prop-recommended'], 'uri'), $c[$k]['prop-recommended']);
-    }
+    } 
     if (isset($c[$k]['prop-optional'])) {
       array_multisort(array_column($c[$k]['prop-optional'], 'uri'), $c[$k]['prop-optional']);
-    }
+    } 
     if (isset($c[$k]['prop-ap-ext'])) {
       array_multisort(array_column($c[$k]['prop-ap-ext'], 'uri'), $c[$k]['prop-ap-ext']);
-    }
+    } 
     if (isset($c[$k]['prop-deprecated'])) {
       array_multisort(array_column($c[$k]['prop-deprecated'], 'name'), $c[$k]['prop-deprecated']);
-    }
+    } 
     if (isset($deprecated)) {
       array_multisort(array_column($deprecated, 'name'), $deprecated);
-    }
+    } 
   }
 
 //  foreach ($c as $k => $v) {
@@ -149,9 +149,9 @@
 //  }
 //  exit;
 //print_r($c);
-//exit;
+//exit; 
 //print_r($deprecated);
-//exit;
+//exit; 
 
   $tables[0]['id'] = 'quick-reference-of-classes-and-properties';
   $tables[0]['classes'] = ['mandatory', 'recommended', 'optional'];
@@ -244,7 +244,7 @@
                     $pprefix = '+';
                   }
                   $html .= '<p>' . $pprefix . '<a title="' . $pv['name'] . '" href="#' . $pv['id'] . '"><code>' . $pv['uri'] . '</code></a></p>' . "\n";
-                }
+                }  
               }  
             }
             $html .= '</td>' . "\n";
@@ -265,3 +265,4 @@
   }
 
 ?>
+
