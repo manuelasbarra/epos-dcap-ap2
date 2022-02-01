@@ -326,6 +326,14 @@ logos: [
         "href":"http://geonames.org/",
         "title":"Geonames"
        },
+       "HTTP":{
+         "href":"http://www.w3.org/2006/http#",
+         "title":"HTTP"
+        },
+        "HYDRA":{
+          "href":"http://www.w3.org/ns/hydra/core#",
+          "title":"HYDRA"
+         },
       "iiWAS17-JRC": {
         "href": "https://doi.org/10.1145/3151759.3151810",
         "title": "The JRC multidisciplinary research data infrastructure",
