@@ -19,19 +19,19 @@ var respecConfig = {
     addSectionLinks: true,
     maxTocLevel: 3,
     doJsonLd: true,
-    noRecTrack: false,    
-    subtitle: "A geospatial extension for the DCAT application profile for data portals in Europe",
+    noRecTrack: false,
+    subtitle: "An extension of the DCAT Application Profile for Research Infrastructures in the solid-Earth domain",
 //    copyrightHolder: "European Union",
 //    copyrightURL: "https://europa.eu/",
-    copyrightStart: 2020,
-    publishDate: "2020-12-23",
+  //  copyrightStart: 2020,
+    publishDate: "2022-02-23",
 
-    alternateFormats: [
+  //  alternateFormats: [
 /*
     {
       label: "PDF (TBD)",
       uri: "./geodcat-ap_v2.0.0.pdf",
-    }, 
+    },
     {
       label: "DOCX (TBD)",
       uri: "./geodcat-ap_v2.0.0.docx",
@@ -40,7 +40,7 @@ var respecConfig = {
       label: "ODT (TBD)",
       uri: "./geodcat-ap_v2.0.0.odt",
     },
-*/
+
     {
       label: "RDF/XML",
       uri: "./geodcat-ap.rdf",
@@ -57,7 +57,7 @@ var respecConfig = {
       label: "SHACL (Turtle)",
       uri: "./geodcat-ap.shacl.ttl",
     }
-    ],    
+    ],    */
 //    implementationReportURI:"https://joinup.ec.europa.eu/document/geodcat-ap-implementations",
     errata:"https://github.com/SEMICeu/GeoDCAT-AP/issues?q=is%3Aissue+label%3Atype%3Aerratum+label%3Arelease%3A2.0.0",
 //    specStatus: "unofficial",
@@ -69,65 +69,62 @@ var respecConfig = {
 //    specStatus: "REC",
 //    crEnd:"2020-10-12",
 //    prEnd:"2020-12-23",
-    shortName: "geodcat-ap",
-    canonicalURI: "https://semiceu.github.io/GeoDCAT-AP/drafts/latest/",
+    shortName: "epos-dcat-ap2",
+    canonicalURI: "TBD",
 //    canonicalURI: "https://semiceu.github.io/GeoDCAT-AP/drafts/2.0.0-draft-0.1/",
 //    canonicalURI: "https://semiceu.github.io/GeoDCAT-AP/releases/2.0.0/",
 //    canonicalURI: "https://semiceu.github.io/GeoDCAT-AP/releases/",
 //    prevRecURI: "https://joinup.ec.europa.eu/release/geodcat-ap/101",
 //    prevRecURI: "https://semiceu.github.io/GeoDCAT-AP/releases/1.0.1/",
-    prevRecURI: "https://semiceu.github.io/GeoDCAT-AP/releases/2.0.0/",
+    prevRecURI: "TBD",
 //    previousPublishDate:  "2016-08-02",
 //    previousMaturity:     "final",
 //    previousURI:          "https://joinup.ec.europa.eu/release/geodcat-ap/101",
-/* SEMICEU specific - start */	
+/* SEMICEU specific - start */
 //    thisVersionURI:       "https://semiceu.github.io/GeoDCAT-AP/drafts/latest/",
 //    thisVersionURI:       "https://semiceu.github.io/GeoDCAT-AP/drafts/2.0.0-draft-0.1/",
-    thisVersionURI:       "https://semiceu.github.io/GeoDCAT-AP/releases/2.0.0/",
+    thisVersionURI:       "TBD",
 //    prevVersionURI:       "https://semiceu.github.io/GeoDCAT-AP/drafts/latest/",
-    prevVersionURI:       "https://semiceu.github.io/GeoDCAT-AP/drafts/2.0.0-draft-0.1/",
+    prevVersionURI:       "TBD",
 //    latestVersionURI:     "https://semiceu.github.io/GeoDCAT-AP/releases/2.0.0/",
-    latestVersionURI:     "https://semiceu.github.io/GeoDCAT-AP/releases/",
-/* SEMICEU specific - end   */	
-    edDraftURI:           "https://semiceu.github.io/GeoDCAT-AP/drafts/latest/",
-    issueBase:            "https://github.com/semiceu/geodcat-ap/issues/",
-    github:               "https://github.com/semiceu/geodcat-ap/",
+    latestVersionURI:     "TBD",
+/* SEMICEU specific - end   */
+    edDraftURI:           "TDB",
+    issueBase:            "https://github.com/",
+    github:               "https://github.com/",
     formerEditors: [{
-      name:       "Andrea Perego",
-      company:    "European Commission, Joint Research Centre",
-      orcid:      "0000-0001-9300-2694",
-//      companyURL: "https://ec.europa.eu/jrc/"
+      name:   "Rossana Paciello",
+      orcid:  "0000-0002-6975-1991",
+      company:    "INGV - Istituto Nazionale Geofisisca e Vulcanologia, Italy"
     },{
-      name: "Stijn Goedertier",
-      company: "PwC EU Services",
-//      companyURL: "https://www.pwc.com/gx/en/services/european-union.html"
-    },{
-      name: "Antonio Rotundo",
-      company: "Agenzia per l'Italia Digitale",
-      url: "",
-//      companyURL: "http://www.agid.gov.it/"
+      name: 	"Manuela Sbarra",
+      orcid:  "0000-0001-7746-6309",
+      company:    "INGV - Istituto Nazionale Geofisisca e Vulcanologia, Italy"
     }],
     editors: [
       {
-        name:    "Andrea Perego",
-        company: "External Consultant, European Commission, Joint Research Centre",
-        orcid:   "0000-0001-9300-2694",
+        name:   "Rossana Paciello",
+        orcid:  "0000-0002-6975-1991",
+        company:    "INGV - Istituto Nazionale Geofisisca e Vulcanologia, Italy"
+
 //        companyURL: "https://ec.europa.eu/jrc/"
       },
       {
-        name: "Bert van Nuffelen",
-        company: "TenForce",
-//        companyURL: ""
+        name: 	"Manuela Sbarra",
+        orcid:  "0000-0001-7746-6309",
+        company:    "INGV - Istituto Nazionale Geofisisca e Vulcanologia, Italy"
+
       }
     ],
     authors: [
     {
-      name: "GeoDCAT-AP Working Group",
-      url: "https://github.com/semiceu/geodcat-ap/",
-      company: "EU ISA² Programme",
-      companyURL: "https://ec.europa.eu/isa2/"
+      name: "EPOS-DCAT-AP Working Group",
+      url: "TDB",
+      company: "EPOS",
+      companyURL: "https://www.epos-eu.org/"
+
     },
-    ],    
+    ],
     otherLinks: [
     {
       key: "Document status",
@@ -143,41 +140,33 @@ var respecConfig = {
       data: [
       {
 //        value: "0.2"
-        value: "1.0"
+        value: "2.0"
       }
       ]
     },
-	    
-    {
+
+   {
       key: "Reviewed by",
       data: [
       {
-        value: "Pavlina Fragkou (European Commission)",
-//        href: "https://ec.europa.eu/"
-      },
-      {
-        value: "Seth van Hooland (European Commission)",
-//        href: "https://ec.europa.eu/"
-      },
+        value: "TBD",
+      //  href: "https://ec.europa.eu/"
+      }
       ]
     },
     {
       key: "Approved by",
       data: [
       {
-        value: "Pavlina Fragkou (European Commission)",
-//        href: "https://ec.europa.eu/"
-      },
-      {
-        value: "Seth van Hooland (European Commission)",
-//        href: "https://ec.europa.eu/"
-      },
+        value: "TBD",
+
+      }
       ]
     }
-      
-    ],
-    wg: "GeoDCAT-AP Working Group",
-    wgURI: "https://github.com/semiceu/geodcat-ap/",
+
+  ],
+    wg: "EPOS-DCAT-AP Working Group",
+    wgURI: "https://github.com/",
 //    wgURI: "https://joinup.ec.europa.eu/solution/geodcat-ap",
 //    wgPublicList: "",
 //    wgPatentURI: "",
@@ -599,7 +588,7 @@ var respecConfig = {
          "date":"17 April 2018",
          "publisher":"OpenSearch"
       },
-/*      
+/*
       "POWDER-S": {
         "href":"https://www.w3.org/2007/05/powder-s",
         "title":"Protocol for Web Description Resources (POWDER): POWDER-S Vocabulary (WDRS)",
@@ -608,7 +597,7 @@ var respecConfig = {
         "status":"Namespace Document",
         "date":"8 November 2010"
       },
-*/      
+*/
       "SCHEMA-ORG":{
         "href":"http://schema.org/",
         "title":"Schema.org"
