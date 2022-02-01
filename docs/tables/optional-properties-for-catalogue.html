@@ -1,28 +1,28 @@
 <table class="simple" id="table-optional-properties-for-catalogue">
-<thead>
-<tr>
-<th>
-<p>Property</p>
-</th>
-<th>
-<p>URI</p>
-</th>
-<th>
-<p>Range</p>
-</th>
-<th>
-<p>Usage note</p>
-</th>
-<th>
-<p>Card.</p>
-</th>
-</tr>
-</thead>
-<tbody>
-
+  <thead>
+    <tr>
+      <th>
+          <p>Property</p>
+      </th>
+      <th>
+          <p>URI</p>
+      </th>
+      <th>
+          <p>Range</p>
+      </th>
+      <th>
+          <p>Usage note</p>
+      </th>
+      <th>
+          <p>Card.</p>
+      </th>
+    </tr>
+    </thead>
+  <tbody>
+<!--
 <tr class="property optional ap-ext" id="catalogue-access-rights">
 <td>
-<p>+access rights</p>
+<p>access rights</p>
 </td>
 <td>
 <p><code>dct:accessRights</code></p>
@@ -38,25 +38,25 @@
 <p>0..1</p>
 </td>
 </tr>
-
-<tr class="property optional" id="catalogue-catalogue">
-<td>
-<p>catalogue</p>
-</td>
-<td>
-<p><code>dcat:catalog</code></p>
-</td>
-<td>
-<p><code>dcat:Catalog</code></p>
-</td>
-<td>
-<p>This property refers to a Catalogue whose contents are of interest in the context of this Catalogue.</p>
-</td>
-<td>
-<p>0..n</p>
-</td>
-</tr>
-
+-->
+    <tr class="property optional" id="catalogue-catalogue">
+      <td>
+          <p>catalogue</p>
+      </td>
+      <td>
+          <p><code>dcat:catalog</code></p>
+      </td>
+      <td>
+          <p><code>dcat:Catalog</code></p>
+      </td>
+      <td>
+          <p>This property refers to a Catalogue whose contents are of interest in the context of this Catalogue.</p>
+      </td>
+      <td>
+          <p>0..n</p>
+      </td>
+    </tr>
+<!--
 <tr class="property optional ap-ext" id="catalogue-conforms-to">
 <td>
 <p>+conforms to</p>
@@ -110,43 +110,43 @@
 <p>0..1</p>
 </td>
 </tr>
+-->
+    <tr class="property optional" id="catalogue-creator">
+      <td>
+          <p>creator</p>
+      </td>
+      <td>
+          <p><code>dct:creator</code></p>
+      </td>
+      <td>
+          <p><code>foaf:Agent</code></p>
+      </td>
+      <td>
+          <p>This property refers to the Agent primarily responsible for producing the Catalogue.</p>
+      </td>
+      <td>
+          <p>0..n</p>
+      </td>
+    </tr>
 
-<tr class="property optional" id="catalogue-creator">
-<td>
-<p>creator</p>
-</td>
-<td>
-<p><code>dct:creator</code></p>
-</td>
-<td>
-<p><code>foaf:Agent</code></p>
-</td>
-<td>
-<p>This property refers to the Agent primarily responsible for producing the Catalogue.</p>
-</td>
-<td>
-<p>0..1</p>
-</td>
-</tr>
-
-<tr class="property optional" id="catalogue-has-part">
-<td>
-<p>has part</p>
-</td>
-<td>
-<p><code>dct:hasPart</code></p>
-</td>
-<td>
-<p><code>dcat:Catalog</code></p>
-</td>
-<td>
-<p>This property refers to a related Catalogue that is part of the described Catalogue.</p>
-</td>
-<td>
-<p>0..n</p>
-</td>
-</tr>
-
+    <tr class="property optional" id="catalogue-has-part">
+      <td>
+          <p>has part</p>
+      </td>
+      <td>
+          <p><code>dct:hasPart</code></p>
+      </td>
+      <td>
+          <p><code>dcat:Catalog</code></p>
+      </td>
+      <td>
+          <p>This property refers to a related Catalogue that is part of the described Catalogue.</p>
+      </td>
+      <td>
+          <p>0..n</p>
+      </td>
+    </tr>
+<!--
 <tr class="property optional ap-ext" id="catalogue-identifier">
 <td>
 <p>+identifier</p>
@@ -164,25 +164,25 @@
 <p>0..n</p>
 </td>
 </tr>
-
-<tr class="property optional" id="catalogue-is-part-of">
-<td>
-<p>is part of</p>
-</td>
-<td>
-<p><code>dct:isPartOf</code></p>
-</td>
-<td>
-<p><code>dcat:Catalog</code></p>
-</td>
-<td>
-<p>This property refers to a related Catalogue in which the described Catalogue is physically or logically included.</p>
-</td>
-<td>
-<p>0..1</p>
-</td>
-</tr>
-
+-->
+    <tr class="property optional" id="catalogue-is-part-of">
+      <td>
+          <p>isPartOf</p>
+      </td>
+      <td>
+          <p><code>dct:isPartOf</code></p>
+      </td>
+      <td>
+          <p><code>dcat:Catalog</code></p>
+      </td>
+      <td>
+          <p>This property refers to a related Catalogue in which the described Catalogue is physically or logically included.</p>
+      </td>
+      <td>
+          <p>0..1</p>
+      </td>
+    </tr>
+<!--
 <tr class="property recommended ap-ext" id="catalogue-keyword">
 <td>
 <p>+keyword / tag</p>
@@ -218,25 +218,25 @@
 <p>0..n</p>
 </td>
 </tr>
-
-<tr class="property optional" id="catalogue-catalogue-record">
-<td>
-<p>record</p>
-</td>
-<td>
-<p><code>dcat:record</code></p>
-</td>
-<td>
-<p><code>dcat:CatalogRecord</code></p>
-</td>
-<td>
-<p>This property refers to a Catalogue Record that is part of the Catalogue.</p>
-</td>
-<td>
-<p>0..n</p>
-</td>
-</tr>
-
+-->
+    <tr class="property optional" id="catalogue-catalogue-record">
+      <td>
+          <p>record</p>
+      </td>
+      <td>
+          <p><code>dcat:record</code></p>
+      </td>
+      <td>
+          <p><code>dcat:CatalogRecord</code></p>
+      </td>
+      <td>
+          <p>This property refers to a Catalogue Record that is part of the Catalogue.</p>
+      </td>
+      <td>
+          <p>0..n</p>
+      </td>
+    </tr>
+<!--
 <tr class="property optional ap-ext" id="catalogue-reference-system">
 <td>
 <p>+reference system</p>
@@ -255,25 +255,25 @@
 <p>0..n</p>
 </td>
 </tr>
-
-<tr class="property optional" id="catalogue-rights">
-<td>
-<p>rights</p>
-</td>
-<td>
-<p><code>dct:rights</code></p>
-</td>
-<td>
-<p><code>dct:RightsStatement</code></p>
-</td>
-<td>
-<p>This property refers to a statement that specifies rights associated with the Catalogue.</p>
-</td>
-<td>
-<p>0..1</p>
-</td>
-</tr>
-
+-->
+    <tr class="property optional" id="catalogue-rights">
+      <td>
+          <p>rights</p>
+      </td>
+      <td>
+          <p><code>dct:rights</code></p>
+      </td>
+      <td>
+          <p><code>dct:RightsStatement</code></p>
+      </td>
+      <td>
+          <p>This property refers to a statement that specifies rights associated with the Catalogue.</p>
+      </td>
+      <td>
+          <p>0..1</p>
+      </td>
+    </tr>
+<!--
 <tr class="property optional ap-ext" id="catalogue-rights-holder">
 <td>
 <p>+rights holder</p>
@@ -292,23 +292,7 @@
 </td>
 </tr>
 
-<tr class="property optional" id="catalogue-service">
-<td>
-<p>service</p>
-</td>
-<td>
-<p><code>dcat:service</code></p>
-</td>
-<td>
-<p><code>dcat:DataService</code></p>
-</td>
-<td>
-<p>This property refers to a Data Service that is listed in the Catalogue.</p>
-</td>
-<td>
-<p>0..n</p>
-</td>
-</tr>
+
 
 <tr class="property optional ap-ext" id="catalogue-temporal-coverage">
 <td>
@@ -381,10 +365,10 @@
 <td>
 <p>0..n</p>
 </td>
-</tr>
+</tr>-->
 
 <!-- NEW -->
-
+<!--
 <tr class="property optional ap-ext" id="catalogue-custodian">
 <td>
 <p>+custodian</p>
@@ -510,6 +494,6 @@
 <p>0..n</p>
 </td>
 </tr>
-
+-->
 </tbody>
 </table>
