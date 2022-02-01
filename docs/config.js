@@ -746,9 +746,9 @@ logos: [
         "publisher":"European Commission"
       },
       "EPOS": {
-        "href":"https://joinup.ec.europa.eu/solution/asset-description-metadata-schema-adms",
-        "title":"Joinup. Asset Description Metadata Schema (ADMS)",
-        "publisher":"European Commission"
+        "href":"TBD",
+        "title":"TBD",
+        "publisher":"TBD"
       },
       "CERIF-VOCS": {
         "href":"http://www.eurocris.org/Uploads/Web%20pages/CERIF-1.5/CERIF1.5_Semantics.xhtml",
