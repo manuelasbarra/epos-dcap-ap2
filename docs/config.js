@@ -620,7 +620,7 @@ var respecConfig = {
       },
 */
       "SCHEMA-ORG":{
-        "href":"http://schema.org/",
+        "href":"http://schema.org",
         "title":"Schema.org"
       },
       "SCoRO": {
