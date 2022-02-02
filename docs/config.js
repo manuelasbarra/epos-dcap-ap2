@@ -177,6 +177,11 @@ var respecConfig = {
         "title":"EPOS",
         "publisher":"TBD"
       },
+      "EPOS-DCAT-AP": {
+        "href":"https://www.epos-eu.org/epos-dcat-ap#",
+        "title":"EPOS",
+        "publisher":"TBD"
+      },
       "HTTP":{
         "href":"http://www.w3.org/2006/http#",
         "title":"HTTP"
