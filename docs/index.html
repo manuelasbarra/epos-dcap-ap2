@@ -256,31 +256,31 @@ table code, table pre {
 <p>The following classes are included in EPOS-DCAT-AP:</p>
 <ul>
   <li><a href="#address">Address</a></li>
-  <li><a  href="#equipment">Equipment</a></li>
-  <li><a  href="#facility">Facility</a></li>
-  <li><a  href="#iritemplate">IriTemplate</a></li>
-  <li><a  href="#iritemplatemapping">IriTemplateMapping</a></li>
-  <li><a  href="#operation">Operation</a></li>
-  <li><a  href="#postaladdress">PostalAddress</a></li>
-  <li><a  href="#project">Project</a></li>
-  <li><a  href="#publication">Publication</a></li>
-  <li><a  href="#service">Service</a></li>
+  <li><a href="#equipment">Equipment</a></li>
+  <li><a href="#facility">Facility</a></li>
+  <li><a href="#iritemplate">IriTemplate</a></li>
+  <li><a href="#iritemplatemapping">IriTemplateMapping</a></li>
+  <li><a href="#operation">Operation</a></li>
+  <li><a href="#postaladdress">PostalAddress</a></li>
+  <li><a href="#project">Project</a></li>
+  <li><a href="#publication">Publication</a></li>
+  <li><a href="#service">Service</a></li>
   <li><a href="#softwareapplication">SoftwareApplication</a></li>
-  <li><a  href="#softwaresourcecode">SoftwareSourceCode</a></li>
+  <li><a href="#softwaresourcecode">SoftwareSourceCode</a></li>
 </ul>
 </aside>
 
 <div data-include-format="html" data-include-replace="true" data-include="./tables/epos-dcat-ap-classes.html"></div>
 
 </section>
-
+<!--
 <section id="deprecated-classes">
 
 <h3>Deprecated Classes</h3>
 
 <div data-include-format="html" data-include-replace="true" data-include="./tables/deprecated-classes.html"></div>
 
-</section>
+</section>-->
 
 </section>
 
@@ -362,13 +362,13 @@ A property which is not mentioned but would be applicable for a class according 
   <h4>Mandatory properties for Address</h4>
 
   <aside class="note">
-  <p>The following properties are not included in [[DCAT-AP-20200608]]:</p>
-  <ul>
-  <li><a href="#address-country-name">country-name</a></li>
-  <li><a href="#address-locality">locality</a></li>
-  <li><a href="#address-postal-code">postal-code</a></li>
-  <li><a href="#address-street-address">street-address </a></li>
-  </ul>
+    <p>The following properties are not included in [[DCAT-AP-20200608]]:</p>
+    <ul>
+      <li><a href="#address-country-name">country-name</a></li>
+      <li><a href="#address-locality">locality</a></li>
+      <li><a href="#address-postal-code">postal-code</a></li>
+      <li><a href="#address-street-address">street-address </a></li>
+    </ul>
   </aside>
 
   <div data-include-format="html" data-include-replace="true" data-include="./tables/mandatory-properties-for-address.html"></div>
@@ -909,7 +909,7 @@ A property which is not mentioned but would be applicable for a class according 
   <section id="mandatory-properties-for-identifier">
 
 
-  <h4>Mandatory property for Identifier</h4>
+  <h4>Mandatory properties for Identifier</h4>
 
   <div data-include-format="html" data-include-replace="true" data-include="./tables/mandatory-properties-for-identifier.html"></div>
 
@@ -992,42 +992,42 @@ A property which is not mentioned but would be applicable for a class according 
 
 <section id="properties-for-licence-document">
 
-<h3>Licence Document</h3>
+  <h3>Licence Document</h3>
 
-<div data-include-format="html" data-include-replace="true" data-include="./tables/class-licence-document.html"></div>
+  <div data-include-format="html" data-include-replace="true" data-include="./tables/class-licence-document.html"></div>
 
-<section id="recommended-properties-for-licence-document">
+  <section id="recommended-properties-for-licence-document">
 
-<h4>Recommended property for Licence Document</h4>
+  <h4>Recommended property for Licence Document</h4>
 
-<div data-include-format="html" data-include-replace="true" data-include="./tables/recommended-properties-for-licence-document.html"></div>
+  <div data-include-format="html" data-include-replace="true" data-include="./tables/recommended-properties-for-licence-document.html"></div>
 
-</section>
+  </section>
+  <!--
+  <section id="optional-properties-for-licence-document">
 
-<section id="optional-properties-for-licence-document">
+  <h4>Optional property for Licence Document</h4>
 
-<h4>Optional property for Licence Document</h4>
+  <aside class="note">
+  <p>The following property is not included in [[DCAT-AP-20200608]]:</p>
+  <ul>
+  <li>+<a href="#licence-document-licence-text">licence text</a></li>
+  </ul>
+  </aside>
 
-<aside class="note">
-<p>The following property is not included in [[DCAT-AP-20200608]]:</p>
-<ul>
-<li>+<a href="#licence-document-licence-text">licence text</a></li>
-</ul>
-</aside>
+  <div data-include-format="html" data-include-replace="true" data-include="./tables/optional-properties-for-licence-document.html"></div>
+  -->
+  </section>
 
-<div data-include-format="html" data-include-replace="true" data-include="./tables/optional-properties-for-licence-document.html"></div>
+  <section id="examples-for-licence-document">
 
-</section>
+  <h4>Examples for Licence Document</h4>
 
-<section id="examples-for-licence-document">
+  <aside class="example" id="ex-licence-document" title="Licence Document">
+  <pre data-include-format="text" data-include="./examples/licence-document.ttl"></pre>
+  </aside>
 
-<h4>Examples for Licence Document</h4>
-
-<aside class="example" id="ex-licence-document" title="Licence Document">
-<pre data-include-format="text" data-include="./examples/licence-document.ttl"></pre>
-</aside>
-
-</section>
+  </section>
 
 </section>
 
@@ -1035,48 +1035,39 @@ A property which is not mentioned but would be applicable for a class according 
 
 <section id="properties-for-location">
 
-<h3>Location</h3>
+  <h3>Location</h3>
 
-<div data-include-format="html" data-include-replace="true" data-include="./tables/class-location.html"></div>
+  <div data-include-format="html" data-include-replace="true" data-include="./tables/class-location.html"></div>
 
-<section id="recommended-properties-for-location">
+  <section id="recommended-properties-for-location">
 
-<h4>Recommended properties for Location</h4>
+  <h4>Recommended properties for Location</h4>
 
-<div data-include-format="html" data-include-replace="true" data-include="./tables/recommended-properties-for-location.html"></div>
+  <div data-include-format="html" data-include-replace="true" data-include="./tables/recommended-properties-for-location.html"></div>
 
-</section>
+  </section>
 
-<section id="optional-properties-for-location">
+  <section id="optional-properties-for-location">
 
-<h4>Optional properties for Location</h4>
+  <h4>Optional properties for Location</h4>
 
-<aside class="note">
-<p>The following properties are not included in [[DCAT-AP-20200608]]:</p>
-<ul>
-<li>+<a href="#location-gazetteer">gazetteer</a></li>
-<li>+<a href="#location-geographic-identifier">geographic identifier</a></li>
-<li>+<a href="#location-geographic-name">geographic name</a></li>
-</ul>
-</aside>
+  <div data-include-format="html" data-include-replace="true" data-include="./tables/optional-properties-for-location.html"></div>
 
-<div data-include-format="html" data-include-replace="true" data-include="./tables/optional-properties-for-location.html"></div>
+  </section>
 
-</section>
+  <section id="examples-for-location">
 
-<section id="examples-for-location">
+  <h4>Examples for Location</h4>
 
-<h4>Examples for Location</h4>
+  <aside class="example" id="ex-location-gn" title="Location as geographic name">
+  <pre data-include-format="text" data-include="./examples/location-gn.ttl"></pre>
+  </aside>
 
-<aside class="example" id="ex-location-gn" title="Location as geographic name">
-<pre data-include-format="text" data-include="./examples/location-gn.ttl"></pre>
-</aside>
+  <aside class="example" id="ex-location-geom" title="Location as geometry">
+  <pre data-include-format="text" data-include="./examples/location-geom.ttl"></pre>
+  </aside>
 
-<aside class="example" id="ex-location-geom" title="Location as geometry">
-<pre data-include-format="text" data-include="./examples/location-geom.ttl"></pre>
-</aside>
-
-</section>
+  </section>
 
 </section>
 
@@ -1091,7 +1082,7 @@ A property which is not mentioned but would be applicable for a class according 
 </aside>
 
 <div data-include-format="html" data-include-replace="true" data-include="./tables/class-media-type.html"></div>
-
+<!--
 <section id="recommended-properties-for-media-type">
 
 <h4>Recommended property for Media Type</h4>
@@ -1116,10 +1107,10 @@ A property which is not mentioned but would be applicable for a class according 
 </aside>
 
 </section>
-
+-->
 </section>
 
-<!-- Metric -->
+<!-- Metric
 
 <section id="properties-for-metric">
 
@@ -1179,7 +1170,7 @@ A property which is not mentioned but would be applicable for a class according 
 </section>
 
 </section>
-
+ -->
 <!-- Operation -->
 <section id="properties-for-operation">
 
@@ -1190,49 +1181,49 @@ A property which is not mentioned but would be applicable for a class according 
 
 <section id="properties-for-period-of-time">
 
-<h3>Period of Time</h3>
+  <h3>Period of Time</h3>
 
-<div data-include-format="html" data-include-replace="true" data-include="./tables/class-period-of-time.html"></div>
+  <div data-include-format="html" data-include-replace="true" data-include="./tables/class-period-of-time.html"></div>
 
-<section id="recommended-properties-for-period-of-time">
+  <section id="recommended-properties-for-period-of-time">
 
-<h4>Recommended properties for Period of Time</h4>
+    <h4>Recommended properties for Period of Time</h4>
 
-<div data-include-format="html" data-include-replace="true" data-include="./tables/recommended-properties-for-period-of-time.html"></div>
+    <div data-include-format="html" data-include-replace="true" data-include="./tables/recommended-properties-for-period-of-time.html"></div>
 
-</section>
+  </section>
 
-<section id="optional-properties-for-period-of-time">
+  <section id="optional-properties-for-period-of-time">
 
-<h4>Optional properties for Period of Time</h4>
+    <h4>Optional properties for Period of Time</h4>
 
-<div data-include-format="html" data-include-replace="true" data-include="./tables/optional-properties-for-period-of-time.html"></div>
+    <div data-include-format="html" data-include-replace="true" data-include="./tables/optional-properties-for-period-of-time.html"></div>
 
-</section>
+  </section>
 
-<section id="deprecated-properties-for-period-of-time">
+  <!--  <section id="deprecated-properties-for-period-of-time">
 
-<h4>Deprecated properties for Period of Time</h4>
+  <h4>Deprecated properties for Period of Time</h4>
 
-<div data-include-format="html" data-include-replace="true" data-include="./tables/deprecated-properties-for-period-of-time.html"></div>
+  <div data-include-format="html" data-include-replace="true" data-include="./tables/deprecated-properties-for-period-of-time.html"></div>
 
-</section>
+  </section>-->
 
-<section id="examples-for-period-of-time">
+  <section id="examples-for-period-of-time">
 
-<h4>Examples for Period of Time</h4>
+  <h4>Examples for Period of Time</h4>
 
-<aside class="example" id="ex-period-of-time" title="Period of Time">
-<pre data-include-format="text" data-include="./examples/period-of-time.ttl"></pre>
-</aside>
+  <aside class="example" id="ex-period-of-time" title="Period of Time">
+  <pre data-include-format="text" data-include="./examples/period-of-time.ttl"></pre>
+  </aside>
 
-<p><a href="#ex-period-of-time-with-owl-time"></a> is equivalent to <a href="#ex-period-of-time"></a>, but it uses the [[OWL-TIME]] properties in <a class="no-sectionRef" href="#optional-properties-for-period-of-time"></a>.</p>
+  <p><a href="#ex-period-of-time-with-owl-time"></a> is equivalent to <a href="#ex-period-of-time"></a>, but it uses the [[OWL-TIME]] properties in <a class="no-sectionRef" href="#optional-properties-for-period-of-time"></a>.</p>
 
-<aside class="example" id="ex-period-of-time-with-owl-time" title="Period of Time using properties time:hasBeginning and time:hasEnd">
-<pre data-include-format="text" data-include="./examples/period-of-time-with-owl-time.ttl"></pre>
-</aside>
+  <aside class="example" id="ex-period-of-time-with-owl-time" title="Period of Time using properties time:hasBeginning and time:hasEnd">
+  <pre data-include-format="text" data-include="./examples/period-of-time-with-owl-time.ttl"></pre>
+  </aside>
 
-</section>
+  </section>
 
 </section>
 
@@ -1255,10 +1246,10 @@ A property which is not mentioned but would be applicable for a class according 
       <aside class="note">
       <p>The following properties are not included in [[DCAT-AP-20200608]]:</p>
       <ul>
-      <li>+<a href="#postaladdress-addresscountry">addressCountry</a></li>
-      <li>+<a href="#postaladdress-addresslocality">addressLocality</a></li>
-      <li>+<a href="#postaladdress-postalcode">postalCode</a></li>
-      <li>+<a href="#postaladdress-streetaddress">streetAddress</a></li>
+        <li><a href="#postaladdress-addresscountry">addressCountry</a></li>
+        <li><a href="#postaladdress-addresslocality">addressLocality</a></li>
+        <li><a href="#postaladdress-postalcode">postalCode</a></li>
+        <li><a href="#postaladdress-streetaddress">streetAddress</a></li>
       </ul>
       </aside>
 
@@ -1284,44 +1275,44 @@ A property which is not mentioned but would be applicable for a class according 
 
 <h3>Project</h3>
 </section>
-<!-- Publication -->
+
 <!-- Provenance Statement -->
 
 <section id="properties-for-provenance-statement">
 
-<h3>Provenance Statement</h3>
+  <h3>Provenance Statement</h3>
 
-<aside class="note">
-<p>This class is not explicitly associated with any property in [[DCAT-AP-20200608]].</p>
-</aside>
+  <aside class="note">
+  <p>This class is not explicitly associated with any property in [[DCAT-AP-20200608]].</p>
+  </aside>
 
-<div data-include-format="html" data-include-replace="true" data-include="./tables/class-provenance-statement.html"></div>
+  <div data-include-format="html" data-include-replace="true" data-include="./tables/class-provenance-statement.html"></div>
+  <!--
+  <section id="recommended-properties-for-provenance-statement">
 
-<section id="recommended-properties-for-provenance-statement">
+  <h4>Recommended property for Provenance Statement</h4>
 
-<h4>Recommended property for Provenance Statement</h4>
+  <aside class="note">
+  <p>The following property is not included in [[DCAT-AP-20200608]]:</p>
+  <ul>
+  <li>+<a href="#provenance-statement-provenance-statement-text">provenance statement text</a></li>
+  </ul>
+  </aside>
 
-<aside class="note">
-<p>The following property is not included in [[DCAT-AP-20200608]]:</p>
-<ul>
-<li>+<a href="#provenance-statement-provenance-statement-text">provenance statement text</a></li>
-</ul>
-</aside>
+  <div data-include-format="html" data-include-replace="true" data-include="./tables/recommended-properties-for-provenance-statement.html"></div>
 
-<div data-include-format="html" data-include-replace="true" data-include="./tables/recommended-properties-for-provenance-statement.html"></div>
+  </section>
 
-</section>
+  <section id="examples-for-provenance-statement">
 
-<section id="examples-for-provenance-statement">
+  <h4>Examples for Provenance Statement</h4>
 
-<h4>Examples for Provenance Statement</h4>
+  <aside class="example" id="ex-provenance-statement" title="Provenance Statement">
+  <pre data-include-format="text" data-include="./examples/provenance-statement.ttl"></pre>
+  </aside>
 
-<aside class="example" id="ex-provenance-statement" title="Provenance Statement">
-<pre data-include-format="text" data-include="./examples/provenance-statement.ttl"></pre>
-</aside>
-
-</section>
-
+  </section>
+  -->
 </section>
 
 <!-- Publication -->
@@ -1330,178 +1321,177 @@ A property which is not mentioned but would be applicable for a class according 
 <h3>Publication</h3>
 </section>
 
-<!-- Quality Measurement -->
+<!-- Quality Measurement
 
-<section id="properties-for-quality-measurement">
+  <section id="properties-for-quality-measurement">
 
-<h3>+Quality Measurement</h3>
+  <h3>+Quality Measurement</h3>
 
-<aside class="note">
-<p>This class is not included in [[DCAT-AP-20200608]].</p>
-</aside>
+  <aside class="note">
+  <p>This class is not included in [[DCAT-AP-20200608]].</p>
+  </aside>
 
-<div data-include-format="html" data-include-replace="true" data-include="./tables/class-quality-measurement.html"></div>
+  <div data-include-format="html" data-include-replace="true" data-include="./tables/class-quality-measurement.html"></div>
 
-<section id="recommended-properties-for-quality-measurement">
+  <section id="recommended-properties-for-quality-measurement">
 
-<h4>Recommended properties for Quality Measurement</h4>
+  <h4>Recommended properties for Quality Measurement</h4>
 
-<aside class="note">
-<p>The following properties are not included in [[DCAT-AP-20200608]]:</p>
-<ul>
-<li>+<a href="#quality-measurement-is-measurement-of">is measurement of</a></li>
-<li>+<a href="#quality-measurement-unit-of-measure">unit of measure</a></li>
-<li>+<a href="#quality-measurement-value">value</a></li>
-</ul>
-</aside>
+  <aside class="note">
+  <p>The following properties are not included in [[DCAT-AP-20200608]]:</p>
+  <ul>
+  <li>+<a href="#quality-measurement-is-measurement-of">is measurement of</a></li>
+  <li>+<a href="#quality-measurement-unit-of-measure">unit of measure</a></li>
+  <li>+<a href="#quality-measurement-value">value</a></li>
+  </ul>
+  </aside>
 
-<div data-include-format="html" data-include-replace="true" data-include="./tables/recommended-properties-for-quality-measurement.html"></div>
+  <div data-include-format="html" data-include-replace="true" data-include="./tables/recommended-properties-for-quality-measurement.html"></div>
 
-</section>
+  </section>
 
-<section id="examples-for-quality-measurement">
+  <section id="examples-for-quality-measurement">
 
-<h4>Examples for Quality Measurement</h4>
+  <h4>Examples for Quality Measurement</h4>
 
-<aside class="example" id="ex-quality-measurement" title="Quality Measurement">
-<pre data-include-format="text" data-include="./examples/quality-measurement.ttl"></pre>
-</aside>
+  <aside class="example" id="ex-quality-measurement" title="Quality Measurement">
+  <pre data-include-format="text" data-include="./examples/quality-measurement.ttl"></pre>
+  </aside>
 
-</section>
+  </section>
 
-</section>
+  </section>
+-->
 
 <!-- Relationship -->
 
 <section id="properties-for-relationship">
 
-<h3>Relationship</h3>
+  <h3>Relationship</h3>
 
-<div data-include-format="html" data-include-replace="true" data-include="./tables/class-relationship.html"></div>
+  <div data-include-format="html" data-include-replace="true" data-include="./tables/class-relationship.html"></div>
 
-<section id="mandatory-properties-for-relationship">
+  <section id="mandatory-properties-for-relationship">
 
-<h4>Mandatory properties for Relationship</h4>
+  <h4>Mandatory properties for Relationship</h4>
 
-<div data-include-format="html" data-include-replace="true" data-include="./tables/mandatory-properties-for-relationship.html"></div>
+  <div data-include-format="html" data-include-replace="true" data-include="./tables/mandatory-properties-for-relationship.html"></div>
+
+  </section>
 
 </section>
-
-</section>
-
-<!-- Classes not in DCAT-AP -->
 
 <!-- Rights Statement -->
-
 <section id="properties-for-rights-statement">
 
-<h3>Rights Statement</h3>
+  <h3>Rights Statement</h3>
 
-<aside class="note">
-<p>This class is not explicitly associated with any property in [[DCAT-AP-20200608]].</p>
-</aside>
+  <aside class="note">
+  <p>This class is not explicitly associated with any property in [[DCAT-AP-20200608]].</p>
+  </aside>
 
-<div data-include-format="html" data-include-replace="true" data-include="./tables/class-rights-statement.html"></div>
+  <div data-include-format="html" data-include-replace="true" data-include="./tables/class-rights-statement.html"></div>
+  <!--
+  <section id="recommended-properties-for-rights-statement">
 
-<section id="recommended-properties-for-rights-statement">
+  <h4>Recommended property for Rights Statement</h4>
 
-<h4>Recommended property for Rights Statement</h4>
+  <aside class="note">
+  <p>The following property is not included in [[DCAT-AP-20200608]]:</p>
+  <ul>
+  <li>+<a href="#rights-statement-rights-statement-text">rights statement text</a></li>
+  </ul>
+  </aside>
 
-<aside class="note">
-<p>The following property is not included in [[DCAT-AP-20200608]]:</p>
-<ul>
-<li>+<a href="#rights-statement-rights-statement-text">rights statement text</a></li>
-</ul>
-</aside>
+  <div data-include-format="html" data-include-replace="true" data-include="./tables/recommended-properties-for-rights-statement.html"></div>
 
-<div data-include-format="html" data-include-replace="true" data-include="./tables/recommended-properties-for-rights-statement.html"></div>
+  </section>-->
+  <!--
+  <section id="examples-for-rights-statement">
 
-</section>
-<!--
-<section id="examples-for-rights-statement">
+  <h4>Examples for Rights Statement</h4>
 
-<h4>Examples for Rights Statement</h4>
+  <aside class="example" id="ex-rights-statement" title="Rights Statement">
+  <pre data-include-format="text" data-include="./examples/rights-statement.ttl"></pre>
+  </aside>
 
-<aside class="example" id="ex-rights-statement" title="Rights Statement">
-<pre data-include-format="text" data-include="./examples/rights-statement.ttl"></pre>
-</aside>
-
-</section>
--->
+  </section>
+  -->
 </section>
 
 <!-- Standard -->
 
 <section id="properties-for-standard">
 
-<h3>Standard</h3>
+  <h3>Standard</h3>
 
-<aside class="note">
-<p>This class is not explicitly associated with any property in [[DCAT-AP-20200608]].</p>
-</aside>
+  <aside class="note">
+  <p>This class is not explicitly associated with any property in [[DCAT-AP-20200608]].</p>
+  </aside>
 
-<div data-include-format="html" data-include-replace="true" data-include="./tables/class-standard.html"></div>
+  <div data-include-format="html" data-include-replace="true" data-include="./tables/class-standard.html"></div>
+  <!--
+  <section id="recommended-properties-for-standard">
 
-<section id="recommended-properties-for-standard">
+  <h4>Recommended properties for Standard</h4>
 
-<h4>Recommended properties for Standard</h4>
+  <aside class="note">
+  <p>The following properties are not included in [[DCAT-AP-20200608]]:</p>
+  <ul>
+  <li>+<a href="#standard-description">description</a></li>
+  <li>+<a href="#standard-identifier">identifier</a></li>
+  <li>+<a href="#standard-reference-register">reference register</a></li>
+  <li>+<a href="#standard-release-date">release date</a></li>
+  <li>+<a href="#standard-title">title</a></li>
+  <li>+<a href="#standard-type">type</a></li>
+  <li>+<a href="#standard-version">version</a></li>
+  </ul>
+  </aside>
 
-<aside class="note">
-<p>The following properties are not included in [[DCAT-AP-20200608]]:</p>
-<ul>
-<li>+<a href="#standard-description">description</a></li>
-<li>+<a href="#standard-identifier">identifier</a></li>
-<li>+<a href="#standard-reference-register">reference register</a></li>
-<li>+<a href="#standard-release-date">release date</a></li>
-<li>+<a href="#standard-title">title</a></li>
-<li>+<a href="#standard-type">type</a></li>
-<li>+<a href="#standard-version">version</a></li>
-</ul>
-</aside>
+  <div data-include-format="html" data-include-replace="true" data-include="./tables/recommended-properties-for-standard.html"></div>
 
-<div data-include-format="html" data-include-replace="true" data-include="./tables/recommended-properties-for-standard.html"></div>
+  </section>
+
+  <section id="optional-properties-for-standard">
+
+  <h4>Optional properties for Standard</h4>
+
+  <aside class="note">
+  <p>The following properties are not included in [[DCAT-AP-20200608]]:</p>
+  <ul>
+  <li>+<a href="#standard-creation-date">creation date</a></li>
+  <li>+<a href="#standard-modification-date">update / modification date</a></li>
+  </ul>
+  </aside>
+
+  <div data-include-format="html" data-include-replace="true" data-include="./tables/optional-properties-for-standard.html"></div>
+
+  </section>
+
+  <section id="examples-for-standard">
+
+  <h4>Examples for Standard</h4>
+
+  <p>The following examples show the specification of different types of Standards.</p>
+
+  <aside class="example" id="ex-standard-md" title="Metadata standard">
+  <pre data-include-format="text" data-include="./examples/standard-md.ttl"></pre>
+  </aside>
+
+  <aside class="example" id="ex-standard-ir" title="Implementing rule">
+  <pre data-include-format="text" data-include="./examples/standard-ir.ttl"></pre>
+  </aside>
+
+  <aside class="example" id="ex-standard-crs" title="Coordinate reference system">
+  <pre data-include-format="text" data-include="./examples/standard-crs.ttl"></pre>
+  </aside>
+
+  </section>
+  -->
+</section>
 
 </section>
 
-<section id="optional-properties-for-standard">
-
-<h4>Optional properties for Standard</h4>
-
-<aside class="note">
-<p>The following properties are not included in [[DCAT-AP-20200608]]:</p>
-<ul>
-<li>+<a href="#standard-creation-date">creation date</a></li>
-<li>+<a href="#standard-modification-date">update / modification date</a></li>
-</ul>
-</aside>
-
-<div data-include-format="html" data-include-replace="true" data-include="./tables/optional-properties-for-standard.html"></div>
-
-</section>
-
-<section id="examples-for-standard">
-
-<h4>Examples for Standard</h4>
-
-<p>The following examples show the specification of different types of Standards.</p>
-
-<aside class="example" id="ex-standard-md" title="Metadata standard">
-<pre data-include-format="text" data-include="./examples/standard-md.ttl"></pre>
-</aside>
-
-<aside class="example" id="ex-standard-ir" title="Implementing rule">
-<pre data-include-format="text" data-include="./examples/standard-ir.ttl"></pre>
-</aside>
-
-<aside class="example" id="ex-standard-crs" title="Coordinate reference system">
-<pre data-include-format="text" data-include="./examples/standard-crs.ttl"></pre>
-</aside>
-
-</section>
-
-</section>
-
-</section>
 <!-- Service -->
 <section id="properties-for-service">
 
