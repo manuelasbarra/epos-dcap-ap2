@@ -1,57 +1,159 @@
 <table class="simple" id="table-recommended-properties-for-data-service">
-<thead>
-<tr>
-<th>
-<p>Property</p>
-</th>
-<th>
-<p>URI</p>
-</th>
-<th>
-<p>Range</p>
-</th>
-<th>
-<p>Usage note</p>
-</th>
-<th>
-<p>Card.</p>
-</th>
-</tr>
-</thead>
-<tbody>
-<tr class="property recommended" id="data-service-endpoint-description">
-<td>
-<p>endpoint description</p>
-</td>
-<td>
-<p><code>dcat:endpointDescription</code></p>
-</td>
-<td>
-<p><code>rdfs:Resource</code></p>
-</td>
-<td>
-<p>This property contains a description of the Data Services available via the endpoints, including their operations, parameters etc. The property gives specific details of the actual endpoint instances, while <code>dct:conformsTo</code> is used to indicate the general standard or specification that the endpoints implement.</p>
-</td>
-<td>
-<p>0..n</p>
-</td>
-</tr>
-<tr class="property recommended" id="data-service-serves-dataset">
-<td>
-<p>serves dataset</p>
-</td>
-<td>
-<p><code>dcat:servesDataset</code></p>
-</td>
-<td>
-<p><code>dcat:Dataset</code></p>
-</td>
-<td>
-<p>This property refers to a Dataset that this Data Service can distribute.</p>
-</td>
-<td>
-<p>0..n</p>
-</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+        <th>
+            <p>Property</p>
+        </th>
+        <th>
+            <p>URI</p>
+        </th>
+        <th>
+            <p>Range</p>
+        </th>
+        <th>
+            <p>Usage note</p>
+        </th>
+        <th>
+            <p>Card.</p>
+        </th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr class="property recommended" id="data-service-contact-point">
+        <td>
+            <p>contactPoint </p>
+        </td>
+        <td>
+            <p><code>dcat:contactPoint </code></p>
+        </td>
+        <td>
+        <p><code>vcard:Kind or schema:Contact Point</code></p>
+        </td>
+        <td>
+            <p>This property contains contact information that can be used for sending comments about the Data Service.</p>
+        </td>
+        <td>
+            <p>0..n</p>
+        </td>
+      </tr>
+      <tr class="property recommended" id="data-service-description">
+        <td>
+            <p>description</p>
+        </td>
+        <td>
+            <p><code>dct:description</code></p>
+        </td>
+        <td>
+        <p><code>rdfs:Literal</code></p>
+        </td>
+        <td>
+            <p>This property contains a free-text account of the Data Service. This property can be repeated for parallel language versions of the description.</p>
+        </td>
+        <td>
+            <p>0..n</p>
+        </td>
+      </tr>
+      <tr class="property recommended" id="data-service-endpoint-description">
+        <td>
+            <p>endpointDescription</p>
+        </td>
+        <td>
+            <p><code>dcat:endpointDescription</code></p>
+        </td>
+        <td>
+        <p><code>rdfs:Resource</code></p>
+        </td>
+        <td>
+            <p>This property contains a description of the Data Services available via the endpoints, including their operations, parameters etc. The property gives specific details of the actual endpoint instances, while <code>dct:conformsTo</code> is used to indicate the general standard or specification that the endpoints implement.</p>
+        </td>
+        <td>
+            <p>0..n</p>
+        </td>
+      </tr>
+      <tr class="property recommended" id="data-service-endpoint-issued">
+        <td>
+            <p>issued</p>
+        </td>
+        <td>
+            <p><code>dct:issued</code></p>
+        </td>
+        <td>
+        <p><code>rdfs:Literal typed as xsd:date or xsd:dateTime</code></p>
+        </td>
+        <td>
+            <p>This property contains the date of publication of the Data Service.</p>
+        </td>
+        <td>
+            <p>0..1</p>
+        </td>
+      </tr>
+      <tr class="property recommended" id="data-service-endpoint-modified">
+        <td>
+            <p>issued</p>
+        </td>
+        <td>
+            <p><code>dct:modified</code></p>
+        </td>
+        <td>
+        <p><code>rdfs:Literal typed as xsd:date or xsd:dateTime</code></p>
+        </td>
+        <td>
+            <p>This property contains the most recent date on which the Data Service was modified.</p>
+        </td>
+        <td>
+            <p>0..1</p>
+        </td>
+      </tr>
+      <tr class="property recommended" id="data-service-endpoint-publisher">
+        <td>
+            <p>publisher</p>
+        </td>
+        <td>
+            <p><code>dct:publisher</code></p>
+        </td>
+        <td>
+        <p><code>foaf:Agent</code></p>
+        </td>
+        <td>
+            <p>This property refers to an Organisation responsible for making the Data Service available.</p>
+        </td>
+        <td>
+            <p>0..1</p>
+        </td>
+      </tr>
+      <tr class="property recommended" id="data-service-serves-dataset">
+        <td>
+            <p>servesDataset</p>
+        </td>
+        <td>
+            <p><code>dcat:servesDataset</code></p>
+        </td>
+        <td>
+            <p><code>dcat:Dataset</code></p>
+        </td>
+        <td>
+            <p>This property refers to a Dataset that this Data Service can distribute.</p>
+        </td>
+        <td>
+            <p>0..n</p>
+        </td>
+      </tr>
+      <tr class="property recommended" id="data-service-theme">
+        <td>
+            <p>theme</p>
+        </td>
+        <td>
+            <p><code>dcat:theme</code></p>
+        </td>
+        <td>
+            <p><code>skos:Concept</code></p>
+        </td>
+        <td>
+            <p>This property refers to a category of the Data Service. A Data Service may be associated with multiple themes.</p>
+        </td>
+        <td>
+            <p>0..n</p>
+        </td>
+      </tr>
+  </tbody>
 </table>
