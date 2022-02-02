@@ -1,0 +1,143 @@
+<table class="simple" id="table-optional-properties-for-facility">
+  <thead>
+    <tr>
+      <th>
+          <p>Property</p>
+      </th>
+      <th>
+          <p>URI</p>
+      </th>
+      <th>
+          <p>Range</p>
+      </th>
+      <th>
+          <p>Usage note</p>
+      </th>
+      <th>
+          <p>Card.</p>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="property optional ap-ext" id="facility-contact-point">
+      <td>
+          <p>contactPoint</p>
+      </td>
+      <td>
+          <p><code>dcat:contactPoint or schema:contactPoint</code></p>
+      </td>
+      <td>
+          <p><code>schema:ContactPoint</code></p>
+      </td>
+      <td>
+          <p>This property contains contact information that can be used for sending comments about the Facility.</p>
+      </td>
+      <td>
+          <p>0..n</p>
+      </td>
+    </tr>
+    <tr class="property optional ap-ext" id="facilty-is-part-of">
+      <td>
+          <p>isPartOf</p>
+      </td>
+      <td>
+          <p><code>dct:isPartOf</code></p>
+      </td>
+      <td>
+          <p><code>epos:Facility</code></p>
+      </td>
+      <td>
+          <p>This property refers to a Facility in which the described Facility is included.</p>
+      </td>
+      <td>
+          <p>0..n</p>
+      </td>
+    </tr>
+    <tr class="property optional ap-ext" id="facilty-has-address">
+      <td>
+          <p>hasAddress</p>
+      </td>
+      <td>
+          <p><code>vcard:hasAddress</code></p>
+      </td>
+      <td>
+          <p><code>vcard:Address</code></p>
+      </td>
+      <td>
+          <p>This property contains the physical address of the Facility.</p>
+      </td>
+      <td>
+          <p>0..n</p>
+      </td>
+    </tr>
+    <tr class="property optional ap-ext" id="facilty-keyword">
+      <td>
+          <p>keyword</p>
+      </td>
+      <td>
+          <p><code>dcat:keyword</code></p>
+      </td>
+      <td>
+          <p><code>rdfs:Literal</code></p>
+      </td>
+      <td>
+          <p>This property contains a keyword or tag describing the Facility</p>
+      </td>
+      <td>
+          <p>0..n</p>
+      </td>
+    </tr>
+    <tr class="property optional ap-ext" id="facilty-landingpage">
+      <td>
+          <p>landingPage</p>
+      </td>
+      <td>
+          <p><code>dcat:landingPage</code></p>
+      </td>
+      <td>
+          <p><code>foaf:Document or rdfs:Literal typed with URI</code></p>
+      </td>
+      <td>
+          <p>This property refers to a landing page or document about the Facility.</p>
+      </td>
+      <td>
+          <p>0..n</p>
+      </td>
+    </tr>  
+    <tr class="property optional ap-ext" id="facilty-relation">
+      <td>
+          <p>relation</p>
+      </td>
+      <td>
+          <p><code>dct:relation</code></p>
+      </td>
+      <td>
+          <p><code>dcat:Resource</code></p>
+      </td>
+      <td>
+          <p>This property refers to a related resource (e.g., Dataset, Data Service, Service, etc).</p>
+      </td>
+      <td>
+          <p>0..n</p>
+      </td>
+    </tr>
+    <tr class="property optional ap-ext" id="facilty-spatial">
+      <td>
+          <p>spatial</p>
+      </td>
+      <td>
+          <p><code>dct:spatial</code></p>
+      </td>
+      <td>
+          <p><code>dct:Location</code></p>
+      </td>
+      <td>
+          <p>This property refers to a geographical location of the Facility. </p>
+      </td>
+      <td>
+          <p>0..1</p>
+      </td>
+    </tr>
+
+  </tbody>
+</table>
