@@ -684,7 +684,12 @@ A property which is not mentioned but would be applicable for a class according 
 <section id="mandatory-properties-for-data-service">
 
 <h4>Mandatory properties for Data Service</h4>
-
+<aside class="note">
+  <p>The following properties are inherited from superclass dcat:Resource</p>
+  <ul>
+      <li><a href="#data-service-identifier">identifier</a></li>
+  </ul>
+</aside>
 <div data-include-format="html" data-include-replace="true" data-include="./tables/mandatory-properties-for-data-service.html"></div>
 
 </section>
@@ -692,7 +697,16 @@ A property which is not mentioned but would be applicable for a class according 
 <section id="recommended-properties-for-data-service">
 
 <h4>Recommended properties for Data Service</h4>
-
+<aside class="note">
+  <p>The following properties are inherited from superclass dcat:Resource</p>
+  <ul>
+      <li><a href="#data-service-contact-point">contactPoint </a></li>
+      <li><a href="#data-service-issued">issued</a></li>
+      <li><a href="#data-service-modified">modified</a></li>
+      <li><a href="#data-service-publisher">publisher</a></li>
+      <li><a href="#data-service-theme">theme</a></li>
+  </ul>
+</aside>
 <div data-include-format="html" data-include-replace="true" data-include="./tables/recommended-properties-for-data-service.html"></div>
 
 </section>
@@ -702,42 +716,11 @@ A property which is not mentioned but would be applicable for a class according 
 <h4>Optional properties for Data Service</h4>
 
 <aside class="note">
-<p>The following properties are not included in [[DCAT-AP-20200608]]:</p>
-<ul>
-<li>+<a href="#data-service-conforms-to">conforms to</a></li>
-<li>+<a href="#data-service-contact-point">contact point</a></li>
-<li>+<a href="#data-service-creation-date">creation date</a></li>
-<li>+<a href="#data-service-creator">creator</a></li>
-<li>+<a href="#data-service-identifier">identifier</a></li>
-<li>+<a href="#data-service-keyword">keyword / tag</a></li>
-<li>+<a href="#data-service-language">language</a></li>
-<li>+<a href="#data-service-publisher">publisher</a></li>
-<li>+<a href="#data-service-qualified-attribution">qualified attribution</a></li>
-<li>+<a href="#data-service-reference-system">reference system</a></li>
-<li>+<a href="#data-service-release-date">release date</a></li>
-<li>+<a href="#data-service-rights-holder">rights holder</a></li>
-<li>+<a href="#data-service-service-category">service category</a></li>
-<li>+<a href="#data-service-service-type">service type</a></li>
-<li>+<a href="#data-service-spatial-coverage">spatial / geographic coverage</a></li>
-<li>+<a href="#data-service-spatial-resolution">spatial resolution</a></li>
-<li>+<a href="#data-service-spatial-resolution-in-metres">spatial resolution in metres</a></li>
-<li>+<a href="#data-service-spatial-resolution-general">spatial resolution as text</a></li>
-<li>+<a href="#data-service-temporal-coverage">temporal coverage</a></li>
-<li>+<a href="#data-service-temporal-resolution">temporal resolution</a></li>
-<li>+<a href="#data-service-category">theme / category</a></li>
-<li>+<a href="#data-service-topic-category">topic category</a></li>
-<li>+<a href="#data-service-type">type</a></li>
-<li>+<a href="#data-service-modification-date">update / modification date</a></li>
-<li>+<a href="#data-service-was-used-by">was used by</a></li>
-
-<li>+<a href="#data-service-custodian">custodian</a></li>
-<li>+<a href="#data-service-distributor">distributor</a></li>
-<li>+<a href="#data-service-originator">originator</a></li>
-<li>+<a href="#data-service-principal-investigator">principal investigator</a></li>
-<li>+<a href="#data-service-processor">processor</a></li>
-<li>+<a href="#data-service-resource-provider">resource provider</a></li>
-<li>+<a href="#data-service-user">user</a></li>
-</ul>
+  <p>The following properties are inherited from superclass dcat:Resource</p>
+  <ul>
+      <li><a href="#data-service-conforms-to">conformsTo</a></li>
+      <li><a href="#data-service-keyword">keyword</a></li>
+  </ul>
 </aside>
 
 <div data-include-format="html" data-include-replace="true" data-include="./tables/optional-properties-for-data-service.html"></div>
@@ -1682,7 +1665,7 @@ Often there is applicable legislation or a licency policy in place which determi
 <li>Provide descriptions of Distributions, if any, of Datasets in the Catalogue, including at least the mandatory properties specified in <a class="no-sectionRef" href="#mandatory-properties-for-distribution"></a>.</li>
 <li>Provide descriptions of Data Services, if any, of Datasets in the Catalogue, including at least the mandatory properties specified in <a class="no-sectionRef" href="#mandatory-properties-for-data-service"></a>.</li>
 <li>Provide descriptions of all organisations involved in the descriptions of Catalogue and Datasets, including at least the mandatory properties specified in <a class="no-sectionRef" href="#mandatory-properties-for-agent"></a>.</li>
-<li>Provide descriptions of all category schemes that contain the categories that are asserted in any of the descriptions of Datasets in the Catalogue, including at least the mandatory properties specified in <a class="no-sectionRef" href="#mandatory-properties-for-category-scheme"></a>.</li>
+<li>Provide descriptions of all category schemes that contain the categories that are asserted in any of the descriptions of Datasets in the Catalogue, including at least the recommended properties specified in <a class="no-sectionRef" href="#recommended-properties-for-category-scheme"></a>.</li>
 <li>Provide descriptions of all categories involved in the descriptions of Datasets in the Catalogue, including at least the mandatory properties specified in <a class="no-sectionRef" href="#mandatory-properties-for-category"></a>.</li>
 </ul>
 
