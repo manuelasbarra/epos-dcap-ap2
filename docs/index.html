@@ -8,6 +8,9 @@
 <script class="remove" src="https://semiceu.github.io/respec/builds/respec-semiceu.js"></script>
 <script class="remove" src="./config.js"></script>
 <style>
+.light{
+  background-color: yellow;
+}
 table.simple {width:100%; border-top: 1px solid #ccc; border-left: 1px solid #ccc; border-right: 1px solid #ccc;}
 table.simple th.small{width:15%;}
 table.simple th.medium{width:20%;}
@@ -46,23 +49,22 @@ table code, table pre {
   <h2>Abstract</h2>
 
   <p>This document is the result of the update process starting from EPOS-DCAT-AP version 1.0
-    with the purpose of aligning it with DCAT-AP version 2.1.0</p>
+    with the purpose of aligning it with DCAT-AP [DCAT-AP] version 2.1.0</p>
   </section>
 
   <section id="disclaimer" class="introductory">
 
   <h2>Disclaimer</h2>
-  <p>This specification was developed in the framework of European Plate Observing System (EPOS). </p>
+  <p class='light'>This specification was developed in the framework of European Plate Observing System (EPOS). </p>
   <p>This project has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement N° 676564.</p>
   <p>The content of this document reflects only the author’s view and EPOS is not responsible for any use that may be made of the information it contains.</p>
-
 
 </section>
 
 <section id="sotd" class="introductory">
 </section>
 
-<section id="document-history" class="introductory">
+<section id="document-history" class="introductory light">
 
   <h2>Document History</h2>
 
@@ -93,13 +95,14 @@ table code, table pre {
   <p>In order to capture, organise and harmonise information from different sources and to enable semantic interoperability, an application profile has been developed and adopted, namely EPOS-DCAT-AP.</p>
   <p>EPOS-DCAT-AP is the result of a collaborative work that brought together diverse expertise. It has been applied successfully in a research infrastructure for solid-Earth sciences, i.e. EPOS, however, the set of requirements addressed make this model suitable to be adopted by other research infrastructures and to be applied in different contexts.
   </p>
-  <p>This document was built starting from EPOS-DCAT-AP version 1.0 with the purpose of aligning it with DCAT-AP version 2.1.0.
 
 </section>
 
 <section id="scope-of-the-revision">
 
   <h3>Scope of the revision</h3>
+  <p>The objective of this work is to produce an updated release of EPOS-DCAT-AP version 1.0 with the purpose of aligning it with DCAT-AP version 2.1.0.
+
   <!--
   <p>The objective of this work is to produce an updated release of GeoDCAT-AP based on requests for change coming from real-world implementations of the specification and an alignment with [[DCAT-AP-20200608]] and [[INSPIRE-MD-20170302]].</p>
 
@@ -137,15 +140,6 @@ table code, table pre {
 
   <p>An <strong>Application Profile</strong> is a specification that re-uses terms from one or more base standards (vocabularies), adding more specificity by identifying mandatory, recommended and optional elements to be used for a particular application, as well as recommendations for controlled vocabularies to be used.</p>
 
-  <!--
-  <p>A <strong>Dataset</strong> is a collection of data, published or curated by a single source, and available for access or download in one or more formats.</p>
-
-  <p>A <strong>Data Service</strong> is a Web-based system that gives access to or supports operations on one or more datasets via an interface (<abbr title="Application Programming Interface">API</abbr>).</p>
-  <p>A <strong>Data Service</strong> is a collection of operations accessible through an interface (<abbr title="Application Programming Interface">API</abbr>) that provide access to one or more datasets or data processing functions. Examples include, but are not limited to, SPARQL endpoints [[SPARQL11-PROTOCOL]], [[OAI-PMH]] repositories, OGC spatial data services ([[CSW]], [[WCS]], [[WFS]], [[WMS]], etc.).</p>
-
-  <p>A <strong>Data Portal</strong> is a Web-based system that contains a data catalogue with descriptions of datasets and provides services enabling discovery and re-use of the datasets.</p>
-  -->
-
   <p>In the following sections, classes and properties are grouped under headings ‘mandatory’, ‘recommended’ and ‘optional’. These terms have the following meaning:</p>
 
   <ul>
@@ -155,8 +149,6 @@ table code, table pre {
   <li><strong>Mandatory property</strong>: a receiver MUST be able to process the information for that property; a sender MUST provide the information for that property.</li>
   <li><strong>Recommended property</strong>: a receiver MUST be able to process the information for that property; a sender SHOULD provide information for that property; a sender MUST provide information for that property, if such information is available.</li>
   <li><strong>Optional property</strong>: a receiver MUST be able to process the information for that property; a sender MAY provide the information for that property but is not obliged to do so.</li>
-  <li><strong>Deprecated class</strong>: a receiver SHOULD be able to process information about instances of that class; a sender SHOULD NOT provide information about instances of that class.</li>
-  <li><strong>Deprecated property</strong>: a receiver SHOULD be able to process information about instances of that property; a sender SHOULD NOT provide the information about instances of that propertry.</li>
   </ul>
 
   <p>The meaning of the terms MUST, MUST NOT, SHOULD and MAY in this section and in the following sections are as defined in [[RFC2119]].</p>
@@ -171,40 +163,41 @@ table code, table pre {
 
 
 
-  <p>Finally, classes and properties added in this Application Profile and extending [[DCAT-AP]] are marked with a prepended &ldquo;plus&rdquo; sign (+), and summarised in the reference table in <a class="no-secRef" href="#geodcat-ap-classes-and-properties"></a>.</p>
+  <p><i class='light'>Finally, classes and properties added in this Application Profile and extending [[DCAT-AP]] are marked with a prepended &ldquo;plus&rdquo; sign (+), and summarised in the reference table in <a class="no-secRef" href="#geodcat-ap-classes-and-properties"></a>.</i></p>
 
-<section id="namespaces">
+  <section id="namespaces">
 
-  <h3>Namespaces</h3>
+    <h3>Namespaces</h3>
 
-  <p>The namespace for EPOS-DCAT-AP is: <code>https://www.epos-eu.org/epos-dcat-ap</code></p>
+    <p>The namespace for EPOS-DCAT-AP is: <code>https://www.epos-eu.org/epos-dcat-ap</code></p>
 
-  <p>The suggested namespace prefix is: <code>epos</code></p>
+    <p>The suggested namespace prefix is: <code>epos</code></p>
 
-  <p>The Application Profile reuses terms from various existing specifications, following <a data-cite="?DWBP#dataVocabularies">established best practices</a> [[?DWBP]]. The following table indicates the full list of corresponding namespaces used in this document.</p>
+    <p>The Application Profile reuses terms from various existing specifications, following <a data-cite="?DWBP#dataVocabularies">established best practices</a> [[?DWBP]]. The following table indicates the full list of corresponding namespaces used in this document.</p>
 
-  <div data-include-format="html" data-include-replace="true" data-include="./tables/namespaces.html"></div>
+    <div data-include-format="html" data-include-replace="true" data-include="./tables/namespaces.html"></div>
 
-</section>
+  </section>
 
-<section id="overview">
+  <section id="overview">
 
-  <h3>Application Profile Overview</h3>
+    <h3>Application Profile Overview</h3>
 
-  <p>An overview of EPOS-DCAT Application Profile is shown by the UML diagram below. </p>
-  <p>The diagram (Figure 1) shows classes and properties included in the DCAT Application Profile v 2.1.0 with classes (in orange) and relationships that characterise the EPOS-DCAT Application Profile.</p>
-  <p><a href="#fig-geodcat-ap-uml-class-diagram"></a> shows a UML diagram of the classes and properties included in the Application Profile.</p>
+    <p>An overview of EPOS-DCAT Application Profile is shown by the UML diagram below. </p>
+    <p class='light'>The diagram (Figure 1) shows classes and properties included in the DCAT Application Profile v 2.1.0 with classes (in orange) and relationships that characterise the EPOS-DCAT Application Profile.</p>
+    <p><a href="#fig-epos-dcat-ap-uml-class-diagram"></a> shows a UML diagram of the classes and properties included in the Application Profile.</p>
 
-  <aside class="note">
-  <p>For legibility, the diagram does not visualise all the classes as boxes. Supportive classes, as <code>skos:Concept</code>, are directly mentioned as the range of properties. The figure, therefore, might not highlight all the constraints and recommendations for these supportive classes, which are documented in the following sections. Moreover, the figure does not include the agent role properties defined in the GeoDCAT-AP namespace (<a class="no-secRef" href="#agent-roles"></a>), and whose use is illustrated in <a class="no-secRef" href="#properties"></a>.</p>
-  </aside>
+    <aside class="note">
+    <p>For legibility, the diagram does not visualise all the classes as boxes. Supportive classes, as <code>skos:Concept</code>,
+      are directly mentioned as the range of properties. The figure, therefore, might not highlight all the constraints and recommendations for these supportive classes, which are documented in the following sections.
+    </p></aside>
 
-  <figure id="fig-geodcat-ap-uml-class-diagram">
-  <a href="./geodcat-ap_v2.0.0.svg" title="view full-size image"><img src="./geodcat-ap_v2.0.0.svg" alt="GeoDCAT-AP UML Class Diagram"/></a>
-  <figcaption>EPOS-DCAT-AP UML Class Diagram</figcaption>
-  </figure>
+    <figure id="fig-epos-dcat-ap-uml-class-diagram">
+    <a href="./epos-dcat-ap_v2.0.0.svg" title="view full-size image"><img src="./epos-dcat-ap_v2.0.0.svg" alt="EPOS-DCAT-AP UML Class Diagram"/></a>
+    <figcaption>EPOS-DCAT-AP UML Class Diagram</figcaption>
+    </figure>
 
-</section>
+  </section>
 
 </section>
 

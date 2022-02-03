@@ -173,8 +173,8 @@ var respecConfig = {
     lint: "false",
     localBiblio: {
       "EPOS": {
-        "href":"https://www.epos-eu.org/epos-dcat-ap#",
-        "title":"EPOS",
+        "href":"https://www.epos-eu.org/",
+        "title":"European Plate Observing System - EPOS",
         "publisher":"TBD"
       },
       "EPOS-DCAT-AP": {
