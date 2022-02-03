@@ -1600,7 +1600,7 @@ Often there is applicable legislation or a licency policy in place which determi
 <section id="conformance-test-results" class="informative">
 
 <h2>Conformance Test Results</h2>
-
+<!--
 <p>Following [[INSPIRE-MD-REG]] and [[ISO-19115]], GeoDCAT-AP supports the specification of test results to assess the degree of conformity of a resource (i.e., a Catalogue, a Dataset, a Data Service) with a given specification (e.g., a standard, a set of implementing rules, a set of data quality or interoperability criteria).</p>
 
 <p>For this purpose, GeoDCAT-AP makes use of two different but not mutually exclusive approaches. More precisely, property <code>dct:conformsTo</code> is used when the test result states that a resource is conformant with a given specification. The more general approach is based on [[PROV-O]], and it specifies conformance test results as a testing activity (<code>prov:Activity</code>) that generates a result (specified with property <code>prov:generated</code>), corresponding to one of the degrees of conformity defined in [[INSPIRE-MD-REG]], and available from the INSPIRE Registry [[INSPIRE-DoC]]. The specification against which the testing activity is carried out is specified via a &ldquo;qualified association&rdquo; (<code>prov:qualifiedAssociation</code>), linked to a &ldquo;plan&rdquo; (<code>prov:hadPlan</code>) derived from (<code>prov:wasDerivedFrom</code>) the specification itself.</p>
@@ -1608,7 +1608,7 @@ Often there is applicable legislation or a licency policy in place which determi
 <p>This pattern is illustrated in <a href="#ex-activity"></a>.</p>
 
 <p>More details on these solutions are available in <a class="no-sectionRef" href="#conformity-and-data-quality---not-in-iso19115-core"></a>.</p>
-
+-->
 </section>
 
 <!-- Accessibility and Multilingual Aspects -->
@@ -1762,7 +1762,7 @@ Often there is applicable legislation or a licency policy in place which determi
 <h2>Changes since first public working draft of 12 October 2020</h2>
 
 <ul>
-<li>Defined terms in the GeoDCAT-AP namespace (<a class="no-secRef" href="#instances-of-metric"></a>) for the specification of the different types of spatial resolution (see issue <a href="https://github.com/SEMICeu/GeoDCAT-AP/issues/15">#15</a>).</li>
+<li>Defined terms in the GeoDCAT-AP namespace (<a class="no-secRef" href=""></a>) for the specification of the different types of spatial resolution (see issue <a href="https://github.com/SEMICeu/GeoDCAT-AP/issues/15">#15</a>).</li>
 <li>Defined properties in the GeoDCAT-AP namespace (<a class="no-secRef" href="#agent-roles"></a>) for the specification of INSPIRE / ISO 19115:2003 responsible party roles not supported in [[VOCAB-DCAT-2]] and [[DCTERMS]] (see issue <a href="https://github.com/SEMICeu/GeoDCAT-AP/issues/32">#32</a>).</li>
 <li>Adopted datatype <code>gsp:geoJSONLiteral</code>, defined in the current draft of GeoSPARQL [[?GeoSPARQL11]], for GeoJSON literals, and deprecated the solution used in the previous versions of GeoDCAT-AP (see issue <a href="https://github.com/SEMICeu/GeoDCAT-AP/issues/4">#4</a>).</li>
 <li>Added to <a href="#controlled-vocabularies-to-be-used"></a> the INSPIRE Registry code lists for spatial representation type [[INSPIRE-SRT]] and maintenance frequency [[INSPIRE-MF]] (see issues <a href="https://github.com/SEMICeu/GeoDCAT-AP/issues/55">#55</a> and <a href="https://github.com/SEMICeu/GeoDCAT-AP/issues/56">#56</a>). The relevant examples have been revised accordingly (<a href="#ex-dataset"></a>, <a href="#ex-distribution"></a>, <a href="#ex-mapping-spatial-representation-type"></a>).</li>
