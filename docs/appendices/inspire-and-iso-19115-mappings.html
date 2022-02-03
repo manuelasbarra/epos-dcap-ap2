@@ -1870,7 +1870,7 @@
 </table>
 -->
 
-<p>As far as services are concerned, the resource locator SHOULD be mapped to properties <code>dcat:endpointURL</code>, <code>dcat:endpointDescription</code>, and <code>dct:conformsTo</code>, as described above.</p> 
+<p>As far as services are concerned, the resource locator SHOULD be mapped to properties <code>dcat:endpointURL</code>, <code>dcat:endpointDescription</code>, and <code>dct:conformsTo</code>, as described above.</p>
 
 <div class="issue" data-number="9"></div>
 
@@ -1885,9 +1885,9 @@
 ## Resource locator for services
 [] a dcat:DataService;
   dcat:endpointDescription &lt;http://geohub.jrc.ec.europa.eu/efas_cc?service=WMS&amp;request=GetCapabilities&gt; ;
-  dcat:endpointURL &lt;http://geohub.jrc.ec.europa.eu/efas_cc&gt; ; 
-  dcat:accessURL &lt;http://geohub.jrc.ec.europa.eu/efas_cc&gt; ; 
-  dct:conformsTo &lt;http://www.opengeospatial.org/standards/wms&gt; ; 
+  dcat:endpointURL &lt;http://geohub.jrc.ec.europa.eu/efas_cc&gt; ;
+  dcat:accessURL &lt;http://geohub.jrc.ec.europa.eu/efas_cc&gt; ;
+  dct:conformsTo &lt;http://www.opengeospatial.org/standards/wms&gt; ;
 .</pre>
 
 <p>Resource metadata in ISO 19139 for datasets:</p>
@@ -2564,7 +2564,7 @@
         &lt;gml:lowerCorner&gt;34.56 -10.58&lt;/gml:lowerCorner&gt;
         &lt;gml:upperCorner&gt;70.09 34.59&lt;/gml:upperCorner&gt;
       &lt;/gml:Envelope&gt;
-    &quot;&quot;&quot;^^gsp:gmlLiteral ; 
+    &quot;&quot;&quot;^^gsp:gmlLiteral ;
   dcat:bbox &quot;&quot;&quot;
       {
         &quot;type&quot;:&quot;Polygon&quot;,
@@ -2837,7 +2837,7 @@
 
 <ul>
 <li>Property <code>dcat:spatialResolutionInMeters</code> is used for spatial resolution when it is expressed as distance in metres.</li>
-<li>Property <code>dqv:hasQualityMeasurement</code> is used for all types of spatial resolution. In such a case, the type of spatial resolution is specified by using property <code>dqv:isMeasurementOf</code>, which takes as value the relevant instance of class <code>dqv:Metric</code> defined in GeoDCAT-AP for this purpose (see <a class="no-secRef" href="#instances-of-metric"></a>).</li>
+<li>Property <code>dqv:hasQualityMeasurement</code> is used for all types of spatial resolution. In such a case, the type of spatial resolution is specified by using property <code>dqv:isMeasurementOf</code>, which takes as value the relevant instance of class <code>dqv:Metric</code> defined in GeoDCAT-AP for this purpose (see <a class="no-secRef" href=""></a>).</li>
 <li>Property <code>rdfs:comment</code> is used when spatial resolution is specified as free-text.</li>
 </ul>
 
@@ -2854,8 +2854,8 @@
 [] a dcat:Dataset ;
   dqv:hasQualityMeasurement [ a dqv:QualityMeasurement ;
     dqv:isMeasurementOf geodcat:spatialResolutionAsScale ;
-    dqv:value "0.0001"^^xsd:decimal 
-  ] .</pre> 
+    dqv:value "0.0001"^^xsd:decimal
+  ] .</pre>
 
 <p>Resource metadata in ISO 19139</p>
 
@@ -2879,10 +2879,10 @@
 
 <p>In [[ISO-19115]], conformance and quality information is encoded as a quality report containing the result of a test (an evaluation) of a given quality measure, according to an evaluation method, with either a quantitative result (a metric) or a conformance result (pass or fail) as most important outcome.</p>
 
-<p>The current version of GeoDCAT-AP only defines a syntax binding for conformity and not for data quality in general, making use of property <code>dct:conformsTo</code> and the W3C Provenance Ontology (PROV-O) [[PROV-O]], as explained in the following paragraphs. 
+<p>The current version of GeoDCAT-AP only defines a syntax binding for conformity and not for data quality in general, making use of property <code>dct:conformsTo</code> and the W3C Provenance Ontology (PROV-O) [[PROV-O]], as explained in the following paragraphs.
 
 <!--
-<p>For encoding conformance, GeoDCAT-AP uses <code>dct:conformsTo</code> and the W3C Provenance Ontology (PROV-O) [[PROV-O]] as explained in the following paragraphs. 
+<p>For encoding conformance, GeoDCAT-AP uses <code>dct:conformsTo</code> and the W3C Provenance Ontology (PROV-O) [[PROV-O]] as explained in the following paragraphs.
 For encoding other aspects of data quality, GeoDCAT-AP does not provide a syntax binding as there is a risk that the (future) work of other standards bodies on data quality may make the defined syntax binding for GeoDCAT-AP outdated.
 For example, the <a href="https://www.w3.org/2013/dwbp/">W3C Data on the Web Best Practices WG</a> is working on a Data Quality Vocabulary (DQV) [[?VOCAB-DQV]].
 To limit the impact, it was decided to only provide a partial mapping for Data Quality / Conformance.</p>
@@ -3042,16 +3042,16 @@ prov:wasUsedBy [
 <pre>[] dcat:distribution [ a dcat:Distribution ;
   dct:license [ a dct:LicenseDocument ;
     rdfs:label &quot;&quot;&quot;
-        The dataset contains parts which are restricted 
-        by the data providers and not to be made public. 
-        For further information and specification regarding 
-        the use limitations and constraints please consult 
-        the file WISE_WFD_ReferenceSpatialDataSets_2020-04-02.pdf 
-        which is provided together with the data.    
+        The dataset contains parts which are restricted
+        by the data providers and not to be made public.
+        For further information and specification regarding
+        the use limitations and constraints please consult
+        the file WISE_WFD_ReferenceSpatialDataSets_2020-04-02.pdf
+        which is provided together with the data.
       &quot;&quot;&quot;@en ] ;
   dct:accessRights [ a dct:RightsStatement ;
     rdfs:label &quot;&quot;&quot;
-        public access limited according to Article 13(1)(b) 
+        public access limited according to Article 13(1)(b)
 	of the INSPIRE Directive
       &quot;&quot;&quot;@en ] ] .</pre>
 
@@ -3074,12 +3074,12 @@ prov:wasUsedBy [
     &lt;/gmd:useConstraints&gt;
     &lt;gmd:otherConstraints&gt;
       &lt;gco:CharacterString&gt;
-        The dataset contains parts which are restricted 
-        by the data providers and not to be made public. 
-        For further information and specification regarding 
-        the use limitations and constraints please consult 
-        the file WISE_WFD_ReferenceSpatialDataSets_2020-04-02.pdf 
-        which is provided together with the data.    
+        The dataset contains parts which are restricted
+        by the data providers and not to be made public.
+        For further information and specification regarding
+        the use limitations and constraints please consult
+        the file WISE_WFD_ReferenceSpatialDataSets_2020-04-02.pdf
+        which is provided together with the data.
       &lt;/gco:CharacterString&gt;
     &lt;/gmd:otherConstraints&gt;
   &lt;/gmd:MD_LegalConstraints&gt;
@@ -3092,7 +3092,7 @@ prov:wasUsedBy [
     &lt;/gmd:accessConstraints&gt;
     &lt;gmd:otherConstraints&gt;
       &lt;gco:CharacterString&gt;
-        public access limited according to Article 13(1)(b) 
+        public access limited according to Article 13(1)(b)
 	of the INSPIRE Directive
       &lt;/gco:CharacterString&gt;
     &lt;/gmd:otherConstraints&gt;
@@ -3513,7 +3513,7 @@ prov:wasUsedBy [
 
 <pre>[] a dcat:CatalogRecord ;
   dct:conformsTo &lt;https://joinup.ec.europa.eu/release/geodcat-ap/10&gt; ;
-  dct:source [ a dcat:CatalogRecord ; 
+  dct:source [ a dcat:CatalogRecord ;
 # Standard name and version of the source ISO 19115 record
     dct:conformsTo [ a dct:Standard ;
       dct:title &quot;ISO 19115&quot;@en ;
