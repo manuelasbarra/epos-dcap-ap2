@@ -1,0 +1,78 @@
+<table class="simple" id="table-eq-epos-dcat-ap-classes">
+<thead>
+  <tr>
+    <th class="small">
+        <p>Class name</p>
+    </th>
+    <th class="small">
+        <p>Usage note for the Application Profile</p>
+    </th>
+    <th class="small">
+        <p>URI</p>
+    </th>
+    <th class="small">
+        <p>DCAT-AP class</p>
+    </th>
+    <th class="small">
+        <p>Reference</p>
+    </th>
+  </tr>
+</thead>
+<tbody>
+  <tr class="class optional ap-ext" id="contactpoint">
+    <td>
+        <p><a href="#properties-for-contactpoint">ContactPoint</a></p>
+    </td>
+    <td>
+        <p></p>
+    </td>
+    <td>
+        <p><code>schema:ContactPoint</code></p>
+    </td>
+    <td />
+    <td>
+        <p><code>vcard:Kind</code></p>
+    </td>
+    <td />
+    <td>
+        <p>Rivedere<a data-cite="VCARD-RDF#d4e1292">§&nbsp;Address</a> [[VCARD-RDF]]</p>
+    </td>
+  </tr>
+
+  <tr class="class optional ap-ext" id="organization">
+    <td>
+        <p><a href="#properties-for-organization">Organization</a></p>
+    </td>
+    <td>
+        <p>The Organization class represents a kind of Agent corresponding to social instititutions such as companies, societies etc.</p>
+    </td>
+    <td>
+        <p><code>schema:Organization</code></p>
+    </td>
+    <td><p><code>foaf:Organization</code> subclass of <code>foaf:Agent</code></p>
+    </td>
+    <td><p>https://schema.org/Organization</p>
+    <!--<p><a data-cite="LOCN#locn:Address">§&nbsp;Class Address</a> [[LOCN]]</p>-->
+    </td>
+  </tr>
+
+  <tr class="class optional ap-ext" id="person">
+    <td>
+        <p><a href="#properties-for-person">Person</a></p>
+    </td>
+    <td>
+        <p>The Person class represents people.</p>
+    </td>
+    <td>
+        <p><code>schema:Person</code></p>
+    </td>
+    <td><p><code>foaf:Person</code> subclass of <code>foaf:Agent</code></p>
+    <td>
+        <p>https://schema.org/Person</p>
+  <!--<a data-cite="PROV-O#Activity">§&nbsp;(2) Class: prov:Activity</a> [[PROV-O]];
+  <a class="src-ref" data-cite="VOCAB-DCAT-2#quality-conformance-degree">§&nbsp;<bdi class="secno">12.2.2 </bdi>Relationships between datasets and agents</a> [[VOCAB-DCAT-2]]</p>
+  --></td>
+  </tr>
+
+</tbody>
+</table>
