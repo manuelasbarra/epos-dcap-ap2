@@ -1,4 +1,4 @@
-<table class="simple" id="table-mandatory-properties-for-person">
+<table class="simple" id="table-mandatory-properties-for-organization">
   <thead>
     <tr>
       <th>
@@ -19,7 +19,7 @@
     </tr>
   </thead>
   <tbody>
-    <tr class="property optional" id="person-address">
+    <tr class="property optional" id="organization-address">
           <td>
               <p>address</p>
           </td>
@@ -30,30 +30,30 @@
               <p><code>rdfs:Literal or schema:PostalAddress</code></p>
           </td>
           <td>
-              <p>This property contains the physical address of the Person.</p>
+              <p>This property contains the physical address of the Organization.</p>
           </td>
           <td>
               <p>0..1</p>
           </td>
       </tr>
-      <tr class="property optional" id="person-affiliation">
+      <tr class="property optional" id="organization-associatedproject">
             <td>
-                <p>affiliation</p>
+                <p>associatedProject</p>
             </td>
             <td>
-                <p><code>schema:affiliation</code></p>
+                <p><code>epos:associatedProject</code></p>
             </td>
             <td>
-                <p><code>schema:Organization</code></p>
+                <p><code>foaf:Project</code></p>
             </td>
             <td>
-                <p>This property refers to the organization to which the person is affiliated.</p>
+                <p>This property refers to a Project in which the Organization is involved.</p>
             </td>
             <td>
                 <p>0..n</p>
             </td>
         </tr>
-        <tr class="property optional" id="person-contact-point">
+        <tr class="property optional" id="organization-contact-point">
               <td>
                   <p>contactPoint</p>
               </td>
@@ -64,13 +64,13 @@
                   <p><code>schema:ContactPoint</code></p>
               </td>
               <td>
-                  <p>This property refers to the Contact Point role defined for the Person.</p>
+                  <p>This property refers to the Contact Point role defined for the Organization.</p>
               </td>
               <td>
                   <p>0..n</p>
               </td>
           </tr>
-            <tr class="property optional" id="person-email">
+            <tr class="property optional" id="organization-email">
                   <td>
                       <p>email</p>
                   </td>
@@ -81,64 +81,64 @@
                       <p><code>rdfs:Literal</code></p>
                   </td>
                   <td>
-                      <p>This property contains the email address of the Person.</p>
+                      <p>This property contains the email address of the Organization.</p>
                   </td>
                   <td>
                       <p>0..n</p>
                   </td>
               </tr>
-              <tr class="property optional" id="person-familyname">
+              <tr class="property optional" id="organization-logo">
                     <td>
-                        <p>familyName</p>
+                        <p>logo</p>
                     </td>
                     <td>
-                        <p><code>schema:familyName</code></p>
+                        <p><code>schema:logo</code></p>
                     </td>
                     <td>
-                        <p><code>rdfs:Literal</code></p>
+                        <p><code>rdfs:Literal typed with URI</code></p>
                     </td>
                     <td>
-                        <p>This property contains the last name of the Person.</p>
+                        <p>This property contains the URL of the Organization logo.</p>
                     </td>
                     <td>
                         <p>0..1</p>
                     </td>
                 </tr>
-                <tr class="property optional" id="person-givenname">
+                <tr class="property optional" id="organization-memberof">
                       <td>
-                          <p>givenName</p>
+                          <p>memberOf</p>
                       </td>
                       <td>
-                          <p><code>schema:givenName</code></p>
+                          <p><code>schema:memberOf</code></p>
                       </td>
                       <td>
-                          <p><code>rdfs:Literal</code></p>
+                          <p><code>schema:Organization</code></p>
                       </td>
                       <td>
-                          <p>This property contains the first name of the Person.</p>
+                          <p>This property refers to an Organization to which this Organization belongs.</p>
                       </td>
                       <td>
-                          <p>0..1</p>
+                          <p>0..n</p>
                       </td>
                   </tr>
-                  <tr class="property optional" id="person-qualifications">
+                  <tr class="property optional" id="organization-owns">
                         <td>
-                            <p>qualifications</p>
+                            <p>owns</p>
                         </td>
                         <td>
-                            <p><code>schema:qualifications</code></p>
+                            <p><code>schema:owns</code></p>
                         </td>
                         <td>
-                            <p><code>rdfs:Literal</code></p>
+                            <p><code>epos:Facility</code>or<code> epos:Equipment</code></p>
                         </td>
                         <td>
-                            <p>This property contains the specific qualificationsof the Person.</p>
+                            <p>This property refers to a Facility or Equipment of which it is the owner.</p>
                         </td>
                         <td>
-                            <p>0..1</p>
+                            <p>0..n</p>
                         </td>
                     </tr>
-                    <tr class="property optional" id="person-telephone">
+                    <tr class="property optional" id="organization-telephone">
                           <td>
                               <p>telephone</p>
                           </td>
@@ -149,13 +149,13 @@
                               <p><code>rdfs:Literal</code></p>
                           </td>
                           <td>
-                              <p>This property contains the telephone number the Person.</p>
+                              <p>This property contains the telephone number the Organization.</p>
                           </td>
                           <td>
                               <p>0..n</p>
                           </td>
                       </tr>
-                      <tr class="property optional" id="person-url">
+                      <tr class="property optional" id="organization-url">
                             <td>
                                 <p>url</p>
                             </td>
@@ -166,7 +166,7 @@
                                 <p><code>rdfs:Literal typed with URI</code></p>
                             </td>
                             <td>
-                                <p>This property refers to the URL of the Person curriculum vitae.</p>
+                                <p>TThis property contains the URL of the Organization website.</p>
                             </td>
                             <td>
                                 <p>0..1</p>
