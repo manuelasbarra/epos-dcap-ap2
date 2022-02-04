@@ -30,7 +30,11 @@ border-bottom:1px solid #ddd!important;}
   border-top:1px solid #ddd!important;
   border-bottom:1px solid #ddd!important;
 
-}/*
+}
+.li_large{
+  width: 100%;
+}
+/*
 .disclaimer {font-size:.9em;}
 .disclaimer:before {content:"\2605\00a0 Disclaimer: ";font-weight:bold;}
 .scope {font-variant:small-caps;}
@@ -687,7 +691,7 @@ A property which is not mentioned but would be applicable for a class according 
 
   <h4>Mandatory properties for Data Service</h4>
   <aside class="note">
-    <p>The following property is inherited from superclass<a data-cite="VOCAB-DCAT-2#Class:Resource">dcat:Resource</a>[[VOCAB-DCAT-2]]</p>
+    <p>The following property is inherited from superclass <a data-cite="VOCAB-DCAT-2#Class:Resource">dcat:Resource</a>[ [VOCAB-DCAT-2]]</p>
     <ul>
         <li><a href="#data-service-identifier">identifier</a></li>
     </ul>
@@ -712,8 +716,11 @@ A property which is not mentioned but would be applicable for a class according 
         <li><a href="#data-service-theme">theme</a></li>
     </ul>
     <p>The following properties extend range in [[EPOS-DCAT-AP]]:<br>
-        <a href="#data-service-publisher">publisher</a>: <code>dct:publisher</code> from <code>foaf:Agent</code> to <code>schema:Organization</code>
-        <br><a href="#data-service-endpoint-description">endpointDescription</a>: <code>dcat:endpointDescription</code> from <code>dcat:Resource</code> to <code>hydra:Operation;</code>
+      <ul><li class="li_large">
+        <a href="#data-service-publisher">publisher</a>: from <code>foaf:Agent</code> to <code>schema:Organization</code>
+      </li><li class="li_large"><a href="#data-service-endpoint-description">endpointDescription</a>: from <code>dcat:Resource</code> to <code>hydra:Operation;</code>
+      </li>
+      </ul>
     </p>
   </aside>
   <div data-include-format="html" data-include-replace="true" data-include="./tables/recommended-properties-for-data-service.html"></div>
