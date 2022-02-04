@@ -1,19 +1,19 @@
 <table class="simple" id="table-recommended-properties-for-catalogue">
   <thead>
     <tr>
-      <th>
+      <th class="xsmall">
           <p>Property</p>
       </th>
-      <th>
+      <th class="small">
           <p>URI</p>
       </th>
-      <th>
+      <th class="small">
           <p>Range</p>
       </th>
-      <th>
+      <th class="large">
           <p>Usage note</p>
       </th>
-      <th>
+      <th class="xsmall">
           <p>Card.</p>
       </th>
     </tr>
@@ -34,6 +34,23 @@
     </td>
     <td>
         <p>0..n</p>
+    </td>
+  </tr>
+  <tr class="property recommended" id="catalogue-issued">
+    <td>
+        <p>issued</p>
+    </td>
+    <td>
+        <p><code>dct:issued</code></p>
+    </td>
+    <td>
+        <p><code>rdfs:Literal</code> typed as <code>xsd:date</code> or <code>xsd:dateTime</code></p>
+    </td>
+    <td>
+        <p>This property contains the date of formal issuance (e.g., publication) of the Catalogue.</p>
+    </td>
+    <td>
+        <p>0..1</p>
     </td>
   </tr>
   <tr class="property recommended" id="catalogue-homepage">
@@ -87,21 +104,38 @@
         <p>0..1</p>
     </td>
   </tr>
-  <tr class="property recommended" id="catalogue-dataset-release-date">
+  <tr class="property recommended" id="catalogue-modification-date">
     <td>
-        <p>issued</p>
+        <p>modified</p>
     </td>
     <td>
-        <p><code>dct:issued</code></p>
+        <p><code>dct:modified</code></p>
     </td>
     <td>
         <p><code>rdfs:Literal</code> typed as <code>xsd:date</code> or <code>xsd:dateTime</code></p>
     </td>
     <td>
-        <p>This property contains the date of formal issuance (e.g., publication) of the Catalogue.</p>
+        <p>This property contains the most recent date on which the Catalogue was modified.</p>
     </td>
     <td>
         <p>0..1</p>
+    </td>
+  </tr>
+  <tr class="property optional" id="catalogue-service">
+    <td>
+        <p>service</p>
+    </td>
+    <td>
+        <p><code>dcat:service</code></p>
+    </td>
+    <td>
+        <p><code>dcat:DataService</code></p>
+    </td>
+    <td>
+        <p>This property refers to a site or end-point (Data Service) that is listed in the Catalogue.</p>
+    </td>
+    <td>
+        <p>0..n</p>
     </td>
   </tr>
   <tr class="property recommended" id="catalogue-spatial-coverage">
@@ -137,40 +171,6 @@
     <td>
         <p>0..n</p>
     </td>
-  </tr>
-  <tr class="property recommended" id="catalogue-modification-date">
-    <td>
-        <p>modified</p>
-    </td>
-    <td>
-        <p><code>dct:modified</code></p>
-    </td>
-    <td>
-        <p><code>rdfs:Literal</code> typed as <code>xsd:date</code> or <code>xsd:dateTime</code></p>
-    </td>
-    <td>
-        <p>This property contains the most recent date on which the Catalogue was modified.</p>
-    </td>
-    <td>
-        <p>0..1</p>
-    </td>
-  </tr>
-  <tr class="property optional" id="catalogue-service">
-    <td>
-        <p>service</p>
-    </td>
-    <td>
-        <p><code>dcat:service</code></p>
-    </td>
-    <td>
-        <p><code>dcat:DataService</code></p>
-    </td>
-    <td>
-        <p>This property refers to a site or end-point (Data Service) that is listed in the Catalogue.</p>
-    </td>
-    <td>
-        <p>0..n</p>
-    </td>
-  </tr>
+  </tr
 </tbody>
 </table>
