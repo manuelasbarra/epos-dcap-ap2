@@ -466,7 +466,7 @@ A property which is not mentioned but would be applicable for a class according 
 
     <h4>Mandatory properties for Catalog</h4>
     <aside class="note light">
-      <p>Extended range in [[EPOS-DCAT-AP]] for the property:
+        <p>The following property extends range in [[EPOS-DCAT-AP]]:
         <ul><li><a href="#catalogue-publisher">publisher</a>: <code>dct:publisher</code> from <code>foaf:Agent</code> to <code>schema:Organization</code></p>
     </aside>
 
@@ -566,18 +566,16 @@ A property which is not mentioned but would be applicable for a class according 
 
   <h4>Mandatory properties for Category</h4>
   <aside class="note">
-    <p>The following properties are added in EPOS-DCAT-AP:</p>
+    <p>The following properties are added in [[EPOS-DCAT-AP]]:</p>
     <ul>
-      <li><a href="#category-inscheme">inScheme</a></li>
       <li><a href="#category-definition">definition</a></li>
+      <li><a href="#category-inscheme">inScheme</a></li>
     </ul>
   </aside>
 
   <div data-include-format="html" data-include-replace="true" data-include="./tables/mandatory-properties-for-category.html"></div>
 
   </section>
-
-
   <section id="examples-for-category">
 
   <h4>Examples for Category</h4>
@@ -603,7 +601,7 @@ A property which is not mentioned but would be applicable for a class according 
   <h4>Recommended properties for Category Scheme</h4>
 
   <aside class="note">
-    <p>The following property is added in EPOS-DCAT-AP:</p>
+    <p>The following property is added in [[EPOS-DCAT-AP]]:</p>
     <ul>
       <li><a href="#category-scheme-description">description</a></li>
     </ul>
@@ -689,10 +687,13 @@ A property which is not mentioned but would be applicable for a class according 
 
   <h4>Mandatory properties for Data Service</h4>
   <aside class="note">
-    <p>The following property is inherited from superclass dcat:Resource</p>
+    <p>The following property is inherited from superclass<a data-cite="VOCAB-DCAT-2#Class:Resource">dcat:Resource</a><br>[[VOCAB-DCAT-2]]</p>
     <ul>
         <li><a href="#data-service-identifier">identifier</a></li>
     </ul>
+    </p>
+
+
   </aside>
   <div data-include-format="html" data-include-replace="true" data-include="./tables/mandatory-properties-for-data-service.html"></div>
 
@@ -702,7 +703,7 @@ A property which is not mentioned but would be applicable for a class according 
 
   <h4>Recommended properties for Data Service</h4>
   <aside class="note">
-    <p>The following properties are inherited from superclass dcat:Resource</p>
+    <p>The following properties are inherited from superclass<a data-cite="VOCAB-DCAT-2#Class:Resource">dcat:Resource</a><br>[[VOCAB-DCAT-2]]</p>
     <ul>
         <li><a href="#data-service-contact-point">contactPoint </a></li>
         <li><a href="#data-service-issued">issued</a></li>
@@ -710,6 +711,13 @@ A property which is not mentioned but would be applicable for a class according 
         <li><a href="#data-service-publisher">publisher</a></li>
         <li><a href="#data-service-theme">theme</a></li>
     </ul>
+    <p>The following properties extend range in [[EPOS-DCAT-AP]]:
+      <ul>
+        <li><a href="#data-service-publisher">publisher</a>: <code>dct:publisher</code> from <code>foaf:Agent</code> to <code>schema:Organization</code></li>
+        <li><a href="#data-service-endpointDescription">endpointDescription</a>: <code>dcat:endpointDescription</code> from <code>dcat:Resource</code> to <code>hydra:Operation;</code>
+        </li>
+      </ul
+    </p>
   </aside>
   <div data-include-format="html" data-include-replace="true" data-include="./tables/recommended-properties-for-data-service.html"></div>
 
