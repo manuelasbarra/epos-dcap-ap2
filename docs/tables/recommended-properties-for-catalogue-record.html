@@ -1,19 +1,19 @@
 <table class="simple" id="table-recommended-properties-for-catalogue-record">
   <thead>
     <tr>
-      <th>
+      <th class="xsmall">
           <p>Property</p>
       </th>
-      <th>
+      <th class="small">
           <p>URI</p>
       </th>
-      <th>
+      <th class="small">
           <p>Range</p>
       </th>
-      <th>
+      <th class="large">
           <p>Usage note</p>
       </th>
-      <th>
+      <th class="xsmall">
           <p>Card.</p>
       </th>
     </tr>
@@ -32,6 +32,23 @@
       </td>
       <td>
           <p>This property refers to an Application Profile that the Catalogue Record conforms to</p>
+      </td>
+      <td>
+          <p>0..1</p>
+      </td>
+    </tr>
+    <tr class="property recommended" id="catalogue-record-listing-date">
+      <td>
+          <p>identifier</p>
+      </td>
+      <td>
+          <p><code>dct:identifier</code></p>
+      </td>
+      <td>
+          <p><code>rdfs:Literal</code> typed as <code>xsd:date</code> or <code>xsd:dateTime</code></p>
+      </td>
+      <td>
+          <p>This property contains the main identifier for the Catalogue Record.</p>
       </td>
       <td>
           <p>0..1</p>

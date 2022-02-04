@@ -1,41 +1,24 @@
 <table class="simple" id="table-mandatory-properties-for-catalogue-record">
   <thead>
     <tr>
-      <th>
+      <th class="xsmall">
           <p>Property</p>
       </th>
-      <th>
+      <th class="small">
           <p>URI</p>
       </th>
-      <th>
+      <th class="small">
           <p>Range</p>
       </th>
-      <th>
+      <th class="large">
           <p>Usage note</p>
       </th>
-      <th>
+      <th class="xsmall">
           <p>Card.</p>
       </th>
     </tr>
   </thead>
   <tbody>
-    <tr class="property mandatory" id="catalogue-record-primary-topic">
-      <td>
-          <p>primaryTopic</p>
-      </td>
-      <td>
-          <p><code>foaf:primaryTopic</code></p>
-      </td>
-      <td>
-          <p><code>dcat:Dataset</code> or <code>dcat:Dataservice</code> or <code>dcat:Catalog</code></p>
-      </td>
-      <td>
-          <p>This property links the Catalogue Record to the Dataset, Data service or Catalogue described in the record.</p>
-      </td>
-      <td>
-          <p>1..1</p>
-      </td>
-    </tr>
     <tr class="property mandatory" id="catalogue-record-modification-date">
       <td>
           <p>modified</p>
@@ -53,5 +36,23 @@
           <p>1..1</p>
       </td>
     </tr>
+    <tr class="property mandatory" id="catalogue-record-primary-topic">
+      <td>
+          <p>primaryTopic</p>
+      </td>
+      <td>
+          <p><code>foaf:primaryTopic</code></p>
+      </td>
+      <td>
+          <p><code>dcat:Dataset</code> or <code>dcat:Dataservice</code> or <code>dcat:Catalog</code></p>
+      </td>
+      <td>
+          <p>This property links the Catalogue Record to the Dataset, Data service or Catalogue described in the record.</p>
+      </td>
+      <td>
+          <p>1..1</p>
+      </td>
+    </tr>
+
   </tbody>
 </table>
