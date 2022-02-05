@@ -59,8 +59,8 @@ var respecConfig = {
     ],    */
 //    implementationReportURI:"https://joinup.ec.europa.eu/document/geodcat-ap-implementations",
     errata:"https://github.com/SEMICeu/GeoDCAT-AP/issues?q=is%3Aissue+label%3Atype%3Aerratum+label%3Arelease%3A2.0.0",
-   specStatus: "unofficial",
-  //  specStatus: "ED",
+   //specStatus: "unofficial",
+    specStatus: "ED",
 //    specStatus: "FPWD",
 //   specStatus: "WD",
 //    specStatus: "LC",
@@ -129,8 +129,8 @@ var respecConfig = {
       key: "Document status",
       data: [
       {
-//        value: "Under development"
-        value: "Completed"
+       value: "Under development"
+        //value: "Completed"
       }
       ]
     },
