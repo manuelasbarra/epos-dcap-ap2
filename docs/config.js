@@ -1,7 +1,8 @@
 var respecConfig = {
 //	preProcess: [dfn_index],
     logos: [
-   {    src: 'https://www.epos-eu.org/themes/epos/logo.svg',
+   {    //src: 'https://www.epos-eu.org/themes/epos/logo.svg',
+         src: './logo.svg',
 //      src: "./images/eu-isa2-programme.jpg",
 ////      url: 'https://ec.europa.eu/isa',
 //      url: "https://ec.europa.eu/isa2",
