@@ -4,10 +4,9 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-[] a vcard:Address ;
-  vcard:country-name "Denmark" ;
-  vcard:locality "Copenhagen" ;
-  vcard:postal-code "1050" ;
-  vcard:region "K" ;
-  vcard:street-address "Kongens Nytorv 6" .
-
+[] vcard:hasAddress [ a vcard:Address ;
+  		vcard:country-name "Country" ;
+  		vcard:locality "locality" ;
+  		vcard:postal-code "00000" ;
+  		vcard:street-address "Street Address" ;
+  	];
