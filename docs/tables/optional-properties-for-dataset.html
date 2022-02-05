@@ -113,7 +113,7 @@
           <p>This property refers to the Agent primarily responsible for producing the Dataset.</p>
       </td>
       <td>
-          <p>0..1</p>
+          <p>0..n</p>
       </td>
     </tr>
     <tr class="property optional" id="dataset-has-part">
@@ -269,23 +269,6 @@
           <p>0..n</p>
       </td>
     </tr>
-    <tr class="property optional" id="dataset-documentation">
-      <td>
-          <p>page(documentation)</p>
-      </td>
-      <td>
-          <p><code>foaf:page</code></p>
-      </td>
-      <td>
-          <p><code>foaf:Document</code></p>
-      </td>
-      <td>
-          <p>This property refers to a page or document about this Dataset.</p>
-      </td>
-      <td>
-          <p>0..n</p>
-      </td>
-    </tr>
     <tr class="property optional" id="dataset-modification-date">
       <td>
           <p>modified</p>
@@ -303,6 +286,24 @@
           <p>0..1</p>
         </td>
     </tr>
+    <tr class="property optional" id="dataset-documentation">
+      <td>
+          <p>page(documentation)</p>
+      </td>
+      <td>
+          <p><code>foaf:page</code></p>
+      </td>
+      <td>
+          <p><code>foaf:Document</code></p>
+      </td>
+      <td>
+          <p>This property refers to a page or document about this Dataset.</p>
+      </td>
+      <td>
+          <p>0..n</p>
+      </td>
+    </tr>
+
     <tr class="property optional" id="dataset-provenance">
       <td>
           <p>provenance</p>
@@ -419,7 +420,7 @@
           <p>This property refers to the minimum spatial separation resolvable in a Dataset, measured in metres.</p>
       </td>
       <td>
-          <p>0..n</p>
+          <p>0..1</p>
       </td>
     </tr>
     <tr class="property optional" id="dataset-temporal-resolution">
@@ -436,7 +437,7 @@
           <p>This property refers to the minimum time period resolvable in the Dataset.</p>
       </td>
       <td>
-          <p>0..n</p>
+          <p>0..1</p>
       </td>
     </tr>
     <tr class="property optional" id="dataset-type">
@@ -453,7 +454,7 @@
           <p>This property refers to the type of the Dataset. A controlled vocabulary for the values has not been established in [[DCAT-AP]].</p>
       </td>
       <td>
-          <p>0..1</p>
+          <p>0..n</p>
       </td>
     </tr>
     <tr class="property optional" id="dataset-version">
