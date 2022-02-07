@@ -24,7 +24,7 @@ var respecConfig = {
 //    copyrightHolder: "European Union",
 //    copyrightURL: "https://europa.eu/",
   //  copyrightStart: 2020,
-    publishDate: "2022-02-23",
+    publishDate: "2022-02-07",
 
   //  alternateFormats: [
 /*
@@ -59,7 +59,7 @@ var respecConfig = {
     }
     ],    */
 //    implementationReportURI:"https://joinup.ec.europa.eu/document/geodcat-ap-implementations",
-    errata:"https://github.com/SEMICeu/GeoDCAT-AP/issues?q=is%3Aissue+label%3Atype%3Aerratum+label%3Arelease%3A2.0.0",
+    errata:"https://github.com/",
    //specStatus: "unofficial",
     specStatus: "ED",
 //    specStatus: "FPWD",
@@ -76,7 +76,7 @@ var respecConfig = {
 //    canonicalURI: "https://semiceu.github.io/GeoDCAT-AP/releases/",
 //    prevRecURI: "https://joinup.ec.europa.eu/release/geodcat-ap/101",
 //    prevRecURI: "https://semiceu.github.io/GeoDCAT-AP/releases/1.0.1/",
-    prevRecURI: "TBD",
+    //prevRecURI: "TBD",
 //    previousPublishDate:  "2016-08-02",
 //    previousMaturity:     "final",
 //    previousURI:          "https://joinup.ec.europa.eu/release/geodcat-ap/101",
@@ -85,23 +85,15 @@ var respecConfig = {
 //    thisVersionURI:       "https://semiceu.github.io/GeoDCAT-AP/drafts/2.0.0-draft-0.1/",
     thisVersionURI:       "TBD",
 //    prevVersionURI:       "https://semiceu.github.io/GeoDCAT-AP/drafts/latest/",
-    prevVersionURI:       "TBD",
+  //  prevVersionURI:       "TBD",
 //    latestVersionURI:     "https://semiceu.github.io/GeoDCAT-AP/releases/2.0.0/",
-    latestVersionURI:     "TBD",
+  //  latestVersionURI:     "TBD",
 /* SEMICEU specific - end   */
     edDraftURI:           "TDB",
   //  issueBase:            "https://github.com/",
   //  github:               "https://github.com/",
-    formerEditors: [{
-      name:   "Rossana Paciello",
-      orcid:  "0000-0002-6975-1991",
-      company:    "INGV - Istituto Nazionale Geofisisca e Vulcanologia, Italy"
-    },{
-      name: 	"Manuela Sbarra",
-      orcid:  "0000-0001-7746-6309",
-      company:    "INGV - Istituto Nazionale Geofisisca e Vulcanologia, Italy"
-    }],
-    editors: [
+
+    authors: [
       {
         name:   "Rossana Paciello",
         orcid:  "0000-0002-6975-1991",
@@ -116,15 +108,7 @@ var respecConfig = {
 
       }
     ],
-    authors: [
-    {
-      name: "EPOS-DCAT-AP Working Group",
-      url: "TDB",
-      company: "EPOS",
-      companyURL: "https://www.epos-eu.org/"
 
-    },
-    ],
     otherLinks: [
     {
       key: "Document status",
@@ -143,27 +127,7 @@ var respecConfig = {
         value: "2.0"
       }
       ]
-    },
-
-   {
-      key: "Reviewed by",
-      data: [
-      {
-        value: "TBD",
-      //  href: "https://ec.europa.eu/"
-      }
-      ]
-    },
-    {
-      key: "Approved by",
-      data: [
-      {
-        value: "TBD",
-
-      }
-      ]
     }
-
   ],
     wg: "EPOS-DCAT-AP Working Group",
     wgURI: "https://github.com/",
@@ -175,13 +139,13 @@ var respecConfig = {
     localBiblio: {
       "EPOS": {
         "href":"https://www.epos-eu.org/",
-        "title":"European Plate Observing System - EPOS",
-        "publisher":"TBD"
+        "title":"European Plate Observing System - EPOS"
+        //"publisher":"TBD"
       },
       "EPOS-DCAT-AP": {
         "href":"https://www.epos-eu.org/epos-dcat-ap#",
-        "title":"EPOS",
-        "publisher":"TBD"
+        "title":"EPOS-DCAT-AP: an extension of the DCAT Application Profile for Research Infrastructures in the solid-Earth domain."
+        //"publisher":"TBD"
       },
       "HTTP":{
         "href":"http://www.w3.org/2006/http#",
