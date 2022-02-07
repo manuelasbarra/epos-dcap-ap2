@@ -2,7 +2,5 @@ table.simple {width:100%; border-top: 1px solid #ccc; border-left: 1px solid #cc
 table.simple th{padding: 3px 10px!important;}
 table.simple th.xsmall{width:10%;}
 table.simple th.small{width:15%;}
-table.simple th.medium{width:20%;}
-table.simple th.large{width:50%;}
-
-table.simple th.large{width:50%;}
+table.simple th.medium{width:25%;}
+table.simple th.large{width:45%;}
