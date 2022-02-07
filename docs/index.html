@@ -117,24 +117,11 @@ table code, table pre {
   <h3>Scope of the revision</h3>
   <p>The objective of this work is to produce an updated release of EPOS-DCAT-AP version 1.0 with the purpose of aligning it with DCAT-AP version 2.1.0.
 
-  <!--
-  <p>The objective of this work is to produce an updated release of GeoDCAT-AP based on requests for change coming from real-world implementations of the specification and an alignment with [[DCAT-AP-20200608]] and [[INSPIRE-MD-20170302]].</p>
-
-  <p>As [[DCAT-AP-20200608]], the Application Profile specified in this document is based on the specification of the <strong>Data Catalog Vocabulary</strong> (DCAT), originally  developed under the responsibility of the Government Linked Data Working Group [[GLD]] at W3C, and significantly revised in 2020 by the W3C Dataset Exchange Working Group [[DXWG]]. DCAT is an RDF [[RDF11-CONCEPTS]] vocabulary designed to facilitate interoperability between data catalogues published on the Web. Additional classes and properties from other well-known vocabularies are re-used where necessary.</p>
-
-  <p>The work does not cover implementation issues like mechanisms for exchange of data and expected behaviour of systems implementing the Application Profile other than what is defined in the Conformance Statement in <a class="no-sectionRef" href="#conformance"></a>.</p>
-
-  <p>The Application Profile is intended to facilitate data exchange and therefore the classes and properties defined in this document are only relevant for the data to be exchanged; there are no requirements for communicating systems to implement specific technical environments. The only requirement is that the systems can export and import data in RDF in conformance with this Application Profile.</p>
-  -->
 </section>
 
 <section id="specification">
 
   <h3>A DCAT-AP extension</h3>
-
-  <!--
-  <p>The DCAT-AP Application Profile defined in this document is based on the specification of the Data Catalog Vocabulary (DCAT) of 16 January 2014 [[VOCAB-DCAT-20140116]], and the Data Catalog Vocabulary (DCAT) - Version 2, W3C Candidate Recommendation 03 October 2019 [[VOCAB-DCAT-2-20191003]].</p>
-  -->
 
   <p>The EPOS-DCAT-AP specification is designed as an extension of DCAT-AP in conformance with the guidelines for the creation of DCAT-AP extensions. </p>
 
@@ -150,7 +137,7 @@ table code, table pre {
 
   <p>A <strong>Vocabulary</strong> is a specification that determines the semantics of terms (classes and properties) in a broad context of information exchange. The defined terms are higly reusable.</p>
 
-  <p>A <strong>Controlled Vocabulary</strong> is an organised arrangement of words and phrases used to index content and/or to retrieve content through browsing or searching. It typically includes preferred and variant terms and has a defined scope or describes a specific domain [[?GETTY]]. Within this specification, it is also used as a synonym for a codelist.
+  <!---<p>A <strong>Controlled Vocabulary</strong> is an organised arrangement of words and phrases used to index content and/or to retrieve content through browsing or searching. It typically includes preferred and variant terms and has a defined scope or describes a specific domain [[?GETTY]]. Within this specification, it is also used as a synonym for a codelist.-->
 
   <p>An <strong>Application Profile</strong> is a specification that re-uses terms from one or more base standards (vocabularies), adding more specificity by identifying mandatory, recommended and optional elements to be used for a particular application, as well as recommendations for controlled vocabularies to be used.</p>
 
@@ -167,17 +154,15 @@ table code, table pre {
 
   <p>The meaning of the terms MUST, MUST NOT, SHOULD and MAY in this section and in the following sections are as defined in [[RFC2119]].</p>
 
-  <p>In the given context, the term "processing" means that receivers must accept incoming data and transparently provide these data to applications and services. It does neither imply nor prescribe what applications and services finally do with the data (parse, convert, store, make searchable, display to users, etc.).</p>
-
   <p>Classes are classified as ‘Mandatory’ in <a class="no-sectionRef" href="#mandatory-classes"></a> if they appear as the range of one of the mandatory properties in <a class="no-sectionRef" href="#properties"></a>.</p>
 
-  <p>The class ‘Distribution’ is classified as ‘Recommended’ in <a class="no-sectionRef" href="#recommended-classes"></a> to allow for cases that a particular Dataset does not have a downloadable Distribution, and in such cases the sender of data would not be able to provide this information. However, it can be expected that in the majority of cases Datasets do have downloadable Distributions, and in such cases the provision of information on the Distribution is mandatory.</p>
+  <p class='light'>The class ‘Distribution’ is classified as ‘Recommended’ in <a class="no-sectionRef" href="#recommended-classes"></a> to allow for cases that a particular Dataset does not have a downloadable Distribution, and in such cases the sender of data would not be able to provide this information. However, it can be expected that in the majority of cases Datasets do have downloadable Distributions, and in such cases the provision of information on the Distribution is mandatory.</p>
 
   <p>All other classes are classified as ‘Optional’ in <a class="no-sectionRef" href="#optional-classes"></a>. A further description of the optional classes is only included as a sub-section in <a class="no-sectionRef" href="#properties"></a> if the Application Profile specifies mandatory or recommended properties for them.</p>
 
 
 
-  <p><i class='light'>Finally, classes and properties added in this Application Profile and extending [[DCAT-AP]] are marked with a prepended &ldquo;plus&rdquo; sign (+), and summarised in the reference table in <a class="no-secRef" href="#geodcat-ap-classes-and-properties"></a>.</i></p>
+  <p><i class='light'>Finally, classes and properties added in this Application Profile and extending [[DCAT-AP]] are marked with a prepended &ldquo;plus&rdquo; sign (+), and summarised in the reference table in <a class="no-secRef" href="#epos-dcat-ap-classes-and-properties"></a>.</i></p>
 
   <section id="namespaces">
 
@@ -185,7 +170,7 @@ table code, table pre {
 
     <p>The namespace for EPOS-DCAT-AP is: <code>https://www.epos-eu.org/epos-dcat-ap</code></p>
 
-    <p>The suggested namespace prefix is: <code>epos</code></p>
+    <p>The namespace prefix is: <code>epos</code></p>
 
     <p>The Application Profile reuses terms from various existing specifications, following <a data-cite="?DWBP#dataVocabularies">established best practices</a> [[?DWBP]]. The following table indicates the full list of corresponding namespaces used in this document.</p>
 
@@ -193,7 +178,7 @@ table code, table pre {
 
   </section>
 
-  <section id="overview" class="light">
+  <section id="overview" >
 
     <h3>Application Profile Overview</h3>
 
@@ -206,7 +191,7 @@ table code, table pre {
       are directly mentioned as the range of properties. The figure, therefore, might not highlight all the constraints and recommendations for these supportive classes, which are documented in the following sections.
     </p></aside>
 
-    <figure id="fig-epos-dcat-ap-uml-class-diagram">
+    <figure id="fig-epos-dcat-ap-uml-class-diagram" class="light">
     <a href="./epos-dcat-ap_v2.0.0.svg" title="view full-size image"><img src="./epos-dcat-ap_v2.0.0.svg" alt="EPOS-DCAT-AP UML Class Diagram"/></a>
     <figcaption>EPOS-DCAT-AP UML Class Diagram</figcaption>
     </figure>
@@ -302,92 +287,44 @@ A property which is not mentioned but would be applicable for a class according 
 
 <p>Examples on the use of these properties, encoded in [[Turtle]], are included in the relevant sections. The examples are also available in [[Turtle]], RDF/XML [[RDF-SYNTAX-GRAMMAR]], and JSON-LD [[JSON-LD11]] from a <a href="./examples/">separate folder</a>.</p>
 
-<!-- Activity
-
-<section id="properties-for-activity">
-
-  <h3>+Activity</h3>
-
-  <aside class="note">
-  <p>This class is not included in [[DCAT-AP-20200608]].</p>
-  </aside>
-
-  <div data-include-format="html" data-include-replace="true" data-include="./tables/class-activity.html"></div>
-
-  <p>The use of this class in GeoDCAT-AP is illustrated in <a class="no-sectionRef" href="#conformance-test-results"></a>.</p>
-
-  <section id="mandatory-properties-for-activity">
-
-  <h4>Mandatory properties for Activity</h4>
-
-  <aside class="note">
-  <p>The following properties are not included in [[DCAT-AP-20200608]]:</p>
-  <ul>
-  <li>+<a href="#activity-generated">generated</a></li>
-  <li>+<a href="#activity-qualified-association">qualified association</a></li>
-  <li>+<a href="#activity-used">used</a></li>
-  </ul>
-  </aside>
-
-  <div data-include-format="html" data-include-replace="true" data-include="./tables/mandatory-properties-for-activity.html"></div>
-
-  </section>
-
-  <section id="examples-for-activity">
-
-  <h4>Examples for Activity</h4>
-
-  <p><a href="#ex-activity"></a> shows the use of class <code>prov:Activity</code> to specify the results of a testing activity assessing the conformance of a given resource against a given specification - as illustrated in <a class="no-sectionRef" href="#conformance-test-results"></a>.</p>
-
-  <aside class="example" id="ex-activity" title="A testing activity">
-  <pre data-include-format="text" data-include="./examples/activity.ttl"></pre>
-  </aside>
-
-  </section>
-
-</section>
-
--->
-
 <!-- Address -->
 
 <section id="properties-for-address">
 
   <h3>Class: Address</h3>
-
-  <aside class="note">
-  <p>This class is not included in [[DCAT-AP-20200608]].</p>
-  </aside>
+    <aside class="note">
+    <p>This class is included in [[EPOS-DCAT-AP]].</p>
+    </aside>
 
   <div data-include-format="html" data-include-replace="true" data-include="./tables/class-address.html"></div>
 
   <section id="mandatory-properties-for-address">
 
-  <h4>Mandatory properties for Address</h4>
+    <h4>Mandatory properties</h4>
 
-  <aside class="note">
-    <p>The following properties are not included in [[DCAT-AP-20200608]]:</p>
-    <ul>
-      <li><a href="#address-country-name">country-name</a></li>
-      <li><a href="#address-locality">locality</a></li>
-      <li><a href="#address-postal-code">postal-code</a></li>
-      <li><a href="#address-street-address">street-address </a></li>
-    </ul>
-  </aside>
+    <aside class="note">
+      <p>The following properties are included in [[EPOS-DCAT-AP]]:</p>
+      <ul>
+        <li><a href="#address-country-name">country-name</a></li>
+        <li><a href="#address-locality">locality</a></li>
+        <li><a href="#address-postal-code">postal-code</a></li>
+        <li><a href="#address-street-address">street-address </a></li>
+      </ul>
+    </aside>
 
-  <div data-include-format="html" data-include-replace="true" data-include="./tables/mandatory-properties-for-address.html"></div>
+    <div data-include-format="html" data-include-replace="true" data-include="./tables/mandatory-properties-for-address.html"></div>
 
   </section>
 
-  <section id="examples-for-address-kind">
+  <section id="examples-for-address">
 
-  <h4>Examples for Address </h4>
+    <h4>Example</h4>
 
-  <aside class="example" id="ex-address" title="Address (Kind)">
-  <p>The address in this example is the same of <a href="#ex-postaladdress"></a>, but represented by using [[VCARD-RDF]].</p>
-  <p>For the mapping between [[LOCN]] and [[VCARD-RDF]], see [[?LOCN-MAPPING]].</p>
-  <pre data-include-format="text" data-include="./examples/address.ttl"></pre>
-  </aside>
+    <aside class="example" id="ex-address" title="Address">
+    <p>The address in this example is the same of <a href="#ex-postaladdress"></a>, but represented by using [[VCARD-RDF]].</p>
+    <p>For the mapping between [[LOCN]] and [[VCARD-RDF]], see [[?LOCN-MAPPING]].</p>
+    <pre data-include-format="text" data-include="./examples/address.ttl"></pre>
+    </aside>
 
   </section>
 
@@ -402,17 +339,17 @@ A property which is not mentioned but would be applicable for a class according 
   <div data-include-format="html" data-include-replace="true" data-include="./tables/class-agent.html"></div>
 
   <section id="mandatory-properties-for-agent">
-     <h4>Mandatory property for Agent</h4>
+     <h4>Mandatory property</h4>
      <div data-include-format="html" data-include-replace="true" data-include="./tables/mandatory-properties-for-agent.html"></div>
   </section>
 
   <section id="recommended-properties-for-agent">
-    <h4>Recommended property for Agent</h4>
+    <h4>Recommended property</h4>
     <div data-include-format="html" data-include-replace="true" data-include="./tables/recommended-properties-for-agent.html"></div>
   </section>
 
   <section id="examples-for-agent">
-    <h4>Examples for Agent</h4>
+    <h4>Example</h4>
     <aside class="example" id="ex-agent" title="Agent">
     <pre data-include-format="text" data-include="./examples/agent.ttl"></pre>
     </aside>
@@ -422,41 +359,34 @@ A property which is not mentioned but would be applicable for a class according 
 
 <!-- Catalogue -->
 
-<section id="properties-for-catalogue">
+<section id="properties-for-catalog">
 
     <h3>Class: Catalog</h3>
+    <div data-include-format="html" data-include-replace="true" data-include="./tables/class-catalog.html"></div>
 
-    <div data-include-format="html" data-include-replace="true" data-include="./tables/class-catalogue.html"></div>
-
-    <section id="mandatory-properties-for-catalogue">
-
+    <section id="mandatory-properties-for-catalog">
       <h4>Mandatory properties for Catalog</h4>
       <aside class="note light">
         <p>The following property extends range in [[EPOS-DCAT-AP]]:<br>
           <ul class='one'>
           <li >
-            <a href="#catalogue-publisher">publisher</a>: from <code>foaf:Agent</code> to <code>schema:Organization</code></p>
+            <a href="#catalog-publisher">publisher</a>: from <code>foaf:Agent</code> to <code>schema:Organization</code></p>
           </li>
         <ul>
       </aside>
-
-      <div data-include-format="html" data-include-replace="true" data-include="./tables/mandatory-properties-for-catalogue.html"></div>
-
+      <div data-include-format="html" data-include-replace="true" data-include="./tables/mandatory-properties-for-catalog.html"></div>
     </section>
 
     <section id="recommended-properties-for-catalogue">
-
-    <h4>Recommended properties for Catalog</h4>
-
-    <div data-include-format="html" data-include-replace="true" data-include="./tables/recommended-properties-for-catalogue.html"></div>
-
+      <h4>Recommended properties for Catalog</h4>
+      <div data-include-format="html" data-include-replace="true" data-include="./tables/recommended-properties-for-catalog.html"></div>
     </section>
 
     <section id="optional-properties-for-catalogue">
 
     <h4>Optional properties for Catalog</h4>
 
-    <div data-include-format="html" data-include-replace="true" data-include="./tables/optional-properties-for-catalogue.html"></div>
+    <div data-include-format="html" data-include-replace="true" data-include="./tables/optional-properties-for-catalog.html"></div>
 
   </section>
 
@@ -1835,11 +1765,11 @@ Often there is applicable legislation or a licency policy in place which determi
 -->
 <!-- Classes and Properties added by GeoDCAT-AP -->
 
-<section id="geodcat-ap-classes-and-properties">
+<section id="epos-dcat-ap-classes-and-properties">
 
-<h2>Classes and properties added by GeoDCAT-AP</h2>
+<h2>Classes and properties added by EPOS-DCAT-AP</h2>
 <!--
-<div data-include-format="html" data-include-replace="true" data-include="./tables/geodcat-ap-classes-and-properties.html"></div>
+<div data-include-format="html" data-include-replace="true" data-include="./tables/epos-dcat-ap-classes-and-properties.html"></div>
 -->
 </section>
 
