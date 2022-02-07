@@ -590,7 +590,7 @@ A property which is not mentioned but would be applicable for a class according 
       <ul class='one'><li >
         <a href="#data-service-publisher">publisher</a> range extended to <code>schema:Organization</code>
       </li>
-      <li><a href="#data-service-endpoint-description">endpointDescription</a> range extended to <code>hydra:Operation;</code>
+      <li><a href="#data-service-endpoint-description">endpointDescription</a> range extended to  <code>hydra:Operation;</code>
       </li>
       </ul>
     </p>
@@ -609,8 +609,6 @@ A property which is not mentioned but would be applicable for a class according 
       <li><a href="#data-service-spatial-coverage">spatial / geographic coverage</a></li>
       <li><a href="#data-service-temporal-coverage">temporal coverage</a></li>
     </ul>
-  </aside>
-  <aside class="note">
     <p>The following properties are inherited from superclass <a data-cite="VOCAB-DCAT-2#Class:Resource">dcat:Resource </a>[[VOCAB-DCAT-2]]</p>
     <ul>
         <li><a href="#data-service-conforms-to">conformsTo</a></li>
@@ -643,7 +641,7 @@ A property which is not mentioned but would be applicable for a class according 
 
     <h4>Mandatory properties</h4>
     <aside class="note">
-      <p>The following property is included in [[EPOS-DCAT-AP]]:</p>
+      The following property is mandatory in [[EPOS-DCAT-AP]]:
       <ul>
         <li><a href="#dataset-identifier">identifier</a></li>
       </ul>
@@ -655,7 +653,16 @@ A property which is not mentioned but would be applicable for a class according 
   <section id="recommended-properties-for-dataset">
 
   <h4>Recommended properties</h4>
-
+  <aside class="note">
+  <p>[[EPOS-DCAT-AP]] extended the range of the following properties:<br>
+    <ul class='one'><li >
+      <a href="#dataset-contact-point">contactPoint</a> range extended to <code>schema:ContactPoint</code>
+    </li>
+    <li><a href="#dataset-publisher">publisher</a> range extended to  <code>schema:Organization</code>
+    </li>
+    </ul>
+  </p>
+  </aside>
   <div data-include-format="html" data-include-replace="true" data-include="./tables/recommended-properties-for-dataset.html"></div>
 
   </section>
@@ -671,6 +678,12 @@ A property which is not mentioned but would be applicable for a class according 
       <li><a href="#dataset-has-part">hasPart</a></li>
       <li><a href="#dataset-is-part-of">isPartOf</a></li>
     </ul>
+    <p>[[EPOS-DCAT-AP]] extended the range of the following property:<br>
+      <ul class='one'>
+      <li><a href="#dataset-creator">creator</a> range extended to  <code>schema:Organization</code>
+      </li>
+      </ul>
+    </p>
   </aside>
 
   <div data-include-format="html" data-include-replace="true" data-include="./tables/optional-properties-for-dataset.html"></div>
