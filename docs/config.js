@@ -60,8 +60,8 @@ var respecConfig = {
     ],    */
 //    implementationReportURI:"https://joinup.ec.europa.eu/document/geodcat-ap-implementations",
     errata:"https://github.com/",
-   //specStatus: "unofficial",
-    specStatus: "ED",
+    specStatus: "unofficial",
+
 //    specStatus: "FPWD",
 //   specStatus: "WD",
 //    specStatus: "LC",
