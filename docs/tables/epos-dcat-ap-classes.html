@@ -11,9 +11,6 @@
         <p>URI</p>
     </th>
     <th class="small">
-        <p>Subclass Of</p>
-    </th>
-    <th class="small">
         <p>Reference</p>
     </th>
   </tr>
@@ -27,9 +24,8 @@
         <p>A postal address of the Kind.</p>
     </td>
     <td>
-        <code>vcard:Address</code>
+        <p><code>vcard:Address</code></p>
     </td>
-    <td />
     <td>
         <p><a data-cite="VCARD-RDF#d4e1292">§&nbsp;Address</a><br>[[VCARD-RDF]]</p>
     </td>
@@ -43,10 +39,9 @@
         <p>A Device.</p>
     </td>
     <td>
-        <code>epos:Equipment</code>
+        <p><code>epos:Equipment</code> <br>subclass of <code>dcat:Resource</code></p>
     </td>
-    <td><code>dcat:Resource</code>
-    </td>
+
     <td>
       <p><a data-cite="VOCAB-DCAT-2#Class:Resource">§&nbsp;<bdi class="secno">6.4 </bdi>Class: Resource</a><br>[[VOCAB-DCAT-2]]</p>
      </td>
@@ -61,9 +56,8 @@
         <p>Examples include laboratories, special habitats, libraries, databases, biological archives, etc. A type of facility could be a research infrastructure a higher aggregated entity.</p>
     </td>
     <td>
-        <code>epos:Facility</code>
+        <p><code>epos:Facility</code><br>subclass of <code>dcat:Resource</code></p>
     </td>
-    <td><code>dcat:Resource</code></td>
     <td>
       <p><a data-cite="VOCAB-DCAT-2#Class:Resource">§&nbsp;<bdi class="secno">6.4 </bdi>Class: Resource</a><br>[[VOCAB-DCAT-2]]</p>
      </td>
@@ -71,17 +65,14 @@
 
   <tr class="class optional ap-ext" id="iritemplate">
     <td>
-    <p><a href="#properties-for-iritemplate">IriTemplate</a></p>
+      <p><a href="#properties-for-iritemplate">IriTemplate</a></p>
     </td>
     <td>
-    <p>An IriTemplate consists of a template literal and a set of mappings.</p>
+      <p>An IriTemplate consists of a template literal and a set of mappings.</p>
     </td>
     <td>
-
-        <code>hydra:IriTemplate</code>
+        <p><code>hydra:IriTemplate</code><br>subclass of <code>dcat:Resource</code></p>
     </td>
-    <td>
-        <code>hydra:Resource</code></td>
     <td>
         <p><a class="src-ref" data-cite="HYDRA1#IriTemplate">§&nbsp;<bdi class="secno">IriTemplate</a><br>[[HYDRA]]</p>
     </td>
@@ -95,10 +86,7 @@
         <p>This maps a variable used in the template to a property and may optionally specify whether that variable is required or not. The syntax of the template literal is specified by its datatype and defaults to the [RFC6570] URI Template syntax, which can be explicitly indicated by hydra:Rfc6570Template.</p>
     </td>
     <td>
-        <code>hydra:IriTemplateMapping</code>
-    </td>
-    <td>
-        <code>hydra:Resource</code>
+        <p><code>hydra:IriTemplateMapping</code><br>subclass of <code>dcat:Resource</code></p>
     </td>
     <td>
         <p><a class="src-ref" data-cite="HYDRA1#IriTemplateMapping">§&nbsp;<bdi class="secno">IriTemplateMapping</a><br>[[HYDRA]]</p>
@@ -109,13 +97,10 @@
         <p><a href="#properties-for-operation">Operation</a></p>
     </td>
     <td>
-        <p>A description of a web service operation.</p>
+        <p>A description of a data service operation.</p>
     </td>
     <td>
-        <code>hydra:Operation</code>
-    </td>
-    <td>
-        <code>hydra:Resource</code>
+        <p><code>hydra:Operation</code><br>subclass of <code>dcat:Resource</code></p>
     </td>
     <td>
         <p><a class="src-ref" data-cite="HYDRA1#Operation">§&nbsp;<bdi class="secno">Operation</a><br>[[HYDRA]]</p>
@@ -129,9 +114,8 @@
         <p>Physical address of the item.</p>
     </td>
     <td>
-        <code>schema:PostalAddress</code>
+        <p><code>schema:PostalAddress</code></p>
     </td>
-    <td />
     <td>
         <a data-cite="SCHEMA-ORG#PostalAddress">§&nbsp;PostalAddress</a><br>[[SCHEMA-ORG]]
     </td>
@@ -146,7 +130,6 @@
     <td>
         <p><code>foaf:Project</code></p>
     </td>
-    <td />
     <td>
        <p><a class="src-ref" data-cite="FOAF#term_Project">§&nbsp;Class: foaf:Project</a><br>[[FOAF]]</p>
     </td>
@@ -161,9 +144,8 @@
     <td>
         <p><code>schema:PropertyValue</code></p>
     </td>
-    <td />
     <td>
-      <p><a href="https://schema.org/PropertyValue">§ Class: PropertyValue</a>[[SCHEMA-ORG]]</p>
+      <p><a href="https://schema.org/PropertyValue">§ Class: PropertyValue</a><br>[[SCHEMA-ORG]]</p>
     </td>
   </tr>
   <tr class="class optional ap-ext" id="publication">
@@ -171,13 +153,10 @@
         <p><a href="#properties-for-publication">Publication</a></p>
     </td>
     <td>
-    <p>A text publication is a resource relating to a dataset, data product or other.</p>
+        <p>A text publication is a resource relating to a dataset, data product or other.</p>
     </td>
     <td>
-    <p><code>epos:Publication</code></p>
-    </td>
-    <td>
-        <p><code>schema:CreativeWork</code></p>
+        <p><code>epos:Publication</code><br>subclass of <code>schema:CreativeWork</code></p>
     </td>
     <td>
       <p><a href="https://schema.org/#CreativeWork">§&nbsp;CreativeWork</a><br>[[SCHEMA-ORG]]</p>
@@ -191,10 +170,7 @@
         <p>Describes an offer of an RI to the community. It could be free or ask for something in return (money, publication of the datasets, etc.).</p>
     </td>
     <td>
-        <p><code>schema:Service</code></p>
-    </td>
-    <td>
-        <p><code>schema:Intangible</code></p>
+        <p><code>schema:Service</code><br>subclass of <code>schema:Intangible</code></p>
     </td>
     <td>
       <a href="https://schema.org/Service">§&nbsp;Service</a><br>[[SCHEMA-ORG]]
@@ -209,9 +185,8 @@
         <p>This represents software packages, applications and programs.</p>
     </td>
     <td>
-        <p><code>schema:SoftwareApplication </code></p>
+        <p><code>schema:SoftwareApplication </code><br>subclass of <code>schema:CreativeWork</code></p>
     </td>
-    <td><p><code>schema:CreativeWork</code></p>
     <td>
         <a href="https://schema.org/SoftwareApplication">§&nbsp;SoftwareApplication</a><br>[[SCHEMA-ORG]]
     </td>
@@ -224,9 +199,8 @@
         <p>Computer programming source code. Example: Full (compile ready) solutions, code snippet samples, scripts, templates.</p>
     </td>
     <td>
-        <code>schema:SoftwareSourceCode</code>
+        <p><code>schema:SoftwareSourceCode</code><br>subclass of <code>schema:CreativeWork</code></p>
     </td>
-    <td><code>schema:CreativeWork</code>
     <td>
         <p><a href="https://schema.org/SoftwareSourceCode">§&nbsp;SoftwareSourceCode</a><br>[[SCHEMA-ORG]]</p>
     </td>
