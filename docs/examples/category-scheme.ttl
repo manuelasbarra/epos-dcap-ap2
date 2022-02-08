@@ -10,6 +10,6 @@
 
 # ConceptScheme
 <epos:Seismology> a skos:ConceptScheme ;
-	dct:title "Seismology" ;
 	dct:description "It contains the concepts of the Seismology domain" ;
+	dct:title "Seismology" ;
 .
