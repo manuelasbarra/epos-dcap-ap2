@@ -14,9 +14,9 @@
 <https://www.epos-eu.org/epos-dcat-ap/Seismology/Dataset/001> a dcat:Dataset ;
 
   # Mandatory properties
-  	dct:description "Primary Seismic Waveform Data" ;
-  	dct:identifier "https://www.epos-eu.org/epos-dcat-ap/Seismology/Dataset/001" ;
-  	dct:title "Primary Seismic Waveform Data" ;
+    dct:description "Primary Seismic Waveform Data" ;
+    dct:identifier "https://www.epos-eu.org/epos-dcat-ap/Seismology/Dataset/001" ;
+    dct:title "Primary Seismic Waveform Data" ;
 
   # Recommended properties
     dcat:contactPoint <http://orcid.org/0000-0002-6250-0000/contactPoint> ;
@@ -28,14 +28,14 @@
     # This property refers to an Organization responsible for making the Dataset available.
     dct:publisher <PIC:000518944> ;
     # This property refers to a geographic region that is covered by the Dataset.
-  	dct:spatial [ a dct:Location ;
-  		 dcat:bbox "POLYGON((180.0 -90.0, -180.0 -90.0, -180.0 90.0, 180.0 90.0, 180.0 -90.0))"^^gsp:wktLiteral ;
-  	];
-  	# This property refers to a temporal period that the Dataset covers.
-  	dct:temporal [ a dct:PeriodOfTime ;
-  		dcat:startDate "1988-01-01T00:00:00Z"^^xsd:dateTime ;
-  		dcat:endDate "2022-01-01T00:00:00Z"^^xsd:dateTime ;
-  	] ;
+    dct:spatial [ a dct:Location ;
+    	 dcat:bbox "POLYGON((180.0 -90.0, -180.0 -90.0, -180.0 90.0, 180.0 90.0, 180.0 -90.0))"^^gsp:wktLiteral ;
+    ];
+    # This property refers to a temporal period that the Dataset covers.
+    dct:temporal [ a dct:PeriodOfTime ;
+    	dcat:startDate "1988-01-01T00:00:00Z"^^xsd:dateTime ;
+    	dcat:endDate "2022-01-01T00:00:00Z"^^xsd:dateTime ;
+    ] ;
 
   # Optional properties
   	adms:identifier [ a adms:Identifier ;
@@ -56,12 +56,12 @@
     # This property refers to a related Dataset that is part of the described Dataset.
     # dct:hasPart <https://www.epos-eu.org/epos-dcat-ap/Seismology/Dataset/otherDataset> ;
 
-  	# This property refers to a related Dataset of which the described Dataset is a version, edition, or adaptation.
-  	# dct:hasVersion <https://www.epos-eu.org/epos-dcat-ap/Seismology/Dataset/otherDataset> ;
+    # This property refers to a related Dataset of which the described Dataset is a version, edition, or adaptation.
+    # dct:hasVersion <https://www.epos-eu.org/epos-dcat-ap/Seismology/Dataset/otherDataset> ;
 
     # This property refers to a related Dataset in which the described Dataset is physically or logically included.
     # dct:isPartOf <https://www.epos-eu.org/epos-dcat-ap/Seismology/Dataset/otherDataset> ;
 
-  	# This property refers to a related Dataset of which the described Dataset is a version, edition, or adaptation.
-  	# dct:isVersionOf <https://www.epos-eu.org/epos-dcat-ap/Seismology/Dataset/otherDataset> ;
+    # This property refers to a related Dataset of which the described Dataset is a version, edition, or adaptation.
+    # dct:isVersionOf <https://www.epos-eu.org/epos-dcat-ap/Seismology/Dataset/otherDataset> ;
 .
