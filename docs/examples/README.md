@@ -45,6 +45,9 @@
 <td><a href="./category.ttl"><code>category.ttl</code></a></td>
 </tr>
 <tr>
+<td><a href="./contact-point.ttl"><code>contact-point.ttl</code></a></td>
+</tr>
+<tr>
 <td><a href="./data-service.ttl"><code>data-service.ttl</code></a></td>
 </tr>
 <tr>
@@ -52,8 +55,6 @@
 </tr>
 <tr>
 <td><a href="./distribution.ttl"><code>distribution.ttl</code></a></td>
-<td><a href="./distribution.rdf"><code>distribution.rdf</code></a></td>
-<td><a href="./distribution.jsonld"><code>distribution.jsonld</code></a></td>
 </tr>
 <tr>
 <td><a href="./document.ttl"><code>document.ttl</code></a></td>
