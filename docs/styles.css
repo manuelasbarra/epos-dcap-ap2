@@ -6,3 +6,6 @@ table.simple th.small{width:15%;}
 table.simple th.medium{width:25%;}
 table.simple th.large{width:45%;}
 table.simple td.center{text-align: center;}
+.hljs{
+  background: #fcfaee!important;
+}
