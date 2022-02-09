@@ -100,7 +100,7 @@ var respecConfig = {
 
       //        companyURL: "https://ec.europa.eu/jrc/"
     }],
-    authors: [
+  /*  authors: [
       {
         name:   "Rossana Paciello",
         orcid:  "0000-0002-6975-1991",
@@ -114,8 +114,7 @@ var respecConfig = {
         company:    "INGV - Istituto Nazionale Geofisisca e Vulcanologia, Italy"
 
       }
-    ],
-
+    ],*/
     otherLinks: [
     {
       key: "Document status",
