@@ -40,23 +40,15 @@
 </tr>
 <tr>
 <td><a href="./category-scheme.ttl"><code>category-scheme.ttl</code></a></td>
-<td><a href="./category-scheme.rdf"><code>category-scheme.rdf</code></a></td>
-<td><a href="./category-scheme.jsonld"><code>category-scheme.jsonld</code></a></td>
 </tr>
 <tr>
 <td><a href="./category.ttl"><code>category.ttl</code></a></td>
-<td><a href="./category.rdf"><code>category.rdf</code></a></td>
-<td><a href="./category.jsonld"><code>category.jsonld</code></a></td>
 </tr>
 <tr>
 <td><a href="./data-service.ttl"><code>data-service.ttl</code></a></td>
-<td><a href="./data-service.rdf"><code>data-service.rdf</code></a></td>
-<td><a href="./data-service.jsonld"><code>data-service.jsonld</code></a></td>
 </tr>
 <tr>
 <td><a href="./dataset.ttl"><code>dataset.ttl</code></a></td>
-<td><a href="./dataset.rdf"><code>dataset.rdf</code></a></td>
-<td><a href="./dataset.jsonld"><code>dataset.jsonld</code></a></td>
 </tr>
 <tr>
 <td><a href="./distribution.ttl"><code>distribution.ttl</code></a></td>
