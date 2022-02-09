@@ -21,7 +21,7 @@ var respecConfig = {
     doJsonLd: true,
     noRecTrack: false,
     subtitle: "An extension of the DCAT Application Profile for Research Infrastructures in the solid-Earth domain",
-//    copyrightHolder: "European Union",
+    copyrightHolder: "",
     copyrightURL: "",
     copyrightStart: "",
     publishDate: "2022-02-07",
