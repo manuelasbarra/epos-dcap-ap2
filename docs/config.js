@@ -99,6 +99,12 @@ var respecConfig = {
           company: "INGV - Istituto Nazionale Geofisisca e Vulcanologia, Italy"
 
       //        companyURL: "https://ec.europa.eu/jrc/"
+    },
+    {
+      name: 	"Manuela Sbarra",
+      orcid:  "0000-0001-7746-6309",
+      company:    "INGV - Istituto Nazionale Geofisisca e Vulcanologia, Italy"
+
     }],
   /*  authors: [
       {
