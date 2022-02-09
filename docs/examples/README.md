@@ -78,6 +78,7 @@
 <td><a href="./metric.rdf"><code>metric.rdf</code></a></td>
 <td><a href="./metric.jsonld"><code>metric.jsonld</code></a></td>
 </tr>
+
 <tr>
 <td><a href="./period-of-time-with-owl-time.ttl"><code>period-of-time-with-owl-time.ttl</code></a></td>
 <td><a href="./period-of-time-with-owl-time.rdf"><code>period-of-time-with-owl-time.rdf</code></a></td>
@@ -91,6 +92,9 @@
 </tr>
 <tr>
 <td><a href="./property-value.ttl"><code>property-value.ttl</code></a></td>
+</tr>
+<tr>
+<td><a href="./person.ttl"><code>person.ttl</code></a></td>
 </tr>
 <tr>
 <td><a href="./provenance-statement.ttl"><code>provenance-statement.ttl</code></a></td>
