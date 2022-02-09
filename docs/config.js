@@ -148,11 +148,11 @@ var respecConfig = {
     lint: "false",
     localBiblio: {
       "DCAT-AP": {
-        "href":"https://www.w3.org/TR/vocab-dcat-2/",
-        "title":"DCAT Application Profile for data portals in Europe. Version 2",
+        "href":"https://joinup.ec.europa.eu/solution/dcat-application-profile-data-portals-europe",
+        "title":"DCAT Application Profile for data portals in Europe. Version 2.1.0",
         //"publisher":"TBD"
-        //"publisher":"European Commission",
-        "date":"8 June 2020"
+        "publisher":"European Commission",
+        "date":"2021"
       },
       "EPOS": {
         "href":"https://www.epos-eu.org/",
