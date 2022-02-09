@@ -6,7 +6,6 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 []
-# ContactPoint
 <http://orcid.org/0000-0001-7750-0000/legalContact> a schema:ContactPoint ;
 			schema:contactType "legalContact";
 			schema:email "test1@email.it ";

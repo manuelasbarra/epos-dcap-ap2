@@ -87,7 +87,10 @@
 <td><a href="./period-of-time.ttl"><code>period-of-time.ttl</code></a></td>
 </tr>
 <tr>
-<td><a href="./postaladdress-agent.ttl"><code>postaladdress.ttl</code></a></td>
+<td><a href="./postal-address.ttl"><code>postal-address.ttl</code></a></td>
+</tr>
+<tr>
+<td><a href="./property-value.ttl"><code>property-value.ttl</code></a></td>
 </tr>
 <tr>
 <td><a href="./provenance-statement.ttl"><code>provenance-statement.ttl</code></a></td>
