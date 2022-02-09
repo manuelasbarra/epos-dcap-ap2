@@ -5,11 +5,11 @@
 
 []
 schema:identifier [ a schema:PropertyValue ;
-                    		schema:propertyID  "orcid" ;
-                    		schema:value "0000-0001-7750-0000" ;
-                   ];
+  		schema:propertyID  "orcid" ;
+  		schema:value "0000-0001-7750-0000" ;
+ ];
 schema:identifier [ a schema:PropertyValue ;
-                  	   schema:propertyID  "ScopusAuthorID" ;
-                  	   schema:value "5500056000" ;
-                  ];
+  	  schema:propertyID  "ScopusAuthorID" ;
+  	  schema:value "5500056000" ;
+ ];
 .

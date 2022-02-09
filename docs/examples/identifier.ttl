@@ -6,7 +6,7 @@
 
 []
 adms:identifier [ a adms:Identifier ;
-											adms:schemeAgency "DDSS-ID" ;
-											skos:notation "WP08-DDSS-001" ;
-  							];
+				adms:schemeAgency "DDSS-ID" ;
+				skos:notation "WP08-DDSS-001" ;
+	];
 .
