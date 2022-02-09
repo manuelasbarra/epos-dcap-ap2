@@ -92,12 +92,19 @@ var respecConfig = {
     edDraftURI:           "TDB",
   //  issueBase:            "https://github.com/",
   //  github:               "https://github.com/",
+    editors: [
+        {
+          name:   "Rossana Paciello",
+          orcid:  "0000-0002-6975-1991",
+          company: "INGV - Istituto Nazionale Geofisisca e Vulcanologia, Italy"
 
+      //        companyURL: "https://ec.europa.eu/jrc/"
+    }],
     authors: [
       {
         name:   "Rossana Paciello",
         orcid:  "0000-0002-6975-1991",
-        company:    "INGV - Istituto Nazionale Geofisisca e Vulcanologia, Italy"
+        company: "INGV - Istituto Nazionale Geofisisca e Vulcanologia, Italy"
 
 //        companyURL: "https://ec.europa.eu/jrc/"
       },
@@ -123,7 +130,6 @@ var respecConfig = {
       key: "Document version",
       data: [
       {
-//        value: "0.2"
         value: "2.0"
       }
       ]
@@ -151,14 +157,21 @@ var respecConfig = {
         "href":"http://www.w3.org/2006/http#",
         "title":"HTTP"
        },
-       "HYDRA":{
+      "HYDRA":{
          "href":"http://www.w3.org/ns/hydra/core#",
          "title":"HYDRA"
-        },
-        "HYDRA1":{
+      },
+      "HYDRA1":{
           "href":"http://api.verint.com/w3c/hydra#",
           "title":"HYDRA"
-         },
+      },
+      "RFC6570":{
+          "href":"https://www.rfc-editor.org/rfc/rfc6570",
+          "title":"URI Template",
+          "authors":["J. Gregorio", "R. Fielding", "M. Hadley", "M. Nottingham" ,"D. Orchard."],
+          "publisher":"IETF",
+          "date":"2016"
+      },
       "ADMS-SKOS":{
         "href":"https://joinup.ec.europa.eu/svn/adms/ADMS_v1.00/ADMS_SKOS_v1.00.html",
         "title":"Joinup. ADMS Controlled Vocabularies",
@@ -181,7 +194,8 @@ var respecConfig = {
         "authors": ["Andrea Perego","Timothy Austin"],
         "status": "Working Draft",
         "publisher":"European Commission, Joint Research Centre (JRC)",
-        "date": "2019"
+        "date": "March 2012",
+        "status": "Proposed Standard." 
       },
       "LOCN-MAPPING": {
         "href": "https://semiceu.github.io/locn-mapping/",
