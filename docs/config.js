@@ -22,8 +22,8 @@ var respecConfig = {
     noRecTrack: false,
     subtitle: "An extension of the DCAT Application Profile for Research Infrastructures in the solid-Earth domain",
 //    copyrightHolder: "European Union",
-//    copyrightURL: "https://europa.eu/",
-  //  copyrightStart: 2020,
+    copyrightURL: "",
+    copyrightStart: "",
     publishDate: "2022-02-07",
 
   //  alternateFormats: [
