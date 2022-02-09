@@ -8,28 +8,19 @@
 []
 # ContactPoint
 <http://orcid.org/0000-0001-7750-0000/legalContact> a schema:ContactPoint ;
-  # Recommended properties
-		schema:contactType "legalContact";
-
-  # Optional properties
-		schema:email "test1@email.it ";
-		schema:availableLanguage "en" ;
+			schema:contactType "legalContact";
+			schema:email "test1@email.it ";
+			schema:availableLanguage "en" ;
 .
 
 <http://orcid.org/0000-0001-7750-0000/financialContact> a schema:ContactPoint ;
-  # Recommended properties
-		schema:contactType "financialContact" ;
-
-  # Optional properties
-		schema:email "test1@email.it ";
-		schema:availableLanguage "en" ;
+			schema:contactType "financialContact" ;
+			schema:email "test1@email.it ";
+			schema:availableLanguage "en" ;
 .
 
 <http://orcid.org/0000-0001-7750-0000/scientificContact> a schema:ContactPoint ;
-  # Recommended properties
-		schema:contactType "scientificContact" ;
-
-  # Optional properties
-		schema:email "test1@email.it ";
-		schema:availableLanguage "en" ;
+			schema:contactType "scientificContact" ;
+			schema:email "test1@email.it ";
+			schema:availableLanguage "en" ;
 .

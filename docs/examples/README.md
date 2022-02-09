@@ -85,8 +85,6 @@
 </tr>
 <tr>
 <td><a href="./period-of-time.ttl"><code>period-of-time.ttl</code></a></td>
-<td><a href="./period-of-time.rdf"><code>period-of-time.rdf</code></a></td>
-<td><a href="./period-of-time.jsonld"><code>period-of-time.jsonld</code></a></td>
 </tr>
 <tr>
 <td><a href="./postaladdress-agent.ttl"><code>postaladdress.ttl</code></a></td>
