@@ -62,6 +62,9 @@
 <td><a href="./document.jsonld"><code>document.jsonld</code></a></td>
 </tr>
 <tr>
+<td><a href="./identifier.ttl"><code>identifier.ttl</code></a></td>
+</tr>
+<tr>
 <td><a href="./kind.ttl"><code>kind.ttl</code></a></td>
 <td><a href="./kind.rdf"><code>kind.rdf</code></a></td>
 <td><a href="./kind.jsonld"><code>kind.jsonld</code></a></td>
