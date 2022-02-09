@@ -59,7 +59,7 @@ var respecConfig = {
     }
     ],    */
 //    implementationReportURI:"https://joinup.ec.europa.eu/document/geodcat-ap-implementations",
-    errata:"https://github.com/",
+  //  errata:"https://github.com/",
     specStatus: "unofficial",
 
 //    specStatus: "FPWD",
@@ -89,7 +89,7 @@ var respecConfig = {
 //    latestVersionURI:     "https://semiceu.github.io/GeoDCAT-AP/releases/2.0.0/",
   //  latestVersionURI:     "TBD",
 /* SEMICEU specific - end   */
-    edDraftURI:           "TDB",
+  //  edDraftURI:           "TDB",
   //  issueBase:            "https://github.com/",
   //  github:               "https://github.com/",
     editors: [
