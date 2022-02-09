@@ -19,10 +19,10 @@
 
   # Optional properties
     schema:address [ a schema:PostalAddress ;
-                          schema:streetAddress "address, 002" ;
-                          schema:addressLocality "Rome" ;
-                          schema:postalCode "00143" ;
-                          schema:addressCountry "Italy" ;
+                schema:streetAddress "address, 002" ;
+                schema:addressLocality "Rome" ;
+                schema:postalCode "00143" ;
+                schema:addressCountry "Italy" ;
     ];
     schema:contactPoint <http://orcid.org/0000-0001-7750-0000/legalContact> ;
     schema:contactPoint <http://orcid.org/0000-0001-7750-0000/scientificContact> ;
@@ -43,11 +43,11 @@
     schema:leiCode "Legal Entity Identifier Search" ;
     schema:legalName "Institute 2" ;
     schema:address [ a schema:PostalAddress ;
-                        	schema:streetAddress "address, 002" ;
-                        	schema:addressLocality "Rome" ;
-                        	schema:postalCode "00143" ;
-                        	schema:addressCountry "Italy" ;
-	                  ];
+                schema:streetAddress "address, 002" ;
+                schema:addressLocality "Rome" ;
+                schema:postalCode "00143" ;
+                schema:addressCountry "Italy" ;
+    ];
     schema:contactPoint <http://orcid.org/0000-0001-7750-0000/legalContact> ;
     schema:contactPoint <http://orcid.org/0000-0001-7750-0000/scientificContact> ;
     schema:contactPoint <http://orcid.org/0000-0001-7750-0000/financialContact> ;
