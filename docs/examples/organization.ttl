@@ -51,7 +51,7 @@
     schema:contactPoint <http://orcid.org/0000-0001-7750-0000/legalContact> ;
     schema:contactPoint <http://orcid.org/0000-0001-7750-0000/scientificContact> ;
     schema:contactPoint <http://orcid.org/0000-0001-7750-0000/financialContact> ;
-	  schema:email "test2_example@email.it" ;
-	  schema:telephone "+0302206922" ;
-  	schema:url "http://www.test2.it/"^^xsd:anyURI ;
+    schema:email "test2_example@email.it" ;
+    schema:telephone "+0302206922" ;
+    schema:url "http://www.test2.it/"^^xsd:anyURI ;
 .
