@@ -126,8 +126,7 @@ var respecConfig = {
       key: "Document status",
       data: [
       {
-       value: "Under development"
-        //value: "Completed"
+       value: "Draft"
       }
       ]
     },
