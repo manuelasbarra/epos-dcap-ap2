@@ -9,11 +9,6 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="./activity.ttl"><code>activity.ttl</code></a></td>
-<td><a href="./activity.rdf"><code>activity.rdf</code></a></td>
-<td><a href="./activity.jsonld"><code>activity.jsonld</code></a></td>
-</tr>
-<tr>
 <td><a href="./address.ttl"><code>address.ttl</code></a></td>
 </tr>
 <tr>
@@ -21,11 +16,7 @@
 <td><a href="./agent.rdf"><code>agent.rdf</code></a></td>
 <td><a href="./agent.jsonld"><code>agent.jsonld</code></a></td>
 </tr>
-<tr>
-<td><a href="./attribution.ttl"><code>attribution.ttl</code></a></td>
-<td><a href="./attribution.rdf"><code>attribution.rdf</code></a></td>
-<td><a href="./attribution.jsonld"><code>attribution.jsonld</code></a></td>
-</tr>
+
 <tr>
 <td><a href="./catalogue-record.ttl"><code>catalogue-record.ttl</code></a></td>
 <td><a href="./catalogue-record.rdf"><code>catalogue-record.rdf</code></a></td>
