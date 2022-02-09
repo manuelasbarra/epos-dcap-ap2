@@ -165,13 +165,13 @@ var respecConfig = {
           "href":"http://api.verint.com/w3c/hydra#",
           "title":"HYDRA"
       },
-      "RFC6570":{
+    /*  "RFC6570":{
           "href":"https://www.rfc-editor.org/rfc/rfc6570",
           "title":"URI Template",
-          "authors":["J. Gregorio", "R. Fielding", "M. Hadley", "M. Nottingham" ,"D. Orchard."],
+          "authors":["J. Gregorio", "R. Fielding", "M. Hadley", "M. Nottingham" ,"D. Orchard"],
           "publisher":"IETF",
           "date":"2016"
-      },
+      },*/
       "ADMS-SKOS":{
         "href":"https://joinup.ec.europa.eu/svn/adms/ADMS_v1.00/ADMS_SKOS_v1.00.html",
         "title":"Joinup. ADMS Controlled Vocabularies",
@@ -195,7 +195,7 @@ var respecConfig = {
         "status": "Working Draft",
         "publisher":"European Commission, Joint Research Centre (JRC)",
         "date": "March 2012",
-        "status": "Proposed Standard." 
+        "status": "Proposed Standard."
       },
       "LOCN-MAPPING": {
         "href": "https://semiceu.github.io/locn-mapping/",
