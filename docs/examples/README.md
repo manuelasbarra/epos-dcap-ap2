@@ -14,14 +14,7 @@
 <td><a href="./activity.jsonld"><code>activity.jsonld</code></a></td>
 </tr>
 <tr>
-<td><a href="./address-agent.ttl"><code>address-agent.ttl</code></a></td>
-<td><a href="./address-agent.rdf"><code>address-agent.rdf</code></a></td>
-<td><a href="./address-agent.jsonld"><code>address-agent.jsonld</code></a></td>
-</tr>
-<tr>
-<td><a href="./address-kind.ttl"><code>address-kind.ttl</code></a></td>
-<td><a href="./address-kind.rdf"><code>address-kind.rdf</code></a></td>
-<td><a href="./address-kind.jsonld"><code>address-kind.jsonld</code></a></td>
+<td><a href="./address.ttl"><code>address.ttl</code></a></td>
 </tr>
 <tr>
 <td><a href="./agent.ttl"><code>agent.ttl</code></a></td>
@@ -103,6 +96,9 @@
 <td><a href="./period-of-time.ttl"><code>period-of-time.ttl</code></a></td>
 <td><a href="./period-of-time.rdf"><code>period-of-time.rdf</code></a></td>
 <td><a href="./period-of-time.jsonld"><code>period-of-time.jsonld</code></a></td>
+</tr>
+<tr>
+<td><a href="./postaladdress-agent.ttl"><code>postaladdress.ttl</code></a></td>
 </tr>
 <tr>
 <td><a href="./provenance-statement.ttl"><code>provenance-statement.ttl</code></a></td>
