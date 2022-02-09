@@ -147,6 +147,13 @@ var respecConfig = {
     inlineCSS: "true",
     lint: "false",
     localBiblio: {
+      "DCAT-AP": {
+        "href":"https://www.w3.org/TR/vocab-dcat-2/",
+        "title":"DCAT Application Profile for data portals in Europe. Version 2",
+        //"publisher":"TBD"
+        //"publisher":"European Commission",
+        "date":"8 June 2020"
+      },
       "EPOS": {
         "href":"https://www.epos-eu.org/",
         "title":"European Plate Observing System - EPOS"
