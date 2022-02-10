@@ -110,6 +110,12 @@
 <td><a href="./person.ttl"><code>person.ttl</code></a></td>
 </tr>
 <tr>
+<td><a href="./softwareapplication.ttl"><code>softwareapplication.ttl</code></a></td>
+</tr>
+<tr>
+<td><a href="./softwaresourcecode.ttl"><code>softwaresourcecode.ttl</code></a></td>
+</tr>
+<tr>
 <td><a href="./provenance-statement.ttl"><code>provenance-statement.ttl</code></a></td>
 <td><a href="./provenance-statement.rdf"><code>provenance-statement.rdf</code></a></td>
 <td><a href="./provenance-statement.jsonld"><code>provenance-statement.jsonld</code></a></td>
