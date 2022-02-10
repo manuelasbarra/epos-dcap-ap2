@@ -110,6 +110,9 @@
 <td><a href="./person.ttl"><code>person.ttl</code></a></td>
 </tr>
 <tr>
+<td><a href="./service.ttl"><code>service.ttl</code></a></td>
+</tr>
+<tr>
 <td><a href="./softwareapplication.ttl"><code>softwareapplication.ttl</code></a></td>
 </tr>
 <tr>
