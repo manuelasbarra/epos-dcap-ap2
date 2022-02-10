@@ -5,7 +5,6 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 []
-
 vcard:hasAddress [ a vcard:Address ;
   		vcard:country-name "Country" ;
   		vcard:locality "locality" ;
