@@ -6,19 +6,6 @@
 
 []
 
-
-
-
-
-
-
-
-
-
-
-	dcat:theme <epos:SeismicWaveform> ;
-.
-
 <SoftwareSourceCodeId> a schema:SoftwareSourceCode;
 
   # Mandatory
