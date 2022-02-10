@@ -40,6 +40,12 @@
 <tr>
     <td><a href="./distribution.ttl"><code>distribution.ttl</code></a></td>
 </tr>
+<tr>
+    <td><a href="./equipment.ttl"><code>equipment.ttl</code></a></td>
+</tr>
+<tr>
+    <td><a href="./facility.ttl"><code>facility.ttl</code></a></td>
+</tr>
 <!--
 <tr>
 <td><a href="./document.ttl"><code>document.ttl</code></a></td>
