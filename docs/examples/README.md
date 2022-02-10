@@ -9,37 +9,38 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="./address.ttl"><code>address.ttl</code></a></td>
+    <td><a href="./address.ttl"><code>address.ttl</code></a></td>
 </tr>
-<tr>
+<!--<tr>
 <td><a href="./agent.ttl"><code>agent.ttl</code></a></td>
 <td><a href="./agent.rdf"><code>agent.rdf</code></a></td>
 <td><a href="./agent.jsonld"><code>agent.jsonld</code></a></td>
 </tr>
-
 <tr>
 <td><a href="./catalogue-record.ttl"><code>catalogue-record.ttl</code></a></td>
 <td><a href="./catalogue-record.rdf"><code>catalogue-record.rdf</code></a></td>
 <td><a href="./catalogue-record.jsonld"><code>catalogue-record.jsonld</code></a></td>
 </tr>
+-->
 <tr>
-<td><a href="./category-scheme.ttl"><code>category-scheme.ttl</code></a></td>
+    <td><a href="./category-scheme.ttl"><code>category-scheme.ttl</code></a></td>
 </tr>
 <tr>
-<td><a href="./category.ttl"><code>category.ttl</code></a></td>
+    <td><a href="./category.ttl"><code>category.ttl</code></a></td>
 </tr>
 <tr>
-<td><a href="./contact-point.ttl"><code>contact-point.ttl</code></a></td>
+    <td><a href="./contact-point.ttl"><code>contact-point.ttl</code></a></td>
 </tr>
 <tr>
-<td><a href="./data-service.ttl"><code>data-service.ttl</code></a></td>
+    <td><a href="./data-service.ttl"><code>data-service.ttl</code></a></td>
 </tr>
 <tr>
-<td><a href="./dataset.ttl"><code>dataset.ttl</code></a></td>
+    <td><a href="./dataset.ttl"><code>dataset.ttl</code></a></td>
 </tr>
 <tr>
-<td><a href="./distribution.ttl"><code>distribution.ttl</code></a></td>
+    <td><a href="./distribution.ttl"><code>distribution.ttl</code></a></td>
 </tr>
+<!--
 <tr>
 <td><a href="./document.ttl"><code>document.ttl</code></a></td>
 <td><a href="./document.rdf"><code>document.rdf</code></a></td>
@@ -53,6 +54,7 @@
 <td><a href="./kind.rdf"><code>kind.rdf</code></a></td>
 <td><a href="./kind.jsonld"><code>kind.jsonld</code></a></td>
 </tr>
+-->
 <tr>
 <td><a href="./licence-document.ttl"><code>licence-document.ttl</code></a></td>
 <td><a href="./licence-document.rdf"><code>licence-document.rdf</code></a></td>
@@ -74,11 +76,8 @@
 <td><a href="./media-type.jsonld"><code>media-type.jsonld</code></a></td>
 </tr>
 <tr>
-<td><a href="./metric.ttl"><code>metric.ttl</code></a></td>
-<td><a href="./metric.rdf"><code>metric.rdf</code></a></td>
-<td><a href="./metric.jsonld"><code>metric.jsonld</code></a></td>
-</tr>
-
+  <td><a href="./operation.ttl"><code>operation.ttl</code></a></td>
+</tr
 <tr>
 <td><a href="./period-of-time-with-owl-time.ttl"><code>period-of-time-with-owl-time.ttl</code></a></td>
 <td><a href="./period-of-time-with-owl-time.rdf"><code>period-of-time-with-owl-time.rdf</code></a></td>

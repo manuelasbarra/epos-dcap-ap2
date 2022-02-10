@@ -6,13 +6,13 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 [] a foaf:Organization ;
-  locn:address [ a locn:Address ;
-      locn:adminUnitL1 "Denmark" ;
-      locn:adminUnitL2 "K" ;
-      locn:postCode "1050" ;
-      locn:postName "Copenhagen" ;
-      locn:thoroughfare "Kongens Nytorv 6" ] ;
-  foaf:mbox <mailto:sdi@eea.europa.eu> ;
-  foaf:name "European Environment Agency"@en ;
-  foaf:phone <tel:+451234567890> .
-
+        locn:address [ a locn:Address ;
+                    locn:adminUnitL1 "Denmark" ;
+                    locn:adminUnitL2 "K" ;
+                    locn:postCode "1050" ;
+                    locn:postName "Copenhagen" ;
+                    locn:thoroughfare "Kongens Nytorv 6"
+             ] ;
+        foaf:mbox <mailto:sdi@eea.europa.eu> ;
+        foaf:name "European Environment Agency"@en ;
+        foaf:phone <tel:+451234567890> .
