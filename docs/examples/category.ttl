@@ -7,7 +7,6 @@
 
 []
 
-# Concept
 <epos:SeismicWaveform> a skos:Concept ;
 	skos:definition "Measurement of the dynamic displacement of the Earth" ;
 	skos:inScheme <epos:Seismology> ;

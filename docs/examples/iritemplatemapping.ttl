@@ -6,6 +6,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 []
+
   hydra:mapping[ a hydra:IriTemplateMapping ;
 
 		# This property contains the name of the parameter as required by web service specifications

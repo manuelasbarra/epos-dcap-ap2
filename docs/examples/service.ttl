@@ -11,6 +11,7 @@
 []
 
 <https://www.epos-eu.org/epos-dcat-ap/Service/001> a schema:Service ;
+
   # Mandatory
     # This property contains the main identifier for the Service.
     schema:identifier "https://www.epos-eu.org/epos-dcat-ap/Service/001";

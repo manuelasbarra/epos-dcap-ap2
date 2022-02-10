@@ -5,6 +5,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 []
+
 <PIC:000518944> a schema:Organization ;
 
   # Mandatory properties
