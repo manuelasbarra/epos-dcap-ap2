@@ -39,7 +39,7 @@ table code, table pre {
   overflow-wrap: break-word;
   word-wrap: break-word;
   word-break: break-all;
-}
+}*/
 .code {
   margin: 1em auto;
   padding: .5em;
@@ -50,7 +50,6 @@ table code, table pre {
   background: #E9FBE9;
   overflow: auto;
 }
-*/
 </style>
 </head>
 <body>
@@ -1417,200 +1416,6 @@ table code, table pre {
     </aside>
   </section>
 
-</section>
-
-<!-- Controlled vocabularies -->
-
-<section id="controlled-vocabularies">
-
-<h2>Controlled Vocabularies</h2>
-
-<section id="requirements-for-controlled-vocabularies">
-
-<h3>Requirements for controlled vocabularies</h3>
-
-<p>The following is a list of requirements that were identified for the controlled vocabularies to be recommended in this Application Profile.</p>
-
-<p>Controlled vocabularies SHOULD:</p>
-
-<ul>
-<li>Be published under an open licence.</li>
-<li>Be operated and/or maintained by an institution of the European Union, by a recognised standards organisation or another trusted organisation.</li>
-<li>Be properly documented.</li>
-<li>Have labels in multiple languages, ideally in all official languages of the European Union.</li>
-<li>Contain a relatively small number of terms (e.g. 10-25) that are general enough to enable a wide range of resources to be classified.</li>
-<li>Have terms that are identified by URIs with each URI resolving to documentation about the term.</li>
-<li>Have associated persistence and versioning policies.</li>
-</ul>
-
-<p>These criteria do not intend to define a set of requirements for controlled vocabularies in general; they are only intended to be used for the selection of the controlled vocabularies that are proposed for this Application Profile.</p>
-
-</section>
-
-<section id="controlled-vocabularies-to-be-used">
-
-<h3>Controlled vocabularies to be used</h3>
-
-<p>In the table below, a number of properties are listed with controlled vocabularies that MUST be used for the listed properties. The declaration of the following controlled vocabularies as mandatory ensures a minimum level of interoperability.</p>
-
-<p>Compared with [[DCAT-AP]], GeoDCAT-AP makes use of additional controlled vocabularies mandated by [[INSPIRE-MD-REG]], and operated by the INSPIRE Registry - with the only exceptions of the coordinate reference systems register maintained by OGC [[OGC-EPSG]].</p>
-
-<p>For two of these controlled vocabularies, namely the INSPIRE spatial data themes [[INSPIRE-THEMES]] and the ISO topic categories [[INSPIRE-TC]], the GeoDCAT-AP Working Group has defined a set of harmonised mappings to the EU Vocabularies Data Themes [[EUV-THEMES]], in order to facilitate the identification of the relevant theme in [[EUV-THEMES]] for geospatial metadata. The status of this work, along with links to a machine readable representation of the mappings, is documented on a dedicated page in Joinup [[?GeoDCAT-ACV]].</p>
-<!--
-<div data-include-format="html" data-include-replace="true" data-include="./tables/controlled-vocabularies-to-be-used.html"></div>
--->
-</section>
-
-<section id="other-controlled-vocabularies">
-
-<h3>Other controlled vocabularies</h3>
-
-<p>In addition to the proposed common vocabularies in <a class="no-sectionRef" href="#controlled-vocabularies-to-be-used"></a>, which are mandatory to ensure minimal interoperability, implementers are encouraged to publish and to use further region or domain-specific vocabularies that are available online. While those may not be recognised by general implementations of the Application Profile, they may serve to increase interoperability across applications in the same region or domain. Examples are the full set of concepts in EuroVoc [[?EUV-EUROVOC]], the CERIF standard vocabularies [[?CERIF-VOCS]], the Dewey Decimal Classification [[?DDC]] and numerous other schemes.</p>
-
-<p>For geospatial metadata, the working group has identified the following additional vocabularies:</p>
-<!--
-<div class="issue" data-number="49"></div>
-
-<ul>
-<li><p><strong>Geographic identifiers</strong>:</p>
-<ul>
-<li><p><strong>For marine regions: </strong></p>
-<ul>
-<li><p>Marine Regions <a href="http://www.marineregions.org/">http://www.marineregions.org/</a></p></li>
-<li><p>SeaVoX salt and fresh water body gazetteer - <a href="https://www.bodc.ac.uk/data/codes_and_formats/seavox/">https://www.bodc.ac.uk/data/codes_and_formats/seavox/</a></p></li>
-</ul></li>
-<li><p><strong>General:</strong></p>
-<ul>
-<li><p>DBpedia for Geographic Placenames - <a href="http://dbpedia.org/about">http://dbpedia.org/about</a></p></li>
-<li><p>National gazetteer vocabularies where feasible</p></li>
-<li><p>SeaVoX salt and fresh water body gazetteer for ‘marine geonames’ - <a href="https://www.bodc.ac.uk/data/codes_and_formats/seavox/">https://www.bodc.ac.uk/data/codes_and_formats/seavox/</a></p></li>
-</ul></li>
-</ul></li>
-<li><p><strong>Keywords (with controlled vocabularies):</strong></p>
-<ul>
-<li><p><strong>For discipline</strong>: suggested vocabularies are</p>
-<ul>
-<li><p>GEneral Multilingual Environmental Thesaurus (GEMET) - <a href="https://www.eionet.europa.eu/gemet/">https://www.eionet.europa.eu/gemet/</a></p></li>
-</ul></li>
-<li><p><strong>General: </strong></p>
-<ul>
-<li><p><abbr title="Global Earth Observation System of Systems">GEOSS</abbr> Societal Benefit Areas - <a href="https://en.wikipedia.org/wiki/Societal_Benefit_Areas">https://en.wikipedia.org/wiki/Societal_Benefit_Areas</a></p></li>
-<li><p>GEneral Multilingual Environmental Thesaurus (GEMET) - <a href="https://www.eionet.europa.eu/gemet/">https://www.eionet.europa.eu/gemet/</a></p></li>
-<li><p>British Oceanographic Data centre - <a href="http://www.bodc.ac.uk/">http://www.bodc.ac.uk/</a></p></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
--->
-</section>
-
-<section id="licence-vocabularies">
-
-<h3>Licence vocabularies</h3>
-
-<p>Concerning licence vocabularies, implementers are encouraged to use widely recognised licences such as Creative Commons licences [[?CC]], and in particular the CC Zero Public Domain Dedication [[?CC0]] or CC-BY Attribution 4.0 International [[?CC-BY]], or  the Open Data Commons Public Domain Dedication and License (PDDL) [[?PDDL]].
-Often there is applicable legislation or a licency policy in place which determine the set of licences to be used. They may recommend the use of an open government licence such as the UK Open Government Licence [[?UKOGL]].</p>
-
-<p>Further activities in this area are undertaken by the Open Data Institute [[?ODI]] with the Open Data Rights Statement Vocabulary [[?ODRS]] and by the Open Digital Rights Language (ODRL) Initiative [[VOCAB-ODRL]].</p>
-
-</section>
-
-</section>
-
-<section id="conformance">
-
-<section id="provider-requirements">
-
-<h2>Provider requirements</h2>
-
-<p>In order to conform to this Application Profile, an application that provides metadata MUST:</p>
-
-<ul>
-<li>Provide a description of the Catalogue, including at least the mandatory properties specified in <a class="no-sectionRef" href="#mandatory-properties-for-catalog"></a>.</li>
-<li>Provide information for the mandatory properties specified in <a class="no-sectionRef" href="#mandatory-properties-for-catalog-record"></a>, if descriptions of Catalogue Records are provided – please note that the provision of descriptions of Catalogue Records is optional.</li>
-<li>Provide descriptions of Datasets in the Catalogue, including at least the mandatory properties specified in <a class="no-sectionRef" href="#mandatory-properties-for-dataset"></a>.</li>
-<li>Provide descriptions of Distributions, if any, of Datasets in the Catalogue, including at least the mandatory properties specified in <a class="no-sectionRef" href="#mandatory-properties-for-distribution"></a>.</li>
-<li>Provide descriptions of Data Services, if any, of Datasets in the Catalogue, including at least the mandatory properties specified in <a class="no-sectionRef" href="#mandatory-properties-for-data-service"></a>.</li>
-<li>Provide descriptions of all organisations involved in the descriptions of Catalogue and Datasets, including at least the mandatory properties specified in <a class="no-sectionRef" href="#mandatory-properties-for-agent"></a>.</li>
-<li>Provide descriptions of all category schemes that contain the categories that are asserted in any of the descriptions of Datasets in the Catalogue, including at least the recommended properties specified in <a class="no-sectionRef" href="#recommended-properties-for-category-scheme"></a>.</li>
-<li>Provide descriptions of all categories involved in the descriptions of Datasets in the Catalogue, including at least the mandatory properties specified in <a class="no-sectionRef" href="#mandatory-properties-for-category"></a>.</li>
-</ul>
-
-<p>For the properties listed in the table in <a class="no-sectionRef" href="#controlled-vocabularies-to-be-used"></a>, the associated controlled vocabularies MUST be used. Additional controlled vocabularies MAY be used.</p>
-
-<p>In addition to the mandatory properties, any of the recommended and optional properties defined in <a class="no-sectionRef" href="#properties"></a> MAY be provided.</p>
-
-<p>Recommended and optional classes may have mandatory properties, but those only apply if and when an instance of such a class is present in a description.</p>
-
-</section>
-
-<section id="receiver-requirements">
-
-<h2>Receiver requirements</h2>
-
-<p>In order to conform to this Application Profile, an application that receives metadata MUST be able to:</p>
-
-<ul>
-<li>Process information for all classes specified in <a class="no-sectionRef" href="#classes"></a>.</li>
-<li>Process information for all properties specified in <a class="no-sectionRef" href="#properties"></a>.</li>
-<li>Process information for all controlled vocabularies specified in <a class="no-sectionRef" href="#controlled-vocabularies-to-be-used"></a>.</li>
-</ul>
-
-<p>As stated in <a class="no-sectionRef" href="#terminology"></a>, "processing" means that receivers must accept incoming data and transparently provide these data to applications and services. It does neither imply nor prescribe what applications and services finally do with the data (parse, convert, store, make searchable, display to users, etc.).</p>
-
-</section>
-
-</section>
-
-<!-- Agent roles -->
-
-<section id="agent-roles" class="informative">
-
-<h2>Agent Roles</h2>
-
-<!--
-
-
-<p>GeoDCAT-AP supports the 11 agent roles defined in [[INSPIRE-MD-REG]] and [[ISO-19115]] by using two different but not mutually exclusive approaches.</p>
-
-<p>In the first approach, roles are mapped to specific properties. In particular, GeoDCAT-AP makes use of the relevant properties from [[DCAT-AP]] and [[DCTERMS]], which overall cover 4 of the relevant roles - namely, <code>dcat:contactPoint</code>, <code>dct:creator</code>, <code>dct:publisher</code>, and <code>dct:rightsHolder</code> (not supported in [[DCAT-AP]]). The remaining 7 are covered by the corresponding properties defined in the GeoDCAT-AP namespace - namely, <code>geodcat:custodian</code>, <code>geodcat:distributor</code>, <code>geodcat:originator</code>, <code>geodcat:principalInvestigator</code>, <code>geodcat:processor</code>, <code>geodcat:resourceProvider</code>, and <code>geodcat:user</code>.</p>
-
-<p>It is important to note that, following [[INSPIRE-MD-REG]] and [[ISO-19115]], in GeoDCAT-AP all these agent roles can be specified on Catalogues, Catalogue Records, Datasets, and Data Services.</p>
-
-<p>The second and more general approach is based on [[PROV-O]], where agent roles are specified via a &ldquo;qualified attribution&rdquo; (<code>prov:qualifiedAttribution</code>). More precisely, the relevant Agent is specified via property <code>prov:agent</code>, whereas the role is specified with property <code>dcat:hadRole</code>, which takes as value a <code>skos:Concept</code> describing that role - as those included in the relevant code list operated by the INSPIRE Registry [[INSPIRE-RPR]]. This pattern is illustrated in <a href="#ex-attribution"></a>.</p>
-
-<p>The [[PROV-O]]-based approach is meant to give data providers an extension mechanism to specify, in a harmonised way, any kind of role, and, possibly, to attach additional information to the role and the associated Agent. As such, it MAY be used in combination with or to complement the property-based approach, but it MUST NOT replace it. For instance, it can be used to specify roles not covered by the agent role properties used in GeoDCAT-AP, and/or to specify additional information that cannot be expressed via a property (as the period during which an Agent covered a given role).</p>
-
-<p>More details on these solutions are available in <a class="no-sectionRef" href="#responsible-party-and-metadata-point-of-contact---dataset-responsible-party-and-metadata-point-of-contact"></a>.</p>
-
-
-<aside class="note">
-<p>The approach based on [[PROV-O]] is meant to give data providers for a mechanism to specify, in a harmonised way, all the roles defined in INSPIRE, thus ensuring interoperability as well as compliance with [[INSPIRE-MD-REG]].</p>
-<p>However, differently from the approach based on [[DCAT-AP]] and [[DCTERMS]], its use is not mandatory. Depending on their requirements, data providers may decide to use only the approach based on [[DCAT-AP]] and [[DCTERMS]], or complement it with the one based on [[PROV-O]] for the roles not covered by the former, or use both approaches concurrently.</p>
-</aside>
--->
-<!--
-<div class="issue" data-number="39"></div>
-
-<div class="issue" data-number="57"></div>
--->
-</section>
-
-<!-- Conformance Test Results -->
-
-<section id="conformance-test-results" class="informative">
-
-<h2>Conformance Test Results</h2>
-<!--
-<p>Following [[INSPIRE-MD-REG]] and [[ISO-19115]], GeoDCAT-AP supports the specification of test results to assess the degree of conformity of a resource (i.e., a Catalogue, a Dataset, a Data Service) with a given specification (e.g., a standard, a set of implementing rules, a set of data quality or interoperability criteria).</p>
-
-<p>For this purpose, GeoDCAT-AP makes use of two different but not mutually exclusive approaches. More precisely, property <code>dct:conformsTo</code> is used when the test result states that a resource is conformant with a given specification. The more general approach is based on [[PROV-O]], and it specifies conformance test results as a testing activity (<code>prov:Activity</code>) that generates a result (specified with property <code>prov:generated</code>), corresponding to one of the degrees of conformity defined in [[INSPIRE-MD-REG]], and available from the INSPIRE Registry [[INSPIRE-DoC]]. The specification against which the testing activity is carried out is specified via a &ldquo;qualified association&rdquo; (<code>prov:qualifiedAssociation</code>), linked to a &ldquo;plan&rdquo; (<code>prov:hadPlan</code>) derived from (<code>prov:wasDerivedFrom</code>) the specification itself.</p>
-
-<p>This pattern is illustrated in <a href="#ex-activity"></a>.</p>
-
-<p>More details on these solutions are available in <a class="no-sectionRef" href="#conformity-and-data-quality---not-in-iso19115-core"></a>.</p>
--->
 </section>
 
 <!-- Accessibility and Multilingual Aspects -->
