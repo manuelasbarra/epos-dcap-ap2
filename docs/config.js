@@ -25,7 +25,7 @@ var respecConfig = {
     copyrightURL: "",
     copyrightStart: "",
     publishDate: "2022-02-14",
-
+    specStatus: "ED",
 
   //  specStatus: "unofficial",
 
