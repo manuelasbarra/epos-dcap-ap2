@@ -65,7 +65,6 @@ p:is(.respec-hint,.respec-occurrences){display:block;margin-top:.5em}
   onclick=${()=>ur.closeModal()}
   title="Close"
 >
-  âŒ
 </button>`;let er,tr;window.addEventListener("load",()=>ar(Qn));const nr=[],rr=[],sr={};s("start-all",()=>document.body.prepend(Jn),{once:!0}),s("end-all",()=>document.body.prepend(Jn),{once:!0});const ir=Ot`<button id="respec-pill" disabled>ReSpec</button>`;function or(){Qn.classList.toggle("respec-hidden"),Qn.classList.toggle("respec-visible"),Qn.hidden=!Qn.hidden}function ar(e){const t=e.querySelectorAll("a[href]:not([disabled]), button:not([disabled]), textarea:not([disabled]), input:not([disabled]), select:not([disabled])"),n=t[0],r=t[t.length-1];n&&n.focus(),e.addEventListener("keydown",e=>{"Tab"===e.key&&(e.shiftKey?document.activeElement===n&&(r.focus(),e.preventDefault()):document.activeElement===r&&(n.focus(),e.preventDefault()))})}Jn.appendChild(ir),ir.addEventListener("click",e=>{e.stopPropagation(),ir.setAttribute("aria-expanded",String(Qn.hidden)),or(),Qn.querySelector("li:first-child button").focus()}),document.documentElement.addEventListener("click",()=>{Qn.hidden||or()}),Jn.appendChild(Qn),Qn.addEventListener("keydown",e=>{"Escape"!==e.key||Qn.hidden||(ir.setAttribute("aria-expanded",String(Qn.hidden)),or(),ir.focus())});const cr=new Map([["controls","respec-menu"],["expanded","false"],["haspopup","true"],["label","ReSpec Menu"]]);function lr(e,t,n,r){t.push(e),sr.hasOwnProperty(n)||(sr[n]=function(e,t,n){const r=Ot`<button
     id="${"respec-pill-"+e}"
     class="respec-info-button"
@@ -123,45 +122,32 @@ p:is(.respec-hint,.respec-occurrences){display:block;margin-top:.5em}
   </dd>`}const Rr=sn({en:{archives:"archives",author:"Author:",authors:"Authors:",commit_history:"Commit history",edited_in_place:"edited in place",editor:"Editor:",editors:"Editors:",feedback:"Feedback:",former_editor:"Former editor:",former_editors:"Former editors:",history:"History:",implementation_report:"Implementation report:",latest_editors_draft:"Latest editor's draft:",latest_published_version:"Latest published version:",latest_recommendation:"Latest Recommendation:",message_topic:"â€¦ message topic â€¦",more_details_about_this_doc:"More details about this document",multiple_alternates:e=>`This document is also available in ${e?"these non-normative formats":"this non-normative format"}:`,prev_editor_draft:"Previous editor's draft:",prev_recommendation:"Previous Recommendation:",prev_version:"Previous version:",publication_history:"Publication history",test_suite:"Test suite:",this_version:"This version:",with_subject_line:"with subject line",your_topic_here:"YOUR TOPIC HERE"},ko:{author:"ì €ìž:",authors:"ì €ìž:",editor:"íŽ¸ì§‘ìž:",editors:"íŽ¸ì§‘ìž:",former_editor:"ì´ì „ íŽ¸ì§‘ìž:",former_editors:"ì´ì „ íŽ¸ì§‘ìž:",latest_editors_draft:"ìµœì‹  íŽ¸ì§‘ ì´ˆì•ˆ:",latest_published_version:"ìµœì‹  ë²„ì „:",this_version:"í˜„ìž¬ ë²„ì „:"},zh:{author:"ä½œè€…ï¼š",authors:"ä½œè€…ï¼š",commit_history:"Gitæäº¤åŽ†å²",editor:"ç¼–è¾‘ï¼š",editors:"ç¼–è¾‘ï¼š",feedback:"åé¦ˆï¼š",former_editor:"åŽŸç¼–è¾‘ï¼š",former_editors:"åŽŸç¼–è¾‘ï¼š",history:"åŽ†å²ï¼š",implementation_report:"å®žçŽ°æŠ¥å‘Šï¼š",latest_editors_draft:"æœ€æ–°ç¼–è¾‘è‰ç¨¿ï¼š",latest_published_version:"æœ€æ–°å‘å¸ƒç‰ˆæœ¬ï¼š",latest_recommendation:"æœ€æ–°å‘å¸ƒçš„æ­£å¼æŽ¨èæ ‡å‡†ï¼š",message_topic:"â€¦ é‚®ä»¶ä¸»é¢˜ â€¦",prev_editor_draft:"ä¸Šä¸€ç‰ˆç¼–è¾‘è‰ç¨¿ï¼š",prev_recommendation:"ä¸Šä¸€ç‰ˆæ­£å¼æŽ¨èæ ‡å‡†ï¼š",prev_version:"ä¸Šä¸€ç‰ˆï¼š",test_suite:"æµ‹è¯•å¥—ä»¶ï¼š",this_version:"æœ¬ç‰ˆæœ¬ï¼š"},ja:{archives:"ã‚¢ãƒ¼ã‚«ã‚¤ãƒ–",author:"è‘—è€…ï¼š",authors:"è‘—è€…ï¼š",commit_history:"æ›´æ–°å±¥æ­´",edited_in_place:"æ”¹ç‰ˆãªãæ›´æ–°",editor:"ç·¨è€…ï¼š",editors:"ç·¨è€…ï¼š",feedback:"ãƒ•ã‚£ãƒ¼ãƒ‰ãƒãƒƒã‚¯:",former_editor:"ä»¥å‰ã®ç‰ˆã®ç·¨è€…ï¼š",former_editors:"ä»¥å‰ã®ç‰ˆã®ç·¨è€…ï¼š",history:"å±¥æ­´:",implementation_report:"å®Ÿè£…ãƒ¬ãƒãƒ¼ãƒˆï¼š",latest_editors_draft:"æœ€æ–°ã®ç·¨é›†ç”¨è‰æ¡ˆï¼š",latest_published_version:"æœ€æ–°ãƒãƒ¼ã‚¸ãƒ§ãƒ³ï¼š",latest_recommendation:"æœ€æ–°ã®å‹§å‘Šç‰ˆ:",message_topic:"â€¦ ãƒ¡ãƒ¼ãƒ«ä»¶å â€¦",more_details_about_this_doc:"ã“ã®æ–‡æ›¸ã«ã¤ã„ã¦ã®ã‚ˆã‚Šè©³ç´°",prev_editor_draft:"å‰å›žã®ç·¨é›†ç”¨è‰æ¡ˆ:",prev_recommendation:"å‰å›žã®å‹§å‘Šç‰ˆ:",prev_version:"å‰å›žã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³:",publication_history:"å…¬è¡¨å±¥æ­´",test_suite:"ãƒ†ã‚¹ãƒˆã‚¹ã‚¤ãƒ¼ãƒˆï¼š",this_version:"ã“ã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ï¼š",with_subject_line:"æ¬¡ã®ä»¶åã§"},nl:{author:"Auteur:",authors:"Auteurs:",editor:"Redacteur:",editors:"Redacteurs:",latest_editors_draft:"Laatste werkversie:",latest_published_version:"Laatst gepubliceerde versie:",this_version:"Deze versie:"},es:{archives:"archivos",author:"Autor:",authors:"Autores:",commit_history:"Historial de cambios",edited_in_place:"editado en lugar",editor:"Editor:",editors:"Editores:",feedback:"Comentarios:",former_editor:"Antiguo editor:",former_editors:"Antiguos editores:",history:"Historia:",implementation_report:"Informe de implementaciÃ³n:",latest_editors_draft:"Ãšltima versiÃ³n del editor:",latest_published_version:"Ãšltima versiÃ³n publicada:",latest_recommendation:"RecomendaciÃ³n mÃ¡s reciente:",message_topic:"â€¦ detalles de mensaje â€¦",more_details_about_this_doc:"MÃ¡s detalles sobre este documento:",publication_history:"Historial de publicaciÃ³n",prev_editor_draft:"Ãšltima versiÃ³n del editor:",prev_recommendation:"Ãšltima RecomendaciÃ³n:",prev_version:"Ãšltima versiÃ³n:",test_suite:"Suite de pruebas:",this_version:"Esta versiÃ³n:",with_subject_line:"con lÃ­nea de asunto",your_topic_here:"TU SUJETO AQUÃ"},de:{archives:"Archiv",author:"Autor/in:",authors:"Autor/innen:",commit_history:"Commit-Historie",edited_in_place:"zuletzt geÃ¤ndert am",editor:"Redaktion:",editors:"Redaktion:",feedback:"Feedback:",former_editor:"FrÃ¼here Mitwirkende:",former_editors:"FrÃ¼here Mitwirkende:",history:"Verlauf:",implementation_report:"Umsetzungsbericht:",latest_editors_draft:"Letzter Entwurf:",latest_published_version:"Letzte publizierte Fassung:",latest_recommendation:"Aktuellste Empfehlung:",more_details_about_this_doc:"Mehr Informationen Ã¼ber dieses Dokument",multiple_alternates:e=>`Dieses Dokument ist ebenfalls in ${e?"diesen nicht-normativen Formaten verfÃ¼gbar":"in diesem nicht-normativen Format verfÃ¼gbar"}:`,prev_editor_draft:"Vorheriger Entwurf:",prev_recommendation:"Vorherige Empfehlung:",prev_version:"Vorherige Version:",publication_history:"VerÃ¶ffentlichungsverlauf",test_suite:"Testumgebung:",this_version:"Diese Fassung:"}});var Er=(e,t)=>(s("beforesave",e=>{e.querySelector(".head details").open=!0}),Ot`<div class="head">
     ${e.logos.map($r)} ${document.querySelector("h1#title")}
     ${function(e){let t=document.querySelector("h2#subtitle");return t&&t.parentElement?(t.remove(),e.subtitle=t.textContent.trim()):e.subtitle&&(t=document.createElement("h2"),t.textContent=e.subtitle,t.id="subtitle"),t&&t.classList.add("subtitle"),t}(e)}
-    <p id="w3c-state">${function(e){const t=e.isCR||e.isCRY?e.longStatus:e.textStatus,n=e.prependW3C?Ot`<a href="https://www.w3.org/standards/types#${e.specStatus}"
-        >W3C ${t}</a
-      >`:Ot`${t}`;return Ot`${n}${" "}
-    <time class="dt-published" datetime="${e.dashDate}"
-      >${Gt.format(e.publishDate)}</time
-    >${e.modificationDate?Ot`, ${Rr.edited_in_place}${" "}
-          <time
-            class="dt-modified"
-            datetime="${Bt.format(e.modificationDate)}"
-            >${Gt.format(e.modificationDate)}</time
-          >`:""}`}(e)}</p>
+    <p id="w3c-state">${function(e){const t=e.isCR||e.isCRY?e.longStatus:e.textStatus,n=e.prependW3C?Ot`<a href="https://www.w3.org/standards/types#${e.specStatus}">W3C ${t}</a>`:Ot`${t}`;return Ot`${n}${" "}
+    <time class="dt-published" datetime="${e.dashDate}">${Gt.format(e.publishDate)}</time>${e.modificationDate?Ot`, ${Rr.edited_in_place}${" "}
+    <time class="dt-modified" datetime="${Bt.format(e.modificationDate)}">${Gt.format(e.modificationDate)}</time>`:""}`}(e)}</p>
     <details open="${localStorage.getItem("tr-metadata")||"true"}">
       <summary>${Rr.more_details_about_this_doc}</summary>
       <dl>
         ${e.isTagFinding&&!e.isTagEditorFinding||!e.isNoTrack?Ot`
               <dt>${Rr.this_version}</dt>
-              <dd>
-                <a class="u-url" href="${e.thisVersion}"
-                  >${e.thisVersion}</a
-                >
-              </dd>
+                <dd>
+                    <a class="u-url" href="${e.thisVersion}">${e.thisVersion}</a>
+                </dd>
               <dt>${Rr.latest_published_version}</dt>
-              <dd>
-                ${e.latestVersion?Ot`<a href="${e.latestVersion}"
-                      >${e.latestVersion}</a
-                    >`:"none"}
-              </dd>
+                <dd>
+                  ${e.latestVersion?Ot`<a href="${e.latestVersion}">${e.latestVersion}</a>`:"none"}
+                </dd>
             `:""}
         ${e.edDraftURI?Ot`
               <dt>${Rr.latest_editors_draft}</dt>
               <dd><a href="${e.edDraftURI}">${e.edDraftURI}</a></dd>
             `:""}
         ${function(e){if(!e.historyURI&&!e.github)return;const t=[];if(e.historyURI){const n=Ot`<dd>
-      <a href="${e.historyURI}">${e.historyURI}</a>
-    </dd>`;t.push(n)}if(e.github){const n=Ot`
-      <dd>
-        <a href="${e.github.commitHistoryURL}">${Rr.commit_history}</a>
-      </dd>
-    `;t.push(n)}return Ot`<dt>${Rr.history}</dt>
+          <a href="${e.historyURI}">${e.historyURI}</a>
+          </dd>`;t.push(n)}if(e.github){const n=Ot`
+          <dd>
+            <a href="${e.github.commitHistoryURL}">${Rr.commit_history}</a>
+          </dd>`;t.push(n)}return Ot`<dt>${Rr.history}</dt>
     ${t}`}(e)}
         ${e.testSuiteURI?Ot`
               <dt>${Rr.test_suite}</dt>
@@ -232,43 +218,28 @@ p:is(.respec-hint,.respec-occurrences){display:block;margin-top:.5em}
           ${Rr.multiple_alternates(t.multipleAlternates)}
           ${t.alternatesHTML}
         </p>`:""}
-    ${function(e){const t=document.querySelector(".copyright");if(t)return t.remove(),t;if(e.isUnofficial&&e.licenseInfo)return Ot`<p class="copyright">
-      Copyright &copy;
+ <!--${function(e){const t=document.querySelector(".copyright");if(t)return t.remove(),t;if(e.isUnofficial&&e.licenseInfo)return Ot`
+    <p class="copyright">Copyright &copy;
       ${e.copyrightStart?e.copyrightStart+"-":""}${e.publishYear}
       the document editors/authors.
       ${"unlicensed"!==e.licenseInfo.name?Ot`Text is available under the
-            <a rel="license" href="${e.licenseInfo.url}"
-              >${e.licenseInfo.name}</a
-            >; additional terms may apply.`:""}
+            <a rel="license" href="${e.licenseInfo.url}">${e.licenseInfo.name}</a>; additional terms may apply.`:""}
     </p>`;return function(e){return Ot`<p class="copyright">
-    <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Copyright"
-      >Copyright</a
-    >
+    <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a>
     &copy;
     ${e.copyrightStart?e.copyrightStart+"-":""}${e.publishYear}
     ${e.additionalCopyrightHolders?Ot` ${[e.additionalCopyrightHolders]} &amp; `:""}
-    <a href="https://www.w3.org/"
-      ><abbr title="World Wide Web Consortium">W3C</abbr></a
-    ><sup>&reg;</sup> (<a href="https://www.csail.mit.edu/"
-      ><abbr title="Massachusetts Institute of Technology">MIT</abbr></a
-    >,
-    <a href="https://www.ercim.eu/"
-      ><abbr
-        title="European Research Consortium for Informatics and Mathematics"
-        >ERCIM</abbr
-      ></a
-    >, <a href="https://www.keio.ac.jp/">Keio</a>,
+    <a href="https://www.w3.org/"><abbr title="World Wide Web Consortium">W3C</abbr></a><sup>&reg;</sup> (<a href="https://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>,
+    <a href="https://www.ercim.eu/"><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>, <a href="https://www.keio.ac.jp/">Keio</a>,
     <a href="https://ev.buaa.edu.cn/">Beihang</a>). W3C
-    <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer"
-      >liability</a
-    >,
-    <a href="https://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks"
-      >trademark</a
-    >${function(e){const{url:t,short:n,name:r}=e;if("unlicensed"===r)return Ot`. <span class="issue">THIS DOCUMENT IS UNLICENSED</span>.`;return Ot` and
+    <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>,
+    <a href="https://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a>${function(e){const{url:t,short:n,name:r}=e;if("unlicensed"===r)return Ot`. <span class="issue">THIS DOCUMENT IS UNLICENSED</span>.`;return Ot` and
     <a rel="license" href="${t}" title="${r}">${n}</a> rules apply.`}(e.licenseInfo)}
-  </p>`}(e)}(e)}
-    <hr title="Separator for header" />
-  </div>`);var Ar=(e,t)=>{const n=document.querySelector(".copyright");n&&n.remove();const r=document.querySelector("h1#title"),s=r.cloneNode(!0);return Ot`<div class="head">
+    </p>`}(e)}(e)
+  }
+  <hr title="Separator for header" />-->
+  </div>`);
+  var Ar=(e,t)=>{const n=document.querySelector(".copyright");n&&n.remove();const r=document.querySelector("h1#title"),s=r.cloneNode(!0);return Ot`<div class="head">
     ${e.logos.map($r)} ${r}
     ${e.subtitle?Ot`<h2 id="subtitle">${e.subtitle}</h2>`:""}
     <h2>
@@ -717,7 +688,7 @@ aside.example .marker>a.self-link{color:inherit}
 .header-wrapper{display:flex;align-items:center}
 :is(h2,h3,h4,h5,h6):not(#toc>h2,#abstract>h2,#sotd>h2,.head>h2){position:relative;left:-.5em}
 :is(h2,h3,h4,h5,h6):not(#toch2)+a.self-link{color:inherit;order:-1;position:relative;left:-1.1em;top:.8rem;font-size:1rem;opacity:.5}
-:is(h2,h3,h4,h5,h6)+a.self-link::before{content:"Â§";text-decoration:none;color:var(--heading-text)}
+:is(h2,h3,h4,h5,h6)+a.self-link::before{content:"§";text-decoration:none;color:var(--heading-text)}
 :is(h4,h5,h6)+a.self-link::before{color:#000}
 :is(h4,h5,h6)+a.self-link{top:.6rem}
 @media (max-width:767px){
@@ -916,7 +887,7 @@ ul.index code{color:inherit}
 #index-defined-here .print-only{display:none}
 @media print{
 #index-defined-here .print-only{display:initial}
-}`;const Ta=sn({en:{heading:"Index",headingExternal:"Terms defined by reference",headlingLocal:"Terms defined by this specification",dfnOf:"definition of"}}),La=new Set(["attribute","callback","dict-member","dictionary","element-attr","element","enum-value","enum","exception","extended-attribute","interface","method","typedef"]);function Pa(e){const t=e.dataset,n=t.dfnType||t.idl||t.linkType||"";switch(n){case"":case"dfn":return"";default:return n}}function Ia(e){const t=e.closest("[data-dfn-for]:not([data-dfn-for=''])");return t?t.dataset.dfnFor:""}function Da(e,t,n=""){if(n.startsWith("[[")){return`internal slot for <code>${Ia(e)}</code>`}switch(t){case"dict-member":case"method":case"attribute":case"enum-value":return`${"dict-member"===t?"member":t.replace("-"," ")} for <code>${Ia(e)}</code>`;case"interface":case"dictionary":case"enum":return t;case"constructor":return`for <code>${Ia(e)}</code>`;default:return""}}function Na(){document.querySelectorAll("#index-defined-here li[data-id]").forEach(e=>e.append((e=>{const t="Â§"+document.getElementById(e).closest("section").querySelector(".secno").textContent.trim();return Ot`<span class="print-only">${t}</span>`})(e.dataset.id)))}function ja(){const e=new Set,t=new Map,n=document.querySelectorAll("a[data-cite]");for(const r of n){if(!r.dataset.cite)continue;const n=r.href;if(e.has(n))continue;const{type:s,linkFor:i}=r.dataset,o=xa(r);if(!o)continue;const a=ra(r).key.toUpperCase();(t.get(a)||t.set(a,[]).get(a)).push({term:o,type:s,linkFor:i,elem:r}),e.add(n)}return t}function Oa(e){const{elem:t}=e,n=function(e){const{term:t,type:n,linkFor:r}=e;let s=t;La.has(n)&&("extended-attribute"===n&&(s=`[${s}]`),s=`<code>${s}</code>`);const i=Ma.has(t)?"type":za.get(n);i&&(s+=" "+i);if(r){let e=r;/\s/.test(r)||(e=`<code>${e}</code>`),"element-attr"===n&&(e+=" element"),s+=` (for ${e})`}return s}(e);return Ot`<li>
+}`;const Ta=sn({en:{heading:"Index",headingExternal:"Terms defined by reference",headlingLocal:"Terms defined by this specification",dfnOf:"definition of"}}),La=new Set(["attribute","callback","dict-member","dictionary","element-attr","element","enum-value","enum","exception","extended-attribute","interface","method","typedef"]);function Pa(e){const t=e.dataset,n=t.dfnType||t.idl||t.linkType||"";switch(n){case"":case"dfn":return"";default:return n}}function Ia(e){const t=e.closest("[data-dfn-for]:not([data-dfn-for=''])");return t?t.dataset.dfnFor:""}function Da(e,t,n=""){if(n.startsWith("[[")){return`internal slot for <code>${Ia(e)}</code>`}switch(t){case"dict-member":case"method":case"attribute":case"enum-value":return`${"dict-member"===t?"member":t.replace("-"," ")} for <code>${Ia(e)}</code>`;case"interface":case"dictionary":case"enum":return t;case"constructor":return`for <code>${Ia(e)}</code>`;default:return""}}function Na(){document.querySelectorAll("#index-defined-here li[data-id]").forEach(e=>e.append((e=>{const t="§"+document.getElementById(e).closest("section").querySelector(".secno").textContent.trim();return Ot`<span class="print-only">${t}</span>`})(e.dataset.id)))}function ja(){const e=new Set,t=new Map,n=document.querySelectorAll("a[data-cite]");for(const r of n){if(!r.dataset.cite)continue;const n=r.href;if(e.has(n))continue;const{type:s,linkFor:i}=r.dataset,o=xa(r);if(!o)continue;const a=ra(r).key.toUpperCase();(t.get(a)||t.set(a,[]).get(a)).push({term:o,type:s,linkFor:i,elem:r}),e.add(n)}return t}function Oa(e){const{elem:t}=e,n=function(e){const{term:t,type:n,linkFor:r}=e;let s=t;La.has(n)&&("extended-attribute"===n&&(s=`[${s}]`),s=`<code>${s}</code>`);const i=Ma.has(t)?"type":za.get(n);i&&(s+=" "+i);if(r){let e=r;/\s/.test(r)||(e=`<code>${e}</code>`),"element-attr"===n&&(e+=" element"),s+=` (for ${e})`}return s}(e);return Ot`<li>
     <span class="index-term" data-href="${t.href}">${{html:n}}</span>
   </li>`}const za=new Map([["attribute","attribute"],["element-attr","attribute"],["element","element"],["enum","enum"],["exception","exception"],["extended-attribute","extended attribute"],["interface","interface"]]),Ma=new Set(["boolean","byte","octet","short","unsigned short","long","unsigned long","long long","unsigned long long","float","unrestricted float","double","unrestricted double","undefined","any","object","symbol"]);function qa(e){e.querySelectorAll("#index-defined-elsewhere li[data-spec]").forEach(e=>e.removeAttribute("data-spec")),e.querySelectorAll("#index-defined-here li[data-id]").forEach(e=>e.removeAttribute("data-id"))}var Wa=Object.freeze({__proto__:null,name:"core/dfn-index",run:function(){const e=document.querySelector("section#index");if(!e)return void s("toc",()=>{},{once:!0});const t=document.createElement("style");t.textContent=Aa,document.head.appendChild(t),e.classList.add("appendix"),e.querySelector("h2, h1")||e.prepend(Ot`<h1>${Ta.heading}</h1>`);const n=Ot`<section id="index-defined-here">
     <h3>${Ta.headlingLocal}</h3>
@@ -1137,7 +1108,7 @@ var.respec-hl{background:0 0;color:#000;box-shadow:unset}
       <p><b>Referenced in:</b></p>
       ${function(e,t){if(!t.length)return Ot`<ul>
       <li>Not referenced in this document.</li>
-    </ul>`;const n=new Map;t.forEach((t,r)=>{const s=t.id||`ref-for-${e}-${r+1}`;t.id||(t.id=s);const i=function(e){const t=e.closest("section");if(!t)return null;const n=t.querySelector("h1, h2, h3, h4, h5, h6");return n?"Â§ "+nn(n.textContent):null}(t);(n.get(i)||n.set(i,[]).get(i)).push(s)});const r=([e,t])=>[{title:e,id:t[0],text:e}].concat(t.slice(1).map((e,t)=>({title:"Reference "+(t+2),text:`(${t+2})`,id:e}))),s=e=>Ot`<li>
+    </ul>`;const n=new Map;t.forEach((t,r)=>{const s=t.id||`ref-for-${e}-${r+1}`;t.id||(t.id=s);const i=function(e){const t=e.closest("section");if(!t)return null;const n=t.querySelector("h1, h2, h3, h4, h5, h6");return n?"§ "+nn(n.textContent):null}(t);(n.get(i)||n.set(i,[]).get(i)).push(s)});const r=([e,t])=>[{title:e,id:t[0],text:e}].concat(t.slice(1).map((e,t)=>({title:"Reference "+(t+2),text:`(${t+2})`,id:e}))),s=e=>Ot`<li>
     ${r(e).map(e=>Ot`<a href="#${e.id}" title="${e.title}">${e.text}</a>${" "}`)}
   </li>`;return Ot`<ul>
     ${[...n].map(s)}
