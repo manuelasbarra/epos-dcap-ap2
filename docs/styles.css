@@ -4,8 +4,11 @@
 .subtitle{
   color:#2b422d!important;
 }
+.dt-published{
+  color:#418130!important;
+}
 h1, h2, h3{
-  color:#457945!important;
+  color:#418130!important;
 }
 table.simple {width:100%; border-top: 1px solid #ccc; border-left: 1px solid #ccc; border-right: 1px solid #ccc;}
 table.simple th{padding: 3px 10px!important;}
