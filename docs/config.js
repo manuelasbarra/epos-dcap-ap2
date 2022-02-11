@@ -72,7 +72,7 @@ var respecConfig = {
           company:    "Istituto Nazionale Geofisisca e Vulcanologia - INGV",
           companyURL: "www.ingv.it"
         }],
-    
+
   /*  authors: [
       {
         name:   "Rossana Paciello",
@@ -89,7 +89,7 @@ var respecConfig = {
       }
     ],*/
     otherLinks: [
-    {
+      {
        key: "Contributors:",
        data: [{
            value: "Luca Trani",
@@ -103,7 +103,8 @@ var respecConfig = {
            value: "Valerio vinciarelli",
            href: "https://orcid.org/0000-0001-5805-9337"
        }
-    ],
+    ]
+    },
     {
       key: "Document status:",
       data: [
