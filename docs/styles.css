@@ -38,7 +38,12 @@ table.simple td{text-align: justify!important;}
 table.simple tr:nth-child(even) {
     background: #efefef82;
 }
-
+table.def  {
+  padding:0!important; border-right:1px solid #ddd!important;
+  border-top:1px solid #ddd!important;
+  border-bottom:1px solid #ddd!important;
+  background: #efefef82;
+}
 .hljs{
   background: #fcfaee!important;
 }
