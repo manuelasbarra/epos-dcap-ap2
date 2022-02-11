@@ -40,7 +40,7 @@ table.simple tr:nth-child(even) {
 }
 table.def  {
   padding:0!important;
-  border-left: 0.5em solid #ccc!important;
+  border-left: 0.5em solid #418130!important;
   border-right:1px solid #ddd!important;
   border-top:1px solid #ddd!important;
   border-bottom:1px solid #ddd!important;
@@ -55,10 +55,7 @@ table.def td, table.def th {
 }
 .note ul {column-count:2;}
 .note{
-  border-right:1px solid #ddd!important;
-  border-top:1px solid #ddd!important;
-  border-bottom:1px solid #ddd!important;
-
+  border:1px solid #ddd!important;
 }
 .note ul.one {column-count:1;}
 .hljs{
