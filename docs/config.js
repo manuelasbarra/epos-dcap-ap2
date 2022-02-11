@@ -63,13 +63,13 @@ var respecConfig = {
         {
           name:   "Rossana Paciello",
           orcid:  "0000-0002-6975-1991",
-          company: "Istituto Nazionale Geofisisca e Vulcanologia (INGV)",
+          company: "Istituto Nazionale Geofisisca e Vulcanologia - INGV",
           companyURL: "www.ingv.it"
         },
         {
           name: 	"Manuela Sbarra",
           orcid:  "0000-0001-7746-6309",
-          company:    "INGV - Istituto Nazionale Geofisisca e Vulcanologia (INGV)",
+          company:    "Istituto Nazionale Geofisisca e Vulcanologia - INGV",
           companyURL: "www.ingv.it"
         }],
     contributors:[
@@ -82,7 +82,7 @@ var respecConfig = {
         {
           name:   "Daniele Bailo",
           orcid:  "0000-0003-0695-4406",
-          company: "INGV - Istituto Nazionale Geofisisca e Vulcanologia (INGV)"
+          company: "INGV - Istituto Nazionale Geofisisca e Vulcanologia - INGV"
         },
         {
           name:   "Valerio vinciarelli",
