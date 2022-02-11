@@ -65,15 +65,14 @@ var respecConfig = {
           orcid:  "0000-0002-6975-1991",
           company: "Istituto Nazionale Geofisisca e Vulcanologia (INGV)",
           companyURL: "www.ingv.it"
-    },
-    {
+        },
+        {
           name: 	"Manuela Sbarra",
           orcid:  "0000-0001-7746-6309",
           company:    "INGV - Istituto Nazionale Geofisisca e Vulcanologia (INGV)",
           companyURL: "www.ingv.it"
-    }],
-    contributors:
-    [  ,
+        }],
+    contributors:[ 
         {
           name:   "Luca Trani",
           orcid:  "...",
