@@ -24,7 +24,7 @@ var respecConfig = {
     copyrightHolder: "",
     copyrightURL: "",
     copyrightStart: "",
-    publishDate: "2022-02-07",
+    publishDate: "2022-02-14",
 
 
   //  specStatus: "unofficial",
@@ -72,7 +72,7 @@ var respecConfig = {
           company:    "INGV - Istituto Nazionale Geofisisca e Vulcanologia (INGV)",
           companyURL: "www.ingv.it"
         }],
-    contributors:[ 
+    contributors:[
         {
           name:   "Luca Trani",
           orcid:  "...",
