@@ -26,41 +26,8 @@ var respecConfig = {
     copyrightStart: "",
     publishDate: "2022-02-07",
 
-  //  alternateFormats: [
-/*
-    {
-      label: "PDF (TBD)",
-      uri: "./geodcat-ap_v2.0.0.pdf",
-    },
-    {
-      label: "DOCX (TBD)",
-      uri: "./geodcat-ap_v2.0.0.docx",
-    },
-    {
-      label: "ODT (TBD)",
-      uri: "./geodcat-ap_v2.0.0.odt",
-    },
 
-    {
-      label: "RDF/XML",
-      uri: "./geodcat-ap.rdf",
-    },
-    {
-      label: "Turtle",
-      uri: "./geodcat-ap.ttl",
-    },
-    {
-      label: "JSON-LD",
-      uri: "./geodcat-ap.jsonld",
-    },
-    {
-      label: "SHACL (Turtle)",
-      uri: "./geodcat-ap.shacl.ttl",
-    }
-    ],    */
-//    implementationReportURI:"https://joinup.ec.europa.eu/document/geodcat-ap-implementations",
-  //  errata:"https://github.com/",
-    specStatus: "unofficial",
+  //  specStatus: "unofficial",
 
 //    specStatus: "FPWD",
 //   specStatus: "WD",
