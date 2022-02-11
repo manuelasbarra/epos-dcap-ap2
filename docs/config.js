@@ -72,23 +72,7 @@ var respecConfig = {
           company:    "Istituto Nazionale Geofisisca e Vulcanologia - INGV",
           companyURL: "www.ingv.it"
         }],
-    contributors:[
-        {
-          name:   "Luca Trani",
-          orcid:  "...",
-          company: "..."
-  //        companyURL: "https://ec.europa.eu/jrc/"
-        },
-        {
-          name:   "Daniele Bailo",
-          orcid:  "0000-0003-0695-4406",
-          company: "INGV - Istituto Nazionale Geofisisca e Vulcanologia - INGV"
-        },
-        {
-          name:   "Valerio vinciarelli",
-          orcid:  "0000-0001-5805-9337",
-          company: "EPOS ERIC"
-        }],
+    
   /*  authors: [
       {
         name:   "Rossana Paciello",
@@ -106,7 +90,22 @@ var respecConfig = {
     ],*/
     otherLinks: [
     {
-      key: "Document status",
+       key: "Contributors:",
+       data: [{
+           value: "Luca Trani",
+           href: ""
+       },
+       {
+           value: "Daniele Bailo",
+           href: "https://orcid.org/0000-0003-0695-4406"
+       },
+       {
+           value: "Valerio vinciarelli",
+           href: "https://orcid.org/0000-0001-5805-9337"
+       }
+    ],
+    {
+      key: "Document status:",
       data: [
       {
        value: "Draft"
@@ -114,7 +113,7 @@ var respecConfig = {
       ]
     },
     {
-      key: "Document version",
+      key: "Document version:",
       data: [
       {
         value: "2.0"
