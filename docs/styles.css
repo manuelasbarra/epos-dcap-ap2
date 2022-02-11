@@ -4,6 +4,9 @@ body{
 a[href]{
   color: #418130!important;
 }
+.toc a{
+    color: var(--toclink-text)!important;
+  }
 .title{
   color:#2b422d!important;
 }
