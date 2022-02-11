@@ -21,17 +21,17 @@ var respecConfig = {
     doJsonLd: true,
     noRecTrack: false,
     subtitle: "An extension of the DCAT Application Profile for Research Infrastructures in the solid-Earth domain",
-    copyrightHolder: "",
-    copyrightURL: "",
-    copyrightStart: "",
+    copyrightHolder: "dd",
+    copyrightURL: "dddd",
+    copyrightStart: "ddd",
     publishDate: "2022-02-14",
-  
+
     //specStatus: "ED",
 
   //  specStatus: "unofficial",
 
 //    specStatus: "FPWD",
-//   specStatus: "WD",
+ specStatus: "WD",
 //    specStatus: "LC",
 //    specStatus: "PR",
 //  specStatus: "REC",
@@ -57,7 +57,7 @@ var respecConfig = {
 //    latestVersionURI:     "https://semiceu.github.io/GeoDCAT-AP/releases/2.0.0/",
   //  latestVersionURI:     "TBD",
 /* SEMICEU specific - end   */
-    edDraftURI:           "ED",
+  //  edDraftURI:           "ED",
   //  issueBase:            "https://github.com/",
   //  github:               "https://github.com/",
     editors: [
