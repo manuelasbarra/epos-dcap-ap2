@@ -63,25 +63,33 @@ var respecConfig = {
         {
           name:   "Rossana Paciello",
           orcid:  "0000-0002-6975-1991",
-          company: "INGV - Istituto Nazionale Geofisisca e Vulcanologia, Italy"
-
-      //        companyURL: "https://ec.europa.eu/jrc/"
+          company: "INGV - Istituto Nazionale Geofisisca e Vulcanologia, Italy",
+          companyURL: "www.ingv.it"
     },
     {
-      name: 	"Manuela Sbarra",
-      orcid:  "0000-0001-7746-6309",
-      company:    "INGV - Istituto Nazionale Geofisisca e Vulcanologia, Italy"
-
+          name: 	"Manuela Sbarra",
+          orcid:  "0000-0001-7746-6309",
+          company:    "INGV - Istituto Nazionale Geofisisca e Vulcanologia, Italy",
+          companyURL: "www.ingv.it"
     }],
     contributors:
-    [
+    [  ,
         {
-          name:   "...",
+          name:   "Luca Trani",
           orcid:  "...",
           company: "..."
-
-      //        companyURL: "https://ec.europa.eu/jrc/"
-    }],
+  //        companyURL: "https://ec.europa.eu/jrc/"
+        },
+        {
+          name:   "Daniele Bailo",
+          orcid:  "0000-0003-0695-4406",
+          company: "INGV - Istituto Nazionale Geofisisca e Vulcanologia, Italy"
+        },
+        {
+          name:   "Valerio vinciarelli",
+          orcid:  "0000-0001-5805-9337",
+          company: "EPOS ERIC, Italy"
+        }],
   /*  authors: [
       {
         name:   "Rossana Paciello",
