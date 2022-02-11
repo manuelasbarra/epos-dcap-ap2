@@ -9,6 +9,13 @@
 }
 h1, h2, h3{
   color:#418130!important;
+  font-weight: bold!important;
+}
+:is(h2,h3,h4,h5,h6)+a.self-link::before {
+  color:#418130!important;
+}
+a[href] {
+    color: #418130!important;
 }
 table.simple {width:100%; border-top: 1px solid #ccc; border-left: 1px solid #ccc; border-right: 1px solid #ccc;}
 table.simple th{padding: 3px 10px!important;}
