@@ -34,7 +34,7 @@ table.simple th.small{width:15%;}
 table.simple th.medium{width:25%;}
 table.simple th.large{width:45%;}
 table.simple td.center{text-align: center;}
-table.simple td{text-align: justify!important;}
+table.simple td.justify{text-align: justify!important;}
 table.simple tr:nth-child(even) {
     background: #efefef82;
 }
