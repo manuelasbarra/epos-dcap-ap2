@@ -25,7 +25,8 @@ var respecConfig = {
     copyrightURL: "",
     copyrightStart: "",
     publishDate: "2022-02-14",
-    specStatus: "ED",
+  
+    //specStatus: "ED",
 
   //  specStatus: "unofficial",
 
@@ -56,7 +57,7 @@ var respecConfig = {
 //    latestVersionURI:     "https://semiceu.github.io/GeoDCAT-AP/releases/2.0.0/",
   //  latestVersionURI:     "TBD",
 /* SEMICEU specific - end   */
-  //  edDraftURI:           "TDB",
+    edDraftURI:           "ED",
   //  issueBase:            "https://github.com/",
   //  github:               "https://github.com/",
     editors: [
