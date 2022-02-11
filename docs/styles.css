@@ -1,6 +1,9 @@
 body{
   text-align: justify!important;
 }
+head a{
+  color: #418130!important;
+}
 .title{
   color:#2b422d!important;
 }
