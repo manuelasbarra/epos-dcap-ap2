@@ -73,6 +73,15 @@ var respecConfig = {
       company:    "INGV - Istituto Nazionale Geofisisca e Vulcanologia, Italy"
 
     }],
+    contributors:
+    [
+        {
+          name:   "...",
+          orcid:  "...",
+          company: "..."
+
+      //        companyURL: "https://ec.europa.eu/jrc/"
+    }],
   /*  authors: [
       {
         name:   "Rossana Paciello",
@@ -143,13 +152,6 @@ var respecConfig = {
           "href":"http://api.verint.com/w3c/hydra#",
           "title":"HYDRA"
       },
-    /*  "RFC6570":{
-          "href":"https://www.rfc-editor.org/rfc/rfc6570",
-          "title":"URI Template",
-          "authors":["J. Gregorio", "R. Fielding", "M. Hadley", "M. Nottingham" ,"D. Orchard"],
-          "publisher":"IETF",
-          "date":"2016"
-      },*/
       "ADMS-SKOS":{
         "href":"https://joinup.ec.europa.eu/svn/adms/ADMS_v1.00/ADMS_SKOS_v1.00.html",
         "title":"Joinup. ADMS Controlled Vocabularies",
