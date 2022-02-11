@@ -1,6 +1,7 @@
 body{
   text-align: justify!important;
   background-image: url(./images/nav_logo_4.svg) !important;
+  background-size: 35px auto;
 }
 a[href]{
   color: #418130!important;
