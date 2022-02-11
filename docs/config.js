@@ -93,7 +93,7 @@ var respecConfig = {
        key: "Contributors:",
        data: [{
            value: "Luca Trani",
-           href: ""
+           href: "https://orcid.org/0000-0001-7750-7254"
        },
        {
            value: "Daniele Bailo",
