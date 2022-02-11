@@ -31,8 +31,8 @@ var respecConfig = {
   //  specStatus: "unofficial",
 
 //    specStatus: "FPWD",
-     specStatus: "WD",
-     group: "dx",
+     //specStatus: "WD",
+     //group: "dx",
 //    specStatus: "LC",
 //    specStatus: "PR",
 //  specStatus: "REC",
