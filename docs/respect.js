@@ -232,9 +232,9 @@ p:is(.respec-hint,.respec-occurrences){display:block;margin-top:.5em}
           ${Rr.multiple_alternates(t.multipleAlternates)}
           ${t.alternatesHTML}
         </p>`:""}
-  
+
     <hr title="Separator for header" />
-  </div>`)var Ar=(e,t)=>{const n=document.querySelector(".copyright");
+  </div>`);var Ar=(e,t)=>{const n=document.querySelector(".copyright");
   n&&n.remove();const r=document.querySelector("h1#title"),s=r.cloneNode(!0);return Ot`<div class="head">
     ${e.logos.map($r)} ${r}
     ${e.subtitle?Ot`<h2 id="subtitle">${e.subtitle}</h2>`:""
