@@ -268,7 +268,9 @@ p:is(.respec-hint,.respec-occurrences){display:block;margin-top:.5em}
     <a rel="license" href="${t}" title="${r}">${n}</a> rules apply.`}(e.licenseInfo)}
   </p>`}(e)}(e)}
     <hr title="Separator for header" />
-  </div>`);var Ar=(e,t)=>{const n=document.querySelector(".copyright");n&&n.remove();const r=document.querySelector("h1#title"),s=r.cloneNode(!0);return Ot`<div class="head">
+  </div>`);
+  var Ar=(e,t)=>{const n=document.querySelector(".copyright");
+  n&&n.remove();const r=document.querySelector("h1#title"),s=r.cloneNode(!0);return Ot`<div class="head">
     ${e.logos.map($r)} ${r}
     ${e.subtitle?Ot`<h2 id="subtitle">${e.subtitle}</h2>`:""}
     <h2>
@@ -336,36 +338,7 @@ p:is(.respec-hint,.respec-occurrences){display:block;margin-top:.5em}
           ${t.multipleAlternates?"This document is also available in these non-normative formats:":"This document is also available in this non-normative format:"}
           ${t.alternatesHTML}
         </p>`:""}
-    ${n||Ot`<p class="copyright">
-          <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Copyright"
-            >Copyright</a
-          >
-          &copy;
-          ${e.copyrightStart?e.copyrightStart+"-":""}${e.publishYear}
-          ${e.additionalCopyrightHolders?Ot` ${[e.additionalCopyrightHolders]} &amp; `:""}
-          the Contributors to the ${s.childNodes}
-          Specification, published by the
-          <a href="${e.wgURI}">${e.wg}</a> under the
-          ${e.isCGFinal?Ot`
-                <a href="https://www.w3.org/community/about/agreements/fsa/"
-                  >W3C Community Final Specification Agreement (FSA)</a
-                >. A human-readable
-                <a
-                  href="https://www.w3.org/community/about/agreements/fsa-deed/"
-                  >summary</a
-                >
-                is available.
-              `:Ot`
-                <a href="https://www.w3.org/community/about/agreements/cla/"
-                  >W3C Community Contributor License Agreement (CLA)</a
-                >. A human-readable
-                <a
-                  href="https://www.w3.org/community/about/agreements/cla-deed/"
-                  >summary</a
-                >
-                is available.
-              `}
-        </p>`}
+  
     <hr title="Separator for header" />
   </div>`};const Tr=sn({en:{sotd:"Status of This Document",status_at_publication:Ot`This section describes the status of this
       document at the time of its publication. A list of current W3C
