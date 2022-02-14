@@ -232,45 +232,13 @@ p:is(.respec-hint,.respec-occurrences){display:block;margin-top:.5em}
           ${Rr.multiple_alternates(t.multipleAlternates)}
           ${t.alternatesHTML}
         </p>`:""}
-    ${function(e){const t=document.querySelector(".copyright");if(t)return t.remove(),t;if(e.isUnofficial&&e.licenseInfo)return Ot`<p class="copyright">
-      Copyright &copy;
-      ${e.copyrightStart?e.copyrightStart+"-":""}${e.publishYear}
-      the document editors/authors.
-      ${"unlicensed"!==e.licenseInfo.name?Ot`Text is available under the
-            <a rel="license" href="${e.licenseInfo.url}"
-              >${e.licenseInfo.name}</a
-            >; additional terms may apply.`:""}
-    </p>`;return function(e){return Ot`<p class="copyright">
-    <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Copyright"
-      >Copyright</a
-    >
-    &copy;
-    ${e.copyrightStart?e.copyrightStart+"-":""}${e.publishYear}
-    ${e.additionalCopyrightHolders?Ot` ${[e.additionalCopyrightHolders]} &amp; `:""}
-    <a href="https://www.w3.org/"
-      ><abbr title="World Wide Web Consortium">W3C</abbr></a
-    ><sup>&reg;</sup> (<a href="https://www.csail.mit.edu/"
-      ><abbr title="Massachusetts Institute of Technology">MIT</abbr></a
-    >,
-    <a href="https://www.ercim.eu/"
-      ><abbr
-        title="European Research Consortium for Informatics and Mathematics"
-        >ERCIM</abbr
-      ></a
-    >, <a href="https://www.keio.ac.jp/">Keio</a>,
-    <a href="https://ev.buaa.edu.cn/">Beihang</a>). W3C
-    <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer"
-      >liability</a
-    >,
-    <a href="https://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks"
-      >trademark</a
-    >${function(e){const{url:t,short:n,name:r}=e;if("unlicensed"===r)return Ot`. <span class="issue">THIS DOCUMENT IS UNLICENSED</span>.`;return Ot` and
-    <a rel="license" href="${t}" title="${r}">${n}</a> rules apply.`}(e.licenseInfo)}
-  </p>`}(e)}(e)}
+  
     <hr title="Separator for header" />
-  </div>`);var Ar=(e,t)=>{const n=document.querySelector(".copyright");n&&n.remove();const r=document.querySelector("h1#title"),s=r.cloneNode(!0);return Ot`<div class="head">
+  </div>`)var Ar=(e,t)=>{const n=document.querySelector(".copyright");
+  n&&n.remove();const r=document.querySelector("h1#title"),s=r.cloneNode(!0);return Ot`<div class="head">
     ${e.logos.map($r)} ${r}
-    ${e.subtitle?Ot`<h2 id="subtitle">${e.subtitle}</h2>`:""}
+    ${e.subtitle?Ot`<h2 id="subtitle">${e.subtitle}</h2>`:""
+  }
     <h2>
       ${e.longStatus}
       <time class="dt-published" datetime="${e.dashDate}"
