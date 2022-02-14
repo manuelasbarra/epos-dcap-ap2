@@ -55,155 +55,37 @@ window.respecVersion="30.0.5",function(){"use strict";const e=!!window.require;i
 .respec-iframe:not(.ready){background:url(https://respec.org/xref/loader.gif) no-repeat center}
 .respec-iframe+a[href]{font-size:.9rem;float:right;margin:0 .5em .5em;border-bottom-width:1px}
 p:is(.respec-hint,.respec-occurrences){display:block;margin-top:.5em}
-.respec-plugin{text-align:right;color:rgb(120,120,120,.5);font-size:.6em}`;const Wn=/&gt;/gm,Un=/&amp;/gm;class Fn extends zt.Renderer{code(e,t,n){const{language:r,...s}=Fn.parseInfoString(t);if(/(^webidl$)/i.test(r))return`<pre class="idl">${e}</pre>`;const i=super.code(e,r,n),{example:o,illegalExample:a}=s;if(!o&&!a)return i;const c=o||a,l=`${r} ${o?"example":"illegal-example"}`;return i.replace("<pre>",`<pre title="${c}" class="${l}">`)}static parseInfoString(e){const t=e.search(/\s/);if(-1===t)return{language:e};const n=e.slice(0,t),r=e.slice(t+1);let s;if(r)try{s=JSON.parse(`{ ${r} }`)}catch(e){console.error(e)}return{language:n,...s}}heading(e,t,n,r){const s=/(.+)\s+{#([\w-]+)}$/;if(s.test(e)){const[,n,r]=e.match(s);return`<h${t} id="${r}">${n}</h${t}>`}return super.heading(e,t,n,r)}}const Bn={sanitize:!1,gfm:!0,headerIds:!1,langPrefix:"",renderer:new Fn};function Hn(e,t={inline:!1}){const n=Wt(e).replace(Wn,">").replace(Un,"&");return t.inline?zt.parseInline(n,Bn):zt.parse(n,Bn)}function Gn(e){for(const t of e.getElementsByTagName("pre"))t.prepend("\n");e.innerHTML=Hn(e.innerHTML)}const Vn=(Kn="[data-format='markdown']:not(body)",e=>{const t=e.querySelectorAll(Kn);return t.forEach(Gn),Array.from(t)});var Kn;var Yn=Object.freeze({__proto__:null,name:"core/markdown",markdownToHtml:Hn,run:function(e){const t=!!document.querySelector("[data-format=markdown]:not(body)"),n="markdown"===e.format;if(!n&&!t)return;if(!n)return void Vn(document.body);
-/*const r=document.getElementById("respec-ui");
-r.remove();
-const s=document.body.cloneNode(!0);
-!function(e,t){const n=e.querySelectorAll(t);
-  for(const e of n){const{innerHTML:t}=e;if(/^<\w/.test(t.trimStart()))continue;const n=t.split("\n"),r=n.slice(0,2).join("\n"),s=n.slice(-2).join("\n");if(r.trim()&&e.prepend("\n\n"),s.trim()){const t=yn(e);e.append("\n\n"+t)}}
-}(s,"[data-format=markdown], section, div, address, article, aside, figure, header, main"),Gn(s),function(e){Array.from(e).forEach(e=>{e.replaceWith(e.textContent)})}(s.querySelectorAll(".nolinks a[href]")),s.append(r),document.body.replaceWith(s)}});
-function Zn(e,t){e&&Array.from(t).forEach(([t,n])=>{e.setAttribute("aria-"+t,n)})}
-!function(){const e=document.createElement("style");e.id="respec-ui-styles",e.textContent=qn,e.classList.add("removeOnSave"),document.head.appendChild(e)
-}();*/
-/*const Jn=Ot`<div id="respec-ui" class="removeOnSave" hidden></div>`,
+.respec-plugin{text-align:right;color:rgb(120,120,120,.5);font-size:.6em}`;const Wn=/&gt;/gm,Un=/&amp;/gm;class Fn extends zt.Renderer{code(e,t,n){const{language:r,...s}=Fn.parseInfoString(t);if(/(^webidl$)/i.test(r))return`<pre class="idl">${e}</pre>`;const i=super.code(e,r,n),{example:o,illegalExample:a}=s;if(!o&&!a)return i;const c=o||a,l=`${r} ${o?"example":"illegal-example"}`;return i.replace("<pre>",`<pre title="${c}" class="${l}">`)}static parseInfoString(e){const t=e.search(/\s/);if(-1===t)return{language:e};const n=e.slice(0,t),r=e.slice(t+1);let s;if(r)try{s=JSON.parse(`{ ${r} }`)}catch(e){console.error(e)}return{language:n,...s}}heading(e,t,n,r){const s=/(.+)\s+{#([\w-]+)}$/;if(s.test(e)){const[,n,r]=e.match(s);return`<h${t} id="${r}">${n}</h${t}>`}return super.heading(e,t,n,r)}}const Bn={sanitize:!1,gfm:!0,headerIds:!1,langPrefix:"",renderer:new Fn};function Hn(e,t={inline:!1}){const n=Wt(e).replace(Wn,">").replace(Un,"&");return t.inline?zt.parseInline(n,Bn):zt.parse(n,Bn)}function Gn(e){for(const t of e.getElementsByTagName("pre"))t.prepend("\n");e.innerHTML=Hn(e.innerHTML)}const Vn=(Kn="[data-format='markdown']:not(body)",e=>{const t=e.querySelectorAll(Kn);return t.forEach(Gn),Array.from(t)});var Kn;var Yn=Object.freeze({__proto__:null,name:"core/markdown",markdownToHtml:Hn,run:function(e){const t=!!document.querySelector("[data-format=markdown]:not(body)"),n="markdown"===e.format;if(!n&&!t)return;if(!n)return void Vn(document.body);/*const r=document.getElementById("respec-ui");r.remove();const s=document.body.cloneNode(!0);!function(e,t){const n=e.querySelectorAll(t);for(const e of n){const{innerHTML:t}=e;if(/^<\w/.test(t.trimStart()))continue;const n=t.split("\n"),r=n.slice(0,2).join("\n"),s=n.slice(-2).join("\n");if(r.trim()&&e.prepend("\n\n"),s.trim()){const t=yn(e);e.append("\n\n"+t)}}}(s,"[data-format=markdown], section, div, address, article, aside, figure, header, main"),Gn(s),function(e){Array.from(e).forEach(e=>{e.replaceWith(e.textContent)})}(s.querySelectorAll(".nolinks a[href]")),s.append(r),document.body.replaceWith(s)}});function Zn(e,t){e&&Array.from(t).forEach(([t,n])=>{e.setAttribute("aria-"+t,n)})}!function(){const e=document.createElement("style");e.id="respec-ui-styles",e.textContent=qn,e.classList.add("removeOnSave"),document.head.appendChild(e)}();
+const Jn=Ot`<div id="respec-ui" class="removeOnSave" hidden></div>`,
 Qn=Ot`<ul id="respec-menu" role="menu" aria-labelledby="respec-pill" hidden></ul>`,
 Xn=Ot`<button class="close-button" onclick=${()=>ur.closeModal()} title="Close"></button>`;
 let er,tr;
 window.addEventListener("load",()=>ar(Qn));
 const nr=[],rr=[],sr={};
 s("start-all",()=>document.body.prepend(Jn),{once:!0}),s("end-all",()=>document.body.prepend(Jn),{once:!0});
-const ir=Ot`<button id="respec-pill" disabled>ReSpec</button>`;*/
-/*function or(){Qn.classList.toggle("respec-hidden"),Qn.classList.toggle("respec-visible"),Qn.hidden=!Qn.hidden}*/
-/*function ar(e){
-       const t=e.querySelectorAll("a[href]:not([disabled]), button:not([disabled]), textarea:not([disabled]), input:not([disabled]), select:not([disabled])"),n=t[0],r=t[t.length-1];
-  n&&n.focus(),e.addEventListener("keydown",e=>{"Tab"===e.key&&(e.shiftKey?document.activeElement===n&&(r.focus(),e.preventDefault()):document.activeElement===r&&(n.focus(),e.preventDefault()))})
-}*/
-//Jn.appendChild(ir),ir.addEventListener("click",e=>{e.stopPropagation(),ir.setAttribute("aria-expanded",String(Qn.hidden)),or(),Qn.querySelector("li:first-child button").focus()}),
-/*document.documentElement.addEventListener("click",()=>{Qn.hidden||or()}),
-              Jn.appendChild(Qn),
-              Qn.addEventListener("keydown",e=>{"Escape"!==e.key||Qn.hidden||(ir.setAttribute("aria-expanded",String(Qn.hidden)),or(),ir.focus())}
-            );*/
-//const cr=new Map([["controls","respec-menu"],["expanded","false"],["haspopup","true"],["label","ReSpec Menu"]]);
-/*function lr(e,t,n,r){t.push(e),sr.hasOwnProperty(n)||(sr[n]=function(e,t,n){
-    const r=Ot`<button id="${"respec-pill-"+e}" class="respec-info-button"></button>`;
-    r.addEventListener("click",()=>{r.setAttribute("aria-expanded","true");const s=Ot`<ol class="${`respec-${e}-list`}"></ol>`;for(const e of t){const t=document.createRange().createContextualFragment(dr(e)),n=document.createElement("li");t.firstElementChild===t.lastElementChild?n.append(...t.firstElementChild.childNodes):n.appendChild(t),s.appendChild(n)}ur.freshModal(n,s,r)});const s=new Map([["expanded","false"],["haspopup","true"],["controls",`respec-pill-${e}-modal`]]);return Zn(r,s),r}(n,t,r),
-    Jn.appendChild(sr[n])
-    );
-const s=sr[n];
-s.textContent=t.length;
-const i=1===t.length?Mt.singular(r):r;
-Zn(s,new Map([["label",`${t.length} ${i}`]]))}*/
-/*Zn(ir,cr);
-const ur={show(){
-  try{Jn.hidden=!1}
-  catch(e){
-    console.error(e)}
-  },
-  hide(){Jn.hidden=!0},enable(){ir.removeAttribute("disabled")
-  },
-  addCommand(e,t,n,r){
-  r=r||"";
-  const s="respec-button-"+e.toLowerCase().replace(/\s+/,"-"),i=Ot`<button id="${s}" class="respec-option">
-      <span class="respec-cmd-icon" aria-hidden="true">${r}</span> ${e}</button>`,o=Ot`<li role="menuitem">${i}</li>`;
-  return o.addEventListener("click",t),Qn.appendChild(o),i
-  },
-  error(e){lr(e,nr,"error","ReSpec Errors")},
-  warning(e){lr(e,rr,"warning","ReSpec Warnings")},
-  closeModal(e){tr&&(tr.classList.remove("respec-show-overlay"),tr.classList.add("respec-hide-overlay"),tr.addEventListener("transitionend",()=>{tr.remove(),tr=null})),e&&e.setAttribute("aria-expanded","false"),er&&(er.remove(),er=null,ir.focus())
-},
-  freshModal(e,t,n){
-         er&&er.remove(),tr&&tr.remove(),tr=Ot`<div id="respec-overlay" class="removeOnSave"></div>`;
-        const r=n.id+"-modal",s=r+"-heading";er=Ot`<div id="${r}" class="respec-modal removeOnSave" role="dialog" aria-labelledby="${s}">${Xn}<h3 id="${s}">${e}</h3><div class="inside">${t}</div> </div>`;
-        const i=new Map([["labelledby",s]]);
-        Zn(er,i),document.body.append(tr,er),tr.addEventListener("click",()=>this.closeModal(n)),tr.classList.toggle("respec-show-overlay"),er.hidden=!1,ar(er)
-      }
-};
-function dr(e){if("string"==typeof e)return e;const t=e.plugin?`<p class="respec-plugin">(plugin: "${e.plugin}")</p>`:"",n=e.hint?`\n<p class="respec-hint"><strong>How to fix:</strong> ${Hn(e.hint,{inline:!0})}\n`:"",r=Array.isArray(e.elements)?`<p class="respec-occurrences">Occurred <strong>${e.elements.length}</strong>
-        times at:</p>\n    ${e.elements.map(pr)}\n    `:"",s=e.details?`\n\n<details>\n${e.details}\n</details>\n`:"",i=Hn(`**${e.message}**`,{inline:!0});return Hn(`${i}${n}${r}${s}${t}`)
-}*/
-/*    function pr(e){return`\n * [\`<${e.localName}>\`](#${e.id}) element`}
-    async function fr(e){
-      try{ur.show(),
-        await async function(){"loading"===document.readyState&&await new Promise(e=>document.addEventListener("DOMContentLoaded",e))}(),
-        await Mn(e)
-      }
-      finally{ur.enable()}
-    }
-    document.addEventListener("keydown",e=>{"Escape"===e.key&&ur.closeModal()}),
-    window.respecUI=ur,s("error",e=>ur.error(e)),s("warn",e=>ur.warning(e)),
-    window.addEventListener("error",e=>{console.error(e.error,e.message,e)}
-    );
-    const hr=[
-      Promise.resolve().then((function(){return mr})),
-      Promise.resolve().then((function(){return l})),
-      Promise.resolve().then((function(){return yr})),
-      Promise.resolve().then((function(){return as})),
-      Promise.resolve().then((function(){return us})),
-      Promise.resolve().then((function(){return fs})),
-      Promise.resolve().then((function(){return ws})),
-      Promise.resolve().then((function(){return Cs})),
-      Promise.resolve().then((function(){return Yn})),
-      Promise.resolve().then((function(){return Ut})),
-      Promise.resolve().then((function(){return As})),
-      Promise.resolve().then((function(){return Ps})),
-      Promise.resolve().then((function(){return ns})),
-      Promise.resolve().then((function(){return Ns})),
-      Promise.resolve().then((function(){return js})),
-      Promise.resolve().then((function(){return Ms})),
-      Promise.resolve().then((function(){return Ki})),
-      Promise.resolve().then((function(){return co})),
-      Promise.resolve().then((function(){return lo})),
-      Promise.resolve().then((function(){return ho})),
-      Promise.resolve().then((function(){return wo})),
-      Promise.resolve().then((function(){return _o})),
-      Promise.resolve().then((function(){return Ro})),
-      Promise.resolve().then((function(){return Yo})),
-      Promise.resolve().then((function(){return mi})),
-      Promise.resolve().then((function(){return ha})),
-      Promise.resolve().then((function(){return Ea})),
-      Promise.resolve().then((function(){return ia})),
-      Promise.resolve().then((function(){return Ci})),
-      Promise.resolve().then((function(){return Wa})),
-      Promise.resolve().then((function(){return Fa})),
-      Promise.resolve().then((function(){return xs})),
-      Promise.resolve().then((function(){return Ba})),
-      Promise.resolve().then((function(){return Ha})),
-      Promise.resolve().then((function(){return Xa})),
-      Promise.resolve().then((function(){return tc})),
-      Promise.resolve().then((function(){return rc})),
-      Promise.resolve().then((function(){return cc})),
-      Promise.resolve().then((function(){return gc})),
-      Promise.resolve().then((function(){return vc})),
-      Promise.resolve().then((function(){return _c})),
-      Promise.resolve().then((function(){return Ec})),
-      Promise.resolve().then((function(){return Dc})),
-      Promise.resolve().then((function(){return Nc})),
-      Promise.resolve().then((function(){return Wc})),
-      Promise.resolve().then((function(){return Kc})),
-      Promise.resolve().then((function(){return jo})),
-      Promise.resolve().then((function(){return tl})),
-      Promise.resolve().then((function(){return ol})),
-      Promise.resolve().then((function(){return pl})),
-      Promise.resolve().then((function(){return ml})),
-      Promise.resolve().then((function(){return bl})),
-      Promise.resolve().then((function(){return wl})),
-      Promise.resolve().then((function(){return Cl})),
-      Promise.resolve().then((function(){return Ll})),
-      Promise.resolve().then((function(){return Pl})),
-      Promise.resolve().then((function(){return Dl})),
-      Promise.resolve().then((function(){return zl})),
-      Promise.resolve().then((function(){return Fl})),
-      Promise.resolve().then((function(){return Vl})),
-      Promise.resolve().then((function(){return Ql})),
-      Promise.resolve().then((function(){return ru})),
-      Promise.resolve().then((function(){return au})),
-      Promise.resolve().then((function(){return du})),
-      Promise.resolve().then((function(){return bu})),
-      Promise.resolve().then((function(){return ku})),
-      Promise.resolve().then((function(){return Su})),
-      Promise.resolve().then((function(){return Au}))];
-      Promise.all(hr).then(e=>fr(e)).catch(e=>console.error(e));*/
-  var mr=Object.freeze({__proto__:null,name:"core/location-hash",run:function(){location.hash&&document.respec.ready.then(()=>{let e=decodeURIComponent(location.hash).substr(1);const t=document.getElementById(e),n=/\W/.test(e);if(!t&&n){const t=e.replace(/[\W]+/gim,"-").replace(/^-+/,"").replace(/-+$/,"");document.getElementById(t)&&(e=t)}location.hash="#"+e})}});const gr="w3c/group";async function br(e){let t="",n=e;e.includes("/")&&([t,n]=e.split("/",2));const r=new URL(`${n}/${t}`,"https://respec.org/w3c/groups/"),s=await cn(r.href);if(s.ok){const e=await s.json(),{id:t,name:n,patentURI:r,patentPolicy:i,type:o,wgURI:a}=e;return{wg:n,wgId:t,wgURI:a,wgPatentURI:r,wgPatentPolicy:i,groupType:o}}const i=await s.text(),o=`Failed to fetch group details (HTTP: ${s.status}). ${i}`,a=404===s.status?Ln`See the list of [supported group names](https://respec.org/w3c/groups/) to use with the ${"[group]"} configuration option.`:void 0;Sn(o,gr,{hint:a})}var yr=Object.freeze({__proto__:null,name:gr,run:async function(e){if(!e.group)return;const{group:t}=e,n=Array.isArray(t)?await async function(e){const t=await Promise.all(e.map(br)),n={wg:[],wgId:[],wgURI:[],wgPatentURI:[],wgPatentPolicy:[],groupType:[]};for(const e of t.filter(e=>e))for(const t of Object.keys(n))n[t].push(e[t]);return n}(t):await br(t);Object.assign(e,n)}});function wr(e){if(!e.key){const t="Found a link without `key` attribute in the configuration. See dev console.";return Cn(t,"core/templates/show-link"),void console.warn(t,e)}return Ot`
+const ir=Ot`<button id="respec-pill" disabled>ReSpec</button>`;
+function or(){Qn.classList.toggle("respec-hidden"),Qn.classList.toggle("respec-visible"),Qn.hidden=!Qn.hidden}
+function ar(e){
+  const t=e.querySelectorAll("a[href]:not([disabled]), button:not([disabled]), textarea:not([disabled]), input:not([disabled]), select:not([disabled])"),n=t[0],r=t[t.length-1];
+  n&&n.focus(),e.addEventListener("keydown",e=>{"Tab"===e.key&&(e.shiftKey?document.activeElement===n&&(r.focus(),e.preventDefault()):document.activeElement===r&&(n.focus(),e.preventDefault()))})}
+Jn.appendChild(ir),ir.addEventListener(
+            "click",e=>{e.stopPropagation(),ir.setAttribute("aria-expanded",String(Qn.hidden)),or(),Qn.querySelector("li:first-child button").focus()}),
+               document.documentElement.addEventListener("click",()=>{Qn.hidden||or()}),Jn.appendChild(Qn),Qn.addEventListener("keydown",e=>{"Escape"!==e.key||Qn.hidden||(ir.setAttribute("aria-expanded",String(Qn.hidden)),or(),ir.focus())});const cr=new Map([["controls","respec-menu"],["expanded","false"],["haspopup","true"],["label","ReSpec Menu"]]);
+ function lr(e,t,n,r){t.push(e),sr.hasOwnProperty(n)||(sr[n]=function(e,t,n){const r=Ot`<button
+    id="${"respec-pill-"+e}"
+    class="respec-info-button"
+  ></button>`;r.addEventListener("click",()=>{r.setAttribute("aria-expanded","true");const s=Ot`<ol class="${`respec-${e}-list`}"></ol>`;for(const e of t){const t=document.createRange().createContextualFragment(dr(e)),n=document.createElement("li");t.firstElementChild===t.lastElementChild?n.append(...t.firstElementChild.childNodes):n.appendChild(t),s.appendChild(n)}ur.freshModal(n,s,r)});const s=new Map([["expanded","false"],["haspopup","true"],["controls",`respec-pill-${e}-modal`]]);return Zn(r,s),r}(n,t,r),Jn.appendChild(sr[n]));const s=sr[n];s.textContent=t.length;const i=1===t.length?Mt.singular(r):r;Zn(s,new Map([["label",`${t.length} ${i}`]]))}Zn(ir,cr);const ur={show(){try{Jn.hidden=!1}catch(e){console.error(e)}},hide(){Jn.hidden=!0},enable(){ir.removeAttribute("disabled")},addCommand(e,t,n,r){r=r||"";const s="respec-button-"+e.toLowerCase().replace(/\s+/,"-"),i=Ot`<button id="${s}" class="respec-option">
+      <span class="respec-cmd-icon" aria-hidden="true">${r}</span> ${e}â€¦
+    </button>`,o=Ot`<li role="menuitem">${i}</li>`;return o.addEventListener("click",t),Qn.appendChild(o),i},error(e){lr(e,nr,"error","ReSpec Errors")},warning(e){lr(e,rr,"warning","ReSpec Warnings")},closeModal(e){tr&&(tr.classList.remove("respec-show-overlay"),tr.classList.add("respec-hide-overlay"),tr.addEventListener("transitionend",()=>{tr.remove(),tr=null})),e&&e.setAttribute("aria-expanded","false"),er&&(er.remove(),er=null,ir.focus())},freshModal(e,t,n){er&&er.remove(),tr&&tr.remove(),tr=Ot`<div id="respec-overlay" class="removeOnSave"></div>`;const r=n.id+"-modal",s=r+"-heading";er=Ot`<div
+      id="${r}"
+      class="respec-modal removeOnSave"
+      role="dialog"
+      aria-labelledby="${s}"
+    >
+      ${Xn}
+      <h3 id="${s}">${e}</h3>
+      <div class="inside">${t}</div>
+    </div>`;const i=new Map([["labelledby",s]]);Zn(er,i),document.body.append(tr,er),tr.addEventListener("click",()=>this.closeModal(n)),tr.classList.toggle("respec-show-overlay"),er.hidden=!1,ar(er)}};function dr(e){if("string"==typeof e)return e;const t=e.plugin?`<p class="respec-plugin">(plugin: "${e.plugin}")</p>`:"",n=e.hint?`\n<p class="respec-hint"><strong>How to fix:</strong> ${Hn(e.hint,{inline:!0})}\n`:"",r=Array.isArray(e.elements)?`<p class="respec-occurrences">Occurred <strong>${e.elements.length}</strong> times at:</p>\n    ${e.elements.map(pr)}\n    `:"",s=e.details?`\n\n<details>\n${e.details}\n</details>\n`:"",i=Hn(`**${e.message}**`,{inline:!0});return Hn(`${i}${n}${r}${s}${t}`)}function pr(e){return`\n * [\`<${e.localName}>\`](#${e.id}) element`}async function fr(e){try{ur.show(),await async function(){"loading"===document.readyState&&await new Promise(e=>document.addEventListener("DOMContentLoaded",e))}(),await Mn(e)}finally{ur.enable()}}document.addEventListener("keydown",e=>{"Escape"===e.key&&ur.closeModal()}),window.respecUI=ur,s("error",e=>ur.error(e)),s("warn",e=>ur.warning(e)),window.addEventListener("error",e=>{console.error(e.error,e.message,e)});const hr=[Promise.resolve().then((function(){return mr})),Promise.resolve().then((function(){return l})),Promise.resolve().then((function(){return yr})),Promise.resolve().then((function(){return as})),Promise.resolve().then((function(){return us})),Promise.resolve().then((function(){return fs})),Promise.resolve().then((function(){return ws})),Promise.resolve().then((function(){return Cs})),Promise.resolve().then((function(){return Yn})),Promise.resolve().then((function(){return Ut})),Promise.resolve().then((function(){return As})),Promise.resolve().then((function(){return Ps})),Promise.resolve().then((function(){return ns})),Promise.resolve().then((function(){return Ns})),Promise.resolve().then((function(){return js})),Promise.resolve().then((function(){return Ms})),Promise.resolve().then((function(){return Ki})),Promise.resolve().then((function(){return co})),Promise.resolve().then((function(){return lo})),Promise.resolve().then((function(){return ho})),Promise.resolve().then((function(){return wo})),Promise.resolve().then((function(){return _o})),Promise.resolve().then((function(){return Ro})),Promise.resolve().then((function(){return Yo})),Promise.resolve().then((function(){return mi})),Promise.resolve().then((function(){return ha})),Promise.resolve().then((function(){return Ea})),Promise.resolve().then((function(){return ia})),Promise.resolve().then((function(){return Ci})),Promise.resolve().then((function(){return Wa})),Promise.resolve().then((function(){return Fa})),Promise.resolve().then((function(){return xs})),Promise.resolve().then((function(){return Ba})),Promise.resolve().then((function(){return Ha})),Promise.resolve().then((function(){return Xa})),Promise.resolve().then((function(){return tc})),Promise.resolve().then((function(){return rc})),Promise.resolve().then((function(){return cc})),Promise.resolve().then((function(){return gc})),Promise.resolve().then((function(){return vc})),Promise.resolve().then((function(){return _c})),Promise.resolve().then((function(){return Ec})),Promise.resolve().then((function(){return Dc})),Promise.resolve().then((function(){return Nc})),Promise.resolve().then((function(){return Wc})),Promise.resolve().then((function(){return Kc})),Promise.resolve().then((function(){return jo})),Promise.resolve().then((function(){return tl})),Promise.resolve().then((function(){return ol})),Promise.resolve().then((function(){return pl})),Promise.resolve().then((function(){return ml})),Promise.resolve().then((function(){return bl})),Promise.resolve().then((function(){return wl})),Promise.resolve().then((function(){return Cl})),Promise.resolve().then((function(){return Ll})),Promise.resolve().then((function(){return Pl})),Promise.resolve().then((function(){return Dl})),Promise.resolve().then((function(){return zl})),Promise.resolve().then((function(){return Fl})),Promise.resolve().then((function(){return Vl})),Promise.resolve().then((function(){return Ql})),Promise.resolve().then((function(){return ru})),Promise.resolve().then((function(){return au})),Promise.resolve().then((function(){return du})),Promise.resolve().then((function(){return bu})),Promise.resolve().then((function(){return ku})),Promise.resolve().then((function(){return Su})),Promise.resolve().then((function(){return Au}))];Promise.all(hr).then(e=>fr(e)).catch(e=>console.error(e));*/var mr=Object.freeze({__proto__:null,name:"core/location-hash",run:function(){location.hash&&document.respec.ready.then(()=>{let e=decodeURIComponent(location.hash).substr(1);const t=document.getElementById(e),n=/\W/.test(e);if(!t&&n){const t=e.replace(/[\W]+/gim,"-").replace(/^-+/,"").replace(/-+$/,"");document.getElementById(t)&&(e=t)}location.hash="#"+e})}});const gr="w3c/group";async function br(e){let t="",n=e;e.includes("/")&&([t,n]=e.split("/",2));const r=new URL(`${n}/${t}`,"https://respec.org/w3c/groups/"),s=await cn(r.href);if(s.ok){const e=await s.json(),{id:t,name:n,patentURI:r,patentPolicy:i,type:o,wgURI:a}=e;return{wg:n,wgId:t,wgURI:a,wgPatentURI:r,wgPatentPolicy:i,groupType:o}}const i=await s.text(),o=`Failed to fetch group details (HTTP: ${s.status}). ${i}`,a=404===s.status?Ln`See the list of [supported group names](https://respec.org/w3c/groups/) to use with the ${"[group]"} configuration option.`:void 0;Sn(o,gr,{hint:a})}var yr=Object.freeze({__proto__:null,name:gr,run:async function(e){if(!e.group)return;const{group:t}=e,n=Array.isArray(t)?await async function(e){const t=await Promise.all(e.map(br)),n={wg:[],wgId:[],wgURI:[],wgPatentURI:[],wgPatentPolicy:[],groupType:[]};for(const e of t.filter(e=>e))for(const t of Object.keys(n))n[t].push(e[t]);return n}(t):await br(t);Object.assign(e,n)}});function wr(e){if(!e.key){const t="Found a link without `key` attribute in the configuration. See dev console.";return Cn(t,"core/templates/show-link"),void console.warn(t,e)}return Ot`
     <dt class="${e.class?e.class:null}">${e.key}</dt>
     ${e.data?e.data.map(vr):vr(e)}
   `}function vr(e){return Ot`<dd class="${e.class?e.class:null}">
@@ -778,7 +660,7 @@ aside.example .marker>a.self-link{color:inherit}
 .header-wrapper{display:flex;align-items:center}
 :is(h2,h3,h4,h5,h6):not(#toc>h2,#abstract>h2,#sotd>h2,.head>h2){position:relative;left:-.5em}
 :is(h2,h3,h4,h5,h6):not(#toch2)+a.self-link{color:inherit;order:-1;position:relative;left:-1.1em;top:.8rem;font-size:1rem;opacity:.5}
-:is(h2,h3,h4,h5,h6)+a.self-link::before{content:""§";text-decoration:none;color:var(--heading-text)}
+:is(h2,h3,h4,h5,h6)+a.self-link::before{content:"Â§";text-decoration:none;color:var(--heading-text)}
 :is(h4,h5,h6)+a.self-link::before{color:#000}
 :is(h4,h5,h6)+a.self-link{top:.6rem}
 @media (max-width:767px){
@@ -963,7 +845,7 @@ ul.index code{color:inherit}
 #index-defined-here .print-only{display:none}
 @media print{
 #index-defined-here .print-only{display:initial}
-}`;const Ta=sn({en:{heading:"Index",headingExternal:"Terms defined by reference",headlingLocal:"Terms defined by this specification",dfnOf:"definition of"}}),La=new Set(["attribute","callback","dict-member","dictionary","element-attr","element","enum-value","enum","exception","extended-attribute","interface","method","typedef"]);function Pa(e){const t=e.dataset,n=t.dfnType||t.idl||t.linkType||"";switch(n){case"":case"dfn":return"";default:return n}}function Ia(e){const t=e.closest("[data-dfn-for]:not([data-dfn-for=''])");return t?t.dataset.dfnFor:""}function Da(e,t,n=""){if(n.startsWith("[[")){return`internal slot for <code>${Ia(e)}</code>`}switch(t){case"dict-member":case"method":case"attribute":case"enum-value":return`${"dict-member"===t?"member":t.replace("-"," ")} for <code>${Ia(e)}</code>`;case"interface":case"dictionary":case"enum":return t;case"constructor":return`for <code>${Ia(e)}</code>`;default:return""}}function Na(){document.querySelectorAll("#index-defined-here li[data-id]").forEach(e=>e.append((e=>{const t="§"+document.getElementById(e).closest("section").querySelector(".secno").textContent.trim();return Ot`<span class="print-only">${t}</span>`})(e.dataset.id)))}function ja(){const e=new Set,t=new Map,n=document.querySelectorAll("a[data-cite]");for(const r of n){if(!r.dataset.cite)continue;const n=r.href;if(e.has(n))continue;const{type:s,linkFor:i}=r.dataset,o=xa(r);if(!o)continue;const a=ra(r).key.toUpperCase();(t.get(a)||t.set(a,[]).get(a)).push({term:o,type:s,linkFor:i,elem:r}),e.add(n)}return t}function Oa(e){const{elem:t}=e,n=function(e){const{term:t,type:n,linkFor:r}=e;let s=t;La.has(n)&&("extended-attribute"===n&&(s=`[${s}]`),s=`<code>${s}</code>`);const i=Ma.has(t)?"type":za.get(n);i&&(s+=" "+i);if(r){let e=r;/\s/.test(r)||(e=`<code>${e}</code>`),"element-attr"===n&&(e+=" element"),s+=` (for ${e})`}return s}(e);return Ot`<li>
+}`;const Ta=sn({en:{heading:"Index",headingExternal:"Terms defined by reference",headlingLocal:"Terms defined by this specification",dfnOf:"definition of"}}),La=new Set(["attribute","callback","dict-member","dictionary","element-attr","element","enum-value","enum","exception","extended-attribute","interface","method","typedef"]);function Pa(e){const t=e.dataset,n=t.dfnType||t.idl||t.linkType||"";switch(n){case"":case"dfn":return"";default:return n}}function Ia(e){const t=e.closest("[data-dfn-for]:not([data-dfn-for=''])");return t?t.dataset.dfnFor:""}function Da(e,t,n=""){if(n.startsWith("[[")){return`internal slot for <code>${Ia(e)}</code>`}switch(t){case"dict-member":case"method":case"attribute":case"enum-value":return`${"dict-member"===t?"member":t.replace("-"," ")} for <code>${Ia(e)}</code>`;case"interface":case"dictionary":case"enum":return t;case"constructor":return`for <code>${Ia(e)}</code>`;default:return""}}function Na(){document.querySelectorAll("#index-defined-here li[data-id]").forEach(e=>e.append((e=>{const t="Â§"+document.getElementById(e).closest("section").querySelector(".secno").textContent.trim();return Ot`<span class="print-only">${t}</span>`})(e.dataset.id)))}function ja(){const e=new Set,t=new Map,n=document.querySelectorAll("a[data-cite]");for(const r of n){if(!r.dataset.cite)continue;const n=r.href;if(e.has(n))continue;const{type:s,linkFor:i}=r.dataset,o=xa(r);if(!o)continue;const a=ra(r).key.toUpperCase();(t.get(a)||t.set(a,[]).get(a)).push({term:o,type:s,linkFor:i,elem:r}),e.add(n)}return t}function Oa(e){const{elem:t}=e,n=function(e){const{term:t,type:n,linkFor:r}=e;let s=t;La.has(n)&&("extended-attribute"===n&&(s=`[${s}]`),s=`<code>${s}</code>`);const i=Ma.has(t)?"type":za.get(n);i&&(s+=" "+i);if(r){let e=r;/\s/.test(r)||(e=`<code>${e}</code>`),"element-attr"===n&&(e+=" element"),s+=` (for ${e})`}return s}(e);return Ot`<li>
     <span class="index-term" data-href="${t.href}">${{html:n}}</span>
   </li>`}const za=new Map([["attribute","attribute"],["element-attr","attribute"],["element","element"],["enum","enum"],["exception","exception"],["extended-attribute","extended attribute"],["interface","interface"]]),Ma=new Set(["boolean","byte","octet","short","unsigned short","long","unsigned long","long long","unsigned long long","float","unrestricted float","double","unrestricted double","undefined","any","object","symbol"]);function qa(e){e.querySelectorAll("#index-defined-elsewhere li[data-spec]").forEach(e=>e.removeAttribute("data-spec")),e.querySelectorAll("#index-defined-here li[data-id]").forEach(e=>e.removeAttribute("data-id"))}var Wa=Object.freeze({__proto__:null,name:"core/dfn-index",run:function(){const e=document.querySelector("section#index");if(!e)return void s("toc",()=>{},{once:!0});const t=document.createElement("style");t.textContent=Aa,document.head.appendChild(t),e.classList.add("appendix"),e.querySelector("h2, h1")||e.prepend(Ot`<h1>${Ta.heading}</h1>`);const n=Ot`<section id="index-defined-here">
     <h3>${Ta.headlingLocal}</h3>
