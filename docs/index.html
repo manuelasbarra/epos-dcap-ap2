@@ -230,12 +230,6 @@ table code, table pre {
       <div data-include-format="html" data-include-replace="true" data-include="./tables/recommended-properties-for-agent.html"></div>
     </section>
 
-    <!--<section id="examples-for-agent">
-      <h4>Example</h4>
-      <aside class="example" id="ex-agent" title="Agent">
-      <pre data-include-format="text" data-include="./examples/agent.ttl"></pre>
-      </aside>
-    </section>-->
   </section>
 
   <!-- Catalog -->
@@ -266,17 +260,6 @@ table code, table pre {
       <div data-include-format="html" data-include-replace="true" data-include="./tables/optional-properties-for-catalog.html"></div>
     </section>
 
-    <!--
-    <section id="examples-for-catalog">
-
-    <h4>Examples for Catalog</h4>
-
-    <aside class="example" id="ex-catalog" title="Catalog">
-    <pre data-include-format="text" data-include="./examples/catalog.ttl"></pre>
-    </aside>
-
-    </section>
-    -->
   </section>
 
   <!-- Catalog Record -->
@@ -703,17 +686,6 @@ table code, table pre {
     <p>This class is not explicitly associated with any property in [[DCAT-AP]].</p>
     </aside>
     <div data-include-format="html" data-include-replace="true" data-include="./tables/class-kind.html"></div>
-    <!--
-    <section id="examples-for-kind">
-
-    <h4>Examples for Kind</h4>
-
-    <aside class="example" id="ex-kind" title="Kind">
-    <pre data-include-format="text" data-include="./examples/kind.ttl"></pre>
-    </aside>
-
-    </section>
-    -->
   </section>
 
   <!-- Licence Document -->
@@ -724,12 +696,6 @@ table code, table pre {
       <h4>Recommended property</h4>
       <div data-include-format="html" data-include-replace="true" data-include="./tables/recommended-properties-for-licence-document.html"></div>
     </section>
-    <!--<section id="examples-for-licence-document">
-      <h4>Example</h4>
-      <aside class="example" id="ex-licence-document" title="Licence Document">
-        <pre data-include-format="text" data-include="./examples/licence-document.ttl"></pre>
-      </aside>
-    </section>-->
   </section>
 
   <!-- Location -->
@@ -777,13 +743,6 @@ table code, table pre {
       <p>This class is not explicitly associated with any property in [[DCAT-AP]].</p>
     </aside>
     <div data-include-format="html" data-include-replace="true" data-include="./tables/class-media-type.html"></div>
-  <!--  <section id="examples-for-media-type">
-      <h4>Example</h4>
-      <aside class="example" id="ex-media-type" title="Media Type">
-      <pre data-include-format="text" data-include="./examples/media-type.ttl"></pre>
-      </aside>
-    </section>-->
-
   </section>
 
   <!-- Operation -->
@@ -1004,32 +963,7 @@ table code, table pre {
     <p>This class is not explicitly associated with any property in [[DCAT-AP]].</p>
     </aside>
     <div data-include-format="html" data-include-replace="true" data-include="./tables/class-rights-statement.html"></div>
-    <!--
-    <section id="recommended-properties-for-rights-statement">
 
-    <h4>Recommended property for Rights Statement</h4>
-
-    <aside class="note">
-    <p>The following property is not included in [[DCAT-AP]]:</p>
-    <ul>
-    <li>+<a href="#rights-statement-rights-statement-text">rights statement text</a></li>
-    </ul>
-    </aside>
-
-    <div data-include-format="html" data-include-replace="true" data-include="./tables/recommended-properties-for-rights-statement.html"></div>
-
-    </section>-->
-    <!--
-    <section id="examples-for-rights-statement">
-
-    <h4>Examples for Rights Statement</h4>
-
-    <aside class="example" id="ex-rights-statement" title="Rights Statement">
-    <pre data-include-format="text" data-include="./examples/rights-statement.ttl"></pre>
-    </aside>
-
-    </section>
-    -->
   </section>
 
   <!-- Standard -->
@@ -1132,42 +1066,6 @@ table code, table pre {
       </aside>
     </section>
   </section>
-
-  <!-- Accessibility and Multilingual Aspects -->
-<!--
-  <section id="accessibility-and-multilingual-aspects" class="informative">
-
-      <h2>Accessibility and Multilingual Aspects</h2>
-      <p><strong>Accessibility</strong> in the context of this Application Profile is limited to information about the technical format of distributions of datasets. The properties <code>dcat:mediaType</code> and <code>dct:format</code> provide information that can be used to determine what software can be deployed to process the data. The accessibility of the data within the datasets needs to be taken care of by the software that processes the data and is outside of the scope of this Application Profile.</p>
-      <p><strong>Multilingual aspects</strong> related to this Application Profile concern all properties whose contents are expressed as strings (i.e. <code>rdfs:Literal</code>) with human-readable text. Wherever such properties are used, the string values are of one of two types:</p>
-      <ul>
-        <li>The string is free text. Examples are descriptions and labels. Such text may be translated into several languages.</li>
-        <li>The string is an appellation of a ‘named entity’. Examples are names of organisations or persons. These names may have parallel versions in other languages but those versions don’t need to be literal translations.</li>
-      </ul>
-
-      <p>Wherever values of properties are expressed with either type of string, the property can be repeated with translations in the case of free text and with parallel versions in case of named entities. For free text, e.g. in the cases of titles, descriptions and keywords, the <strong>language tag</strong> is mandatory. </p>
-
-      <p>Language tags to be used with <code>rdfs:Literal</code> are defined by [[BCP47]], which allows the use of the "t" extension for text transformations defined in [[RFC6497]] with the field "t0" [[CLDR]] indicating a machine translation.</p>
-
-      <p>A language tag will look like: "en-t-es-t0-abcd", which conveys the information that the string is in English, translated from Spanish by machine translation using a tool named "abcd".</p>
-
-      <p>For named entities, the language tag is optional and should only be provided if the parallel version of the name is strictly associated with a particular language. For example, the name ‘European Union’ has parallel versions in all official languages of the union, while a name like ‘W3C’ is not associated with a particular language and has no parallel versions.</p>
-
-      <p>For linking to different language versions of associated web pages (e.g. landing pages) or documentation, a content negotiation [[CONNEG]] mechanism may be used whereby different content is served based on the Accept-Languages indicated by the browser. Using such a mechanism, the link to the page or document can resolve to different language versions of the page or document.</p>
-
-      <p>All the occurrences of the property <code>dct:language</code>, which can be repeated if the metadata is provided in multiple languages, must have a URI as their object, not a literal string from the [[ISO-639]] code list.</p>
-
-      <p>How multilingual information is handled in systems, for example in indexing and user interfaces, is outside of the scope of this Application Profile.</p>
-
-  </section>
-
-  <section id="ack" hidden>
-
-
-    <h2>Acknowledgements</h2>
-
-  </section>
--->
   <!-- Annexes -->
   <section id="quick-reference-of-classes-and-properties" class="appendix">
 

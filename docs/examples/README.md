@@ -11,17 +11,6 @@
 <tr>
     <td><a href="./address.ttl"><code>address.ttl</code></a></td>
 </tr>
-<!--<tr>
-<td><a href="./agent.ttl"><code>agent.ttl</code></a></td>
-<td><a href="./agent.rdf"><code>agent.rdf</code></a></td>
-<td><a href="./agent.jsonld"><code>agent.jsonld</code></a></td>
-</tr>
-<tr>
-<td><a href="./catalogue-record.ttl"><code>catalogue-record.ttl</code></a></td>
-<td><a href="./catalogue-record.rdf"><code>catalogue-record.rdf</code></a></td>
-<td><a href="./catalogue-record.jsonld"><code>catalogue-record.jsonld</code></a></td>
-</tr>
--->
 <tr>
     <td><a href="./category-scheme.ttl"><code>category-scheme.ttl</code></a></td>
 </tr>
@@ -46,102 +35,49 @@
 <tr>
     <td><a href="./facility.ttl"><code>facility.ttl</code></a></td>
 </tr>
-<!--
+
 <tr>
-<td><a href="./document.ttl"><code>document.ttl</code></a></td>
-<td><a href="./document.rdf"><code>document.rdf</code></a></td>
-<td><a href="./document.jsonld"><code>document.jsonld</code></a></td>
-</tr>
--->
-<tr>
-<td><a href="./identifier.ttl"><code>identifier.ttl</code></a></td>
+    <td><a href="./identifier.ttl"><code>identifier.ttl</code></a></td>
 </tr>
 <tr>
-<td><a href="./iritemplate.ttl"><code>iritemplate.ttl</code></a></td>
+    <td><a href="./iritemplate.ttl"><code>iritemplate.ttl</code></a></td>
 </tr>
 <tr>
-<td><a href="./iritemplatemapping.ttl"><code>iritemplatemapping.ttl</code></a></td>
-</tr>
-<!--
-<tr>
-<td><a href="./kind.ttl"><code>kind.ttl</code></a></td>
-<td><a href="./kind.rdf"><code>kind.rdf</code></a></td>
-<td><a href="./kind.jsonld"><code>kind.jsonld</code></a></td>
-</tr>
--->
-<tr>
-<td><a href="./licence-document.ttl"><code>licence-document.ttl</code></a></td>
-<td><a href="./licence-document.rdf"><code>licence-document.rdf</code></a></td>
-<td><a href="./licence-document.jsonld"><code>licence-document.jsonld</code></a></td>
+    <td><a href="./iritemplatemapping.ttl"><code>iritemplatemapping.ttl</code></a></td>
 </tr>
 <tr>
-<td><a href="./location-geom.ttl"><code>location-geom.ttl</code></a></td>
-<td><a href="./location-geom.rdf"><code>location-geom.rdf</code></a></td>
-<td><a href="./location-geom.jsonld"><code>location-geom.jsonld</code></a></td>
+    <td><a href="./location-geometry.ttl"><code>location-geometry.ttl</code></a></td>
 </tr>
 <tr>
-<td><a href="./location-gn.ttl"><code>location-gn.ttl</code></a></td>
-<td><a href="./location-gn.rdf"><code>location-gn.rdf</code></a></td>
-<td><a href="./location-gn.jsonld"><code>location-gn.jsonld</code></a></td>
+    <td><a href="./location-centroid.ttl"><code>location-centroid.ttl</code></a></td>
 </tr>
 <tr>
-<td><a href="./media-type.ttl"><code>media-type.ttl</code></a></td>
-<td><a href="./media-type.rdf"><code>media-type.rdf</code></a></td>
-<td><a href="./media-type.jsonld"><code>media-type.jsonld</code></a></td>
+    <td><a href="./operation.ttl"><code>operation.ttl</code></a></td>
 </tr>
 <tr>
-  <td><a href="./operation.ttl"><code>operation.ttl</code></a></td>
-</tr
-<tr>
-<td><a href="./period-of-time-with-owl-time.ttl"><code>period-of-time-with-owl-time.ttl</code></a></td>
-<td><a href="./period-of-time-with-owl-time.rdf"><code>period-of-time-with-owl-time.rdf</code></a></td>
-<td><a href="./period-of-time-with-owl-time.jsonld"><code>period-of-time-with-owl-time.jsonld</code></a></td>
+    <td><a href="./organization.ttl"><code>organization.ttl</code></a></td>
 </tr>
 <tr>
-<td><a href="./period-of-time.ttl"><code>period-of-time.ttl</code></a></td>
+
+    <td><a href="./period-of-time.ttl"><code>period-of-time.ttl</code></a></td>
 </tr>
 <tr>
-<td><a href="./postal-address.ttl"><code>postal-address.ttl</code></a></td>
+    <td><a href="./person.ttl"><code>person.ttl</code></a></td>
 </tr>
 <tr>
-<td><a href="./property-value.ttl"><code>property-value.ttl</code></a></td>
+    <td><a href="./postal-address.ttl"><code>postal-address.ttl</code></a></td>
 </tr>
 <tr>
-<td><a href="./person.ttl"><code>person.ttl</code></a></td>
+    <td><a href="./property-value.ttl"><code>property-value.ttl</code></a></td>
 </tr>
 <tr>
-<td><a href="./service.ttl"><code>service.ttl</code></a></td>
+    <td><a href="./service.ttl"><code>service.ttl</code></a></td>
 </tr>
 <tr>
-<td><a href="./softwareapplication.ttl"><code>softwareapplication.ttl</code></a></td>
+    <td><a href="./softwareapplication.ttl"><code>softwareapplication.ttl</code></a></td>
 </tr>
 <tr>
-<td><a href="./softwaresourcecode.ttl"><code>softwaresourcecode.ttl</code></a></td>
-</tr>
-<tr>
-<td><a href="./provenance-statement.ttl"><code>provenance-statement.ttl</code></a></td>
-<td><a href="./provenance-statement.rdf"><code>provenance-statement.rdf</code></a></td>
-<td><a href="./provenance-statement.jsonld"><code>provenance-statement.jsonld</code></a></td>
-</tr>
-<tr>
-<td><a href="./quality-measurement.ttl"><code>quality-measurement.ttl</code></a></td>
-<td><a href="./quality-measurement.rdf"><code>quality-measurement.rdf</code></a></td>
-<td><a href="./quality-measurement.jsonld"><code>quality-measurement.jsonld</code></a></td>
-</tr>
-<tr>
-<td><a href="./standard-crs.ttl"><code>standard-crs.ttl</code></a></td>
-<td><a href="./standard-crs.rdf"><code>standard-crs.rdf</code></a></td>
-<td><a href="./standard-crs.jsonld"><code>standard-crs.jsonld</code></a></td>
-</tr>
-<tr>
-<td><a href="./standard-ir.ttl"><code>standard-ir.ttl</code></a></td>
-<td><a href="./standard-ir.rdf"><code>standard-ir.rdf</code></a></td>
-<td><a href="./standard-ir.jsonld"><code>standard-ir.jsonld</code></a></td>
-</tr>
-<tr>
-<td><a href="./standard-md.ttl"><code>standard-md.ttl</code></a></td>
-<td><a href="./standard-md.rdf"><code>standard-md.rdf</code></a></td>
-<td><a href="./standard-md.jsonld"><code>standard-md.jsonld</code></a></td>
+    <td><a href="./softwaresourcecode.ttl"><code>softwaresourcecode.ttl</code></a></td>
 </tr>
 </tbody>
 </table>
