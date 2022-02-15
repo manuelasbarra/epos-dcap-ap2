@@ -342,67 +342,53 @@
     <td class="property optional"></td>
   </tr>
   <tr>
-    <!--
-  <td><a href="#location">Location</a></td>
-  <td><code>dct:Location</code></td>
-  <td>
-  </td>
-  <td>
-  </td>
-  <td>
-  <p>+<a title="geographic identifier" href="#location-geographic-identifier"><code>dct:identifier</code></a></p>
-  <p>+<a title="gazetteer" href="#location-gazetteer"><code>skos:inScheme</code></a></p>
-  <p>+<a title="geographic name" href="#location-geographic-name"><code>skos:prefLabel</code></a></p>
-  </td>
+    <td><a href="#location">Location</a></td>
+    <td><code>dct:Location</code></td>
+    <td class="property mandatory"></td>
+    <td class="property recommended">
+      <p><a title="bbox" href="#location-bbox"><code>dcat:bbox</code></a></p>
+      <p><a title="centroid" href="#location-centroid"><code>dcat:centroid</code></a></p>
+    </td>
+    <td class="property optional">
+      <p><a title="geometry" href="#location-geometry"><code>locn:geometry</code></a></p>
+    </td>
   </tr>
   <tr>
-  <td><a href="#media-type">Media type</a></td>
-  <td><code>dct:MediaType</code></td>
-  <td>
-  </td>
-  <td>
-  <p>+<a title="label" href="#media-type-label"><code>rdfs:label</code></a></p>
-  </td>
-  <td>
-  </td>
+    <td><a href="#operation">Operation</a></td>
+    <td><code>hydra:Operation</code></td>
+    <td class="property mandatory"></td>
+    <td class="property recommended">
+        <p><a title="bbox" href="#operation-property"><code>hydra:property</code></p>
+        <p><a title="bbox" href="#operation-returns"><code>hydra:returns</code></p>
+    </td>
+    <td class="property optional">
+      <p><a title="geometry" href="#operation-method"><code>locn:geometry</code></a></p>
+      <p><a title="method" href="#operation-method"><code>hydra:method</code></p>
+    </td>
+  </tr>
+  <tr>
+    <td><a href="#operation">Organization</a></td>
+    <td><code>schema:Organization</code></td>
+    <td class="property mandatory">
+      <p><a title="identifier" href="organization-identifier"><code>schema:identifier</code></p>
+    </td>
+    <td class="property recommended">
+        <p><a title="leicode" href="#organization-leicode"><code>schema:leiCode</code></p>
+        <p><a title="legalname" href="#organization-legalname"><code>schema:legalname</code></p>
+    </td>
+    <td class="property optional">
+      <p><a title="address" href="organization-address"><code>schema:address</code></p>
+      <p><a title="associatedproject" href="organization-associatedproject"><code>epos:associatedProject</code></p>
+      <p><a title="contact-point" href="organization-contact-point"><code>dcat:contactPoint</code> or <code>schema:contactPoint</code></p>
+      <p><a title="email" href="organization-email"><code>schema:email</code></p>
+      <p><a title="logo" href="organization-logo"><code>schema:logo</code></p>
+      <p><a title="memberof" href="organization-memberof"><code>schema:memberOf</code></p>
+      <p><a title="owns" href="organization-owns"><code>schema:owns</code></p>
+      <p><a title="telephone" href="organization-telephone"><code>schema:telephone</code></p>
+      <p><a title="url" href="organization-url"><code>schema:url</code></p>  
+    </td>
   </tr>
 
-<tr>
-<td><a href="#location">Location</a></td>
-<td><code>dct:Location</code></td>
-<td>
-</td>
-<td>
-</td>
-<td>
-<p>+<a title="geographic identifier" href="#location-geographic-identifier"><code>dct:identifier</code></a></p>
-<p>+<a title="gazetteer" href="#location-gazetteer"><code>skos:inScheme</code></a></p>
-<p>+<a title="geographic name" href="#location-geographic-name"><code>skos:prefLabel</code></a></p>
-</td>
-</tr>
-<tr>
-<td><a href="#media-type">Media type</a></td>
-<td><code>dct:MediaType</code></td>
-<td>
-</td>
-<td>
-<p>+<a title="label" href="#media-type-label"><code>rdfs:label</code></a></p>
-</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>+<a href="#metric">Metric</a></td>
-<td><code>dqv:Metric</code></td>
-<td>
-</td>
-<td>
-<p>+<a title="expected data type" href="#metric-expected-data-type"><code>dqv:expectedDataType</code></a></p>
-<p>+<a title="dimension" href="#metric-dimension"><code>dqv:inDimension</code></a></p>
-</td>
-<td>
-</td>
-</tr>
 <tr>
 <td><a href="#provenance-statement">Provenance Statement</a></td>
 <td><code>dct:ProvenanceStatement</code></td>
