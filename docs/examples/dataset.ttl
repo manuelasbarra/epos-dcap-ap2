@@ -57,6 +57,10 @@
     # This property refers to a related Dataset that is part of the described Dataset.
     # dct:hasPart <https://www.epos-eu.org/epos-dcat-ap/Seismology/Dataset/otherDataset> ;
 
+    dqv:hasQualityAnnotation [ a oa:Annotation ;
+    		oa:hasBody "URL_of_QualityAssurance"^^xsd:anyURI  ;
+    		oa:hasTarget <https://www.epos-eu.org/epos-dcat-ap/Seismology/Dataset/001> ;
+    ];
     # This property refers to a related Dataset of which the described Dataset is a version, edition, or adaptation.
     # dct:hasVersion <https://www.epos-eu.org/epos-dcat-ap/Seismology/Dataset/otherDataset> ;
 
