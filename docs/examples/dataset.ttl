@@ -14,44 +14,56 @@
 
 <https://www.epos-eu.org/epos-dcat-ap/Seismology/Dataset/001> a dcat:Dataset ;
 
-  # Mandatory properties
+# Mandatory properties
     dct:description "Primary Seismic Waveform Data" ;
     dct:identifier "https://www.epos-eu.org/epos-dcat-ap/Seismology/Dataset/001" ;
     dct:title "Primary Seismic Waveform Data" ;
 
-  # Recommended properties
+# Recommended properties
     dcat:contactPoint <http://orcid.org/0000-0002-6250-0000/contactPoint> ;
+
     # This property links the Dataset to an available Distribution.
     dcat:distribution <https://www.epos-eu.org/epos-dcat-ap/Seismology/Dataset/001/Distribution/001> ;
+
     dcat:keyword "seismic waveform","continuous waveform" ,"mseed" ;
+
     # This property refers to a category of the Dataset. A Dataset may be associated with multiple themes.
     dcat:theme  <epos:SeismicWaveform> ;
+
     # This property refers to an Organization responsible for making the Dataset available.
     dct:publisher <PIC:000518944> ;
+
     # This property refers to a geographic region that is covered by the Dataset.
     dct:spatial [ a dct:Location ;
     	 dcat:bbox "POLYGON((180.0 -90.0, -180.0 -90.0, -180.0 90.0, 180.0 90.0, 180.0 -90.0))"^^gsp:wktLiteral ;
     ];
+
     # This property refers to a temporal period that the Dataset covers.
     dct:temporal [ a dct:PeriodOfTime ;
     	dcat:startDate "1988-01-01T00:00:00Z"^^xsd:dateTime ;
     	dcat:endDate "2022-01-01T00:00:00Z"^^xsd:dateTime ;
     ] ;
 
-  # Optional properties
+# Optional properties
   	adms:identifier [ a adms:Identifier ;
   		    adms:schemeAgency "DDSS-ID" ;
   	    	skos:notation "WP08-DDSS-001" ;
   	];
+
     # This property refers to the frequency at which the Dataset is updated.
   	# The possible types are here: http://purl.org/cld/freq/
   	dct:accrualPeriodicity "http://purl.org/cld/freq/continuous"^^xsd:anyURI ;
-  	dct:created "2016-01-01T00:00:00Z"^^xsd:dateTime ;
+
+    dct:created "2016-01-01T00:00:00Z"^^xsd:dateTime ;
+
     dct:issued "2016-01-01T00:00:00Z"^^xsd:dateTime ;
+
     dct:modified "2016-01-01T00:00:00Z"^^xsd:dateTime ;
+
     # This property refers to the type of the Dataset.
     # Example of frequency using a controlled vocabulary http://dublincore.org/2012/06/14/dctype
     dct:type "http://purl.org/dc/dcmitype/Collection"^^xsd:anyURI ;
+
     owl:versionInfo "1.0.0" ;
 
     # This property refers to a related Dataset that is part of the described Dataset.
@@ -61,6 +73,7 @@
     		oa:hasBody "URL_of_QualityAssurance"^^xsd:anyURI  ;
     		oa:hasTarget <https://www.epos-eu.org/epos-dcat-ap/Seismology/Dataset/001> ;
     ];
+
     # This property refers to a related Dataset of which the described Dataset is a version, edition, or adaptation.
     # dct:hasVersion <https://www.epos-eu.org/epos-dcat-ap/Seismology/Dataset/otherDataset> ;
 
