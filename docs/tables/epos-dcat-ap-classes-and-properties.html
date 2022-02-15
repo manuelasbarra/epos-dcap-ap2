@@ -358,11 +358,10 @@
     <td><code>hydra:Operation</code></td>
     <td class="property mandatory"></td>
     <td class="property recommended">
-        <p><a title="bbox" href="#operation-property"><code>hydra:property</code></p>
-        <p><a title="bbox" href="#operation-returns"><code>hydra:returns</code></p>
+        <p><a title="property" href="#operation-property"><code>hydra:property</code></p>
+        <p><a title="returns" href="#operation-returns"><code>hydra:returns</code></p>
     </td>
     <td class="property optional">
-      <p><a title="geometry" href="#operation-method"><code>locn:geometry</code></a></p>
       <p><a title="method" href="#operation-method"><code>hydra:method</code></p>
     </td>
   </tr>
@@ -385,63 +384,21 @@
       <p><a title="memberof" href="organization-memberof"><code>schema:memberOf</code></p>
       <p><a title="owns" href="organization-owns"><code>schema:owns</code></p>
       <p><a title="telephone" href="organization-telephone"><code>schema:telephone</code></p>
-      <p><a title="url" href="organization-url"><code>schema:url</code></p>  
+      <p><a title="url" href="organization-url"><code>schema:url</code></p>
     </td>
   </tr>
-
-<tr>
-<td><a href="#provenance-statement">Provenance Statement</a></td>
-<td><code>dct:ProvenanceStatement</code></td>
-<td>
-</td>
-<td>
-<p>+<a title="provenance statement text" href="#provenance-statement-provenance-statement-text"><code>rdfs:label</code></a></p>
-</td>
-<td>
-</td>
-</tr>
-<tr>
-<td>+<a href="#quality-measurement">Quality Measurement</a></td>
-<td><code>dqv:QualityMeasurement</code></td>
-<td>
-</td>
-<td>
-<p>+<a title="is measurement of" href="#quality-measurement-is-measurement-of"><code>dqv:isMeasurementOf</code></a></p>
-<p>+<a title="value" href="#quality-measurement-value"><code>dqv:value</code></a></p>
-<p>+<a title="unit of measure" href="#quality-measurement-unit-of-measure"><code>sdmx-attribute:unitMeasure</code></a></p>
-</td>
-<td>
-</td>
-</tr>
-<tr>
-<td><a href="#rights-statement">Rights statement</a></td>
-<td><code>dct:RightsStatement</code></td>
-<td>
-</td>
-<td>
-<p>+<a title="rights statement text" href="#rights-statement-rights-statement-text"><code>rdfs:label</code></a></p>
-</td>
-<td>
-</td>
-</tr>
-<tr>
-<td><a href="#standard">Standard</a></td>
-<td><code>dct:Standard</code></td>
-<td>
-</td>
-<td>
-<p>+<a title="description" href="#standard-description"><code>dct:description</code></a></p>
-<p>+<a title="identifier" href="#standard-identifier"><code>dct:identifier</code></a></p>
-<p>+<a title="release date" href="#standard-release-date"><code>dct:issued</code></a></p>
-<p>+<a title="title" href="#standard-title"><code>dct:title</code></a></p>
-<p>+<a title="type" href="#standard-type"><code>dct:type</code></a></p>
-<p>+<a title="version" href="#standard-version"><code>owl:versionInfo</code></a></p>
-<p>+<a title="reference register" href="#standard-reference-register"><code>skos:inScheme</code></a></p>
-</td>
-<td>
-<p>+<a title="creation date" href="#standard-creation-date"><code>dct:created</code></a></p>
-<p>+<a title="update / modification date" href="#standard-modification-date"><code>dct:modified</code></a></p>
-</td>
-</tr>-->
+  <tr>
+    <td><a href="#period-of-time">PeriodOfTime</a></td>
+    <td><code>dct:PeriodOfTime</code></td>
+    <td class="property mandatory"></td>
+    <td class="property recommended">
+      <p><a title="end-date" href="#period-of-time-end-date"><code>dcat:endDate</code></a></p>
+      <p><a title="start-date" href="#period-of-time-start-date"><code>dcat:startDate</code></a></p>
+    </td>
+    <td class="property optional">
+      <p><a title="beginning" href="#period-of-time-beginning"><code>time:hasBeginning</code></a></p>
+      <p><a title="end" href="#period-of-time-end"><code>time:hasEnd</code></a></p>
+    </td>
+  </tr>
 </tbody>
 </table>
