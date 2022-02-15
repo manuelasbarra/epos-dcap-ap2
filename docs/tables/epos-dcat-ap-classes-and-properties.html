@@ -358,7 +358,6 @@
     <td><code>hydra:Operation</code></td>
     <td class="property mandatory"></td>
     <td class="property recommended">
-        <p><a title="bbox" href="#location-bbox"><code>dcat:bbox</code></a></p>
         <p><a title="property" href="#operation-property"><code>hydra:property</code></a></p>
         <p><a title="returns" href="#operation-returns"><code>hydra:returns</code></a></p>
     </td>
@@ -418,6 +417,33 @@
       <p><a title="owns" href="person-qualifications"><code>schema:qualifications</code></a></p>
       <p><a title="telephone" href="person-telephone"><code>schema:telephone</code></a></p>
       <p><a title="url" href="person-url"><code>schema:url</code></a></p>
+    </td>
+  </tr>
+  <tr>
+    <td>+ <a href="#postaladdress">Postal Address</a></td>
+    <td><code>schema:PostalAddress</code></td>
+    <td class="property mandatory">
+        <p>+ <a title="addresscountry" href="#postaladdress-addresscountry"><code>schema:addressCountry</code></a></p>
+        <p>+ <a title="addresslocality" href="#postaladdress-addresslocality"><code>schema:addressLocality</code></a></p>
+        <p>+ <a title="postalcode" href="#postaladdress-postalcode"><code>schema:postalCode</code></a></p>
+        <p>+ <a title="streetaddress" href="#address-street-address"><code>schema:streetAddress</code></a></p>
+    </td>
+    <td class="property recommended"></td>
+    <td class="property optional"></td>
+  </tr>
+  <tr>
+    <td>+ <a href="#postaladdress">Project</a></td>
+    <td><code>schema:Project</code></td>
+    <td class="property mandatory">
+        <p>+ <a title="identifier" href="#project-identifier"><code>dct:identifier</code></a></p>
+        <p>+ <a title="title" href="#project-title"><code>dct:title</code></a></p>
+    </td>
+    <td class="property recommended">
+      <p>+ <a title="contact-point" href="#project-contact-point"><p><code>dcat:contactPoint</code> or <code>schema:contactPoint</code></a></p>
+      <p>+ <a title="description" href="#project-description"><code>dct:description</code></a></p>
+    </td>
+    <td class="property optional">
+      <p>+ <a title="homepage" href="#project-homepage"><code>foaf:homepage</code></a></p>
     </td>
   </tr>
 </tbody>
