@@ -206,80 +206,167 @@
       <p><a title="was-generated-by" href="#dataset-was-generated-by"><code>prov:wasGeneratedBy</code></a></p>
     </td>
   </tr>
-<!--<tr>
-  <td><a href="#distribution">Distribution</a></td>
-  <td><code>dcat:Distribution</code></td>
+  <tr>
+    <td><a href="#distribution">Distribution</a></td>
+    <td><code>dcat:Distribution</code></td>
+    <td class="property mandatory">
+      <p><a title="access-url" href="#distribution-access-url"><code>dcat:accessURL</code></a></p>
+      <p><a title="identifier" href="#distribution-identifier"><code>dct:identifier</code></a></p>
+      <p><a title="title" href="#distribution-title"><code>dct:<title>Home</title></code></a></p>
+    </td>
+    <td class="property recommended">
+      <p><a title="availability" href="distribution-availability"><code>dcatap:availability</code></p>
+      <p><a title="description" href="distribution-description"><code>dct:description</code></p>
+      <p><a title="format" href="distribution-format"><code>dct:format</code></p>
+      <p><a title="license" href="distribution-license"><code>dct:license</code></p>
+    </td>
+    <td class="property optional">
+      <p><a title="access-service" href="distribution-access-service"><code>dcat:accessService</code></p>
+      <p><a title="byte-size" href="distribution-byte-size"><code>dcat:byteSize</code></p>
+      <p><a title="checksum" href="distribution-checksum"><code>spdx:checksum</code></p>
+      <p><a title="compression-format" href="distribution-compression-format"><code>dcat:compressFormat</code></p>
+      <p><a title="compression-format" href="distribution-conforms-to"><code>dct:conformsTo</code></p>
+      <p><a title="download-url" href="distribution-download-url"><code>dcat:downloadURL</code></p>
+      <p><a title="has-policy" href="distribution-has-policy"><code>odrl:hasPolicy</code></p>
+      <p><a title="issued" href="distribution-issued"><code>dct:issued</code></p>
+      <p><a title="language" href="distribution-language"><code>dct:language</code></p>
+      <p><a title="media-type" href="distribution-media-type"><code>dcat:mediaType</code></p>
+      <p><a title="modified" href="distribution-modified"><code>dct:modified</code></p>
+      <p><a title="package-format" href="distribution-package-format"><code>dcat:packageFormat</code></p>
+      <p><a title="page" href="distribution-page"><code>foaf:page</code></p>
+      <p><a title="rights" href="distribution-rights"><code>dct:rights</code></p>
+      <p><a title="spatial-resolution-in-metres" href="distribution-spatial-resolution-in-metres"><code>dcat:spatialResolutionInMeters</code></p>
+      <p><a title="status" href="distribution-status"><code>adms:status</code></p>
+      <p><a title="temporal-resolution" href="distribution-temporal-resolution"><code>dcat:temporalResolution</code></p>
+      <p><a title="title" href="distribution-title"><code>dct:title</code></p>
+    </td>
+  </tr>
+  <tr>
+    <td>+ <a href="#equipment">Equipment</a></td>
+    <td><code>epos:Equipment</code></td>
+    <td class="property mandatory">
+      <p>+ <a title="description" href="equipment-description"><code>dct:description</code></p>
+      <p>+ <a title="identifier" href="equipment-identifier"><code>dct:identifier</code></p>
+      <p>+ <a title="title" href="equipment-title"><code>dct:title</code></p>
+    </td>
+    <td class="property recommended">
+      <p>+ <a title="creator" href="equipment-creator"><code>dct:creator</code></p>
+      <p>+ <a title="type" href="equipment-type"><code>dct:type</code></p>
+    </td>
+    <td class="property optional">
+      <p>+ <a title="contact-point" href="equipment-contact-point"><code>dcat:contactPoint</code> or <code>schema:contactPoint</code></p>
+      <p>+ <a title="dynamic-range" href="equipment-dynamic-range"><code>epos:dynamicRange</code></p>
+      <p>+ <a title="filter" href="equipment-filter"><code>epos:filter</code></p>
+      <p>+ <a title="is-part-of" href="equipment-is-part-of"><code>dct:isPartOf</code></p>
+      <p>+ <a title="keyword" href="equipment-keyword"><code>dcat:keyword</code></p>
+      <p>+ <a title="landingpage" href="equipment-landingpage"><code>dcat:landingPage</code></p>
+      <p>+ <a title="orientation" href="equipment-orientation"><code>epos:orientation</code></p>
+      <p>+ <a title="relation" href="equipment-relation"><code>dct:relation</code></p>
+      <p>+ <a title="resolution" href="equipment-resolution"><code>epos:resolution</code></p>
+      <p>+ <a title="sample-period" href="equipment-sample-period"><code>epos:samplePeriod</code></p>
+      <p>+ <a title="spatial" href="equipment-spatial"><code>dct:spatial</code></p>
+      <p>+ <a title="temporal" href="equipment-temporal"><code>dct:temporal</code></p>
+      <p>+ <a title="theme" href="equipment-theme"><code>dcat:theme</code></p>
+    </td>
+  </tr>
+  <tr>
+    <td>+ <a href="#facility">Facility</a></td>
+    <td><code>epos:Facility</code></td>
+    <td class="property mandatory">
+      <p>+ <a title="description" href="facility-description"><code>dct:description</code></p>
+      <p>+ <a title="identifier" href="facility-identifier"><code>dct:identifier</code></p>
+      <p>+ <a title="title" href="facility-title"><code>dct:title</code></p>
+    </td>
+    <td class="property recommended">
+      <p>+ <a title="theme" href="facility-theme"><code>dct:theme</code></p>
+      <p>+ <a title="type" href="facility-type"><code>dct:type</code></p>
+    </td>
+    <td class="property optional">
+      <p>+ <a title="contact-point" href="facility-contact-point"><code>dcat:contactPoint</code> or <code>schema:contactPoint</code></p>
+      <p>+ <a title="is-part-of" href="facility-is-part-of"><code>dct:isPartOf</code></p>
+      <p>+ <a title="keyword" href="facility-keyword"><code>vcard:hasAddress</code></p>
+      <p>+ <a title="has-address" href="facilty-has-address"><code>epos:orientation</code></p>
+      <p>+ <a title="landingpage" href="facility-landingpage"><code>dcat:landingPage</code></p>
+      <p>+ <a title="relation" href="facility-relation"><code>dct:relation</code></p>
+      <p>+ <a title="spatial" href="facilityt-spatial"><code>dct:spatial</code></p>
+    </td>
+  </tr>
+  <tr>
+    <td><a href="#identifier">Identifier</a></td>
+    <td><code>adms:Identifier</code></td>
+    <td class="property mandatory">
+        <p><a title="notation" href="#identifier-notation"><code>skos:notation</code></a></p>
+        <p>+ <a title="schemeagency" href="#identifier-schemeagency"><code>adms:schemeAgency</code></a></p>
+    </td>
+    <td class="property recommended"></td>
+    <td class="property optional"></td>
+  </tr>
+  <tr>
+    <td><a href="#iritemplate">IriTemplate</a></td>
+    <td><code>hydra:IriTemplate</code></td>
+    <td class="property mandatory">
+        <p><a title="template" href="#iritemplate-template"><code>hydra:template</code></a></p>
+    </td>
+    <td class="property recommended"></td>
+    <td class="property optional">
+      <p>+ <a title="mapping" href="#iritemplate-mapping"><code>hydra:mapping</code></a></p>
+    </td>
+  </tr>
+  <tr>
+    <td><a href="#iritemplatemapping">IriTemplateMapping</a></td>
+    <td><code>hydra:IriTemplateMapping</code></td>
+    <td class="property mandatory">
+        <p>+ <a title="template" href="#iritemplate-template"><code>hydra:template</code></a></p>
+        <p>+ <a title="label" href="iritemplatemapping-label"><code>rdf:label</code></p>
+        <p>+ <a title="range" href="iritemplatemapping-range"><code>rdfs:range</code></p>
+        <p>+ <a title="required" href="iritemplatemapping-required"><code>hydra:required</code></p>
+        <p>+ <a title="variable" href="iritemplatemapping-variable"><code>hydra:variable</code></p>
+    </td>
+    <td class="property recommended">
+       <p>+ <a title="defaultvalue" href="iritemplatemapping-defaultValue"><code>schema:defaultValue</code></p>
+       <p>+ <a title="maxvalue" href="iritemplatemapping-maxvalue"><code>schema:maxValue</code></p>
+       <p>+ <a title="minvalue" href="iritemplatemapping-minvalue"><code>schema:minvalue</code></p>
+       <p>+ <a title="paramValue" href="iritemplatemapping-paramValue"><code>http:paramValue</code></p>
+       <p>+ <a title="property" href="iritemplatemapping-property"><code>hydra:property</code></p>
+       <p>+ <a title="valuepattern" href="iritemplatemapping-valuePattern"><code>schema:valuePattern</code></p>
+    </td>
+    <td class="property optional"></td>
+  </tr>
+  <tr>
+    <td><a href="#license-document">License Document</a></td>
+    <td><code>dct:LicenseDocument</code></td>
+    <td class="property mandatory"></td>
+    <td class="property recommended">
+       <p><a title="type" href="license-document-type"><code>dct:type</code></p>
+    </td>
+    <td class="property optional"></td>
+  </tr>
+  <tr>
+    <!--
+  <td><a href="#location">Location</a></td>
+  <td><code>dct:Location</code></td>
   <td>
-    <p><a title="access-url" href="#distribution-access-url"><code>dcat:accessURL</code></a></p>
-    <p><a title="identifier" href="#distribution-identifier"><code>dct:identifier</code></a></p>
-    <p><a title="title" href="#distribution-title"><code>dct:<title>Home</title></code></a></p>
   </td>
   <td>
-    <p><a title="availability" href="distribution-availability"><code>dcatap:availability</code></p>
-    <p><a title="description" href="distribution-description"><code>dct:description</code></p>
-    <p><a title="format" href="distribution-format"><code>dct:format</code></p>
-    <p><a title="licence" href="distribution-licence"><code>dct:license</code></p>
   </td>
   <td>
-    <p><a title="access-service" href="distribution-access-service"><code>dcat:accessService</code></p>
-    <p><a title="byte-size" href="distribution-byte-size"><code>dcat:byteSize</code></p>
-    <p><a title="checksum" href="distribution-checksum"><code>spdx:checksum</code></p>
-    <p><a title="compression-format" href="distribution-compression-format"><code>dcat:compressFormat</code></p>
-    <p><a title="compression-format" href="distribution-conforms-to"><code>dct:conformsTo</code></p>
-    <p><a title="download-url" href="distribution-download-url"><code>dcat:downloadURL</code></p>
-    <p><a title="has-policy" href="distribution-has-policy"><code>odrl:hasPolicy</code></p>
-    <p><a title="issued" href="distribution-issued"><code>dct:issued</code></p>
-    <p><a title="language" href="distribution-language"><code>dct:language</code></p>
-    <p><a title="media-type" href="distribution-media-type"><code>dcat:mediaType</code></p>
-    <p><a title="modified" href="distribution-modified"><code>dct:modified</code></p>
-    <p><a title="package-format" href="distribution-package-format"><code>dcat:packageFormat</code></p>
-    <p><a title="page" href="distribution-page"><code>foaf:page</code></p>
-    <p><a title="rights" href="distribution-rights"><code>dct:rights</code></p>
-    <p><a title="spatial-resolution-in-metres" href="distribution-spatial-resolution-in-metres"><code>dcat:spatialResolutionInMeters</code></p>
-    <p><a title="status" href="distribution-status"><code>adms:status</code></p>
-    <p><a title="temporal-resolution" href="distribution-temporal-resolution"><code>dcat:temporalResolution</code></p>
-    <p><a title="title" href="distribution-title"><code>dct:title</code></p>
+  <p>+<a title="geographic identifier" href="#location-geographic-identifier"><code>dct:identifier</code></a></p>
+  <p>+<a title="gazetteer" href="#location-gazetteer"><code>skos:inScheme</code></a></p>
+  <p>+<a title="geographic name" href="#location-geographic-name"><code>skos:prefLabel</code></a></p>
   </td>
-</tr>
-<tr>
-  <td><a href="#equipment">Equipment</a></td>
-  <td><code>epos:Equipment</code></td>
-  <td>
-    <p><a title="description" href="equipment-description"><code>dct:description</code></p>
-    <p><a title="identifier" href="equipment-identifier"><code>dct:identifier</code></p>
-    <p><a title="title" href="equipment-title"><code>dct:title</code></p>
-  </td>
-  <td>
-    <p><a title="creator" href="equipment-creator"><code>dct:creator</code></p>
-    <p><a title="type" href="equipment-type"><code>dct:type</code></p>
-  </td>
-  <td>
-    <p><a title="contact-point" href="equipment-contact-point"><code>dcat:contactPoint</code> or <code>schema:contactPoint</code></p>
-    <p> + <a title="dynamic-range" href="equipment-dynamic-range"><code>epos:dynamicRange</code></p>
-    <p> + <a title="filter" href="equipment-filter"><code>epos:filter</code></p>
-    <p><a title="is-part-of" href="equipment-is-part-of"><code>dct:isPartOf</code></p>
-    <p><a title="keyword" href="equipment-keyword"><code>dcat:keyword</code></p>
-    <p><a title="landingpage" href="equipment-landingpage"><code>dcat:landingPage</code></p>
-    <p><a title="orientation" href="equipment-orientation"><code>epos:orientation</code></p>
-    <p><a title="relation" href="equipment-relation"><code>dct:relation</code></p>
-    <p><a title="resolution" href="equipment-resolution"><code>epos:resolution</code></p>
-    <p> + <a title="sample-period" href="equipment-sample-period"><code>epos:samplePeriod</code></p>
-    <p><a title="spatial" href="equipment-spatial"><code>dct:spatial</code></p>
-    <p><a title="temporal" href="equipment-temporal"><code>dct:temporal</code></p>
-    <p><a title="theme" href="equipment-theme"><code>dcat:theme</code></p>
-  </td><
-</tr>
-<tr>
-  <td><a href="#licence-document">Licence Document</a></td>
-  <td><code>dct:LicenseDocument</code></td>
+  </tr>
+  <tr>
+  <td><a href="#media-type">Media type</a></td>
+  <td><code>dct:MediaType</code></td>
   <td>
   </td>
   <td>
-    <p>+<a title="type" href="#licence-document-type"><code>dct:type</code></a></p>
+  <p>+<a title="label" href="#media-type-label"><code>rdfs:label</code></a></p>
   </td>
   <td>
   </td>
-</tr>
+  </tr>
+
 <tr>
 <td><a href="#location">Location</a></td>
 <td><code>dct:Location</code></td>
