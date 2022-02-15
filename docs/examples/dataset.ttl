@@ -35,19 +35,19 @@
 
     # This property refers to a geographic region that is covered by the Dataset.
     dct:spatial [ a dct:Location ;
-    	 dcat:bbox "POLYGON((180.0 -90.0, -180.0 -90.0, -180.0 90.0, 180.0 90.0, 180.0 -90.0))"^^gsp:wktLiteral ;
+        dcat:bbox "POLYGON((180.0 -90.0, -180.0 -90.0, -180.0 90.0, 180.0 90.0, 180.0 -90.0))"^^gsp:wktLiteral ;
     ];
 
     # This property refers to a temporal period that the Dataset covers.
     dct:temporal [ a dct:PeriodOfTime ;
-    	dcat:startDate "1988-01-01T00:00:00Z"^^xsd:dateTime ;
-    	dcat:endDate "2022-01-01T00:00:00Z"^^xsd:dateTime ;
+        dcat:startDate "1988-01-01T00:00:00Z"^^xsd:dateTime ;
+        dcat:endDate "2022-01-01T00:00:00Z"^^xsd:dateTime ;
     ] ;
 
 # Optional properties
   	adms:identifier [ a adms:Identifier ;
-  		    adms:schemeAgency "DDSS-ID" ;
-  	    	skos:notation "WP08-DDSS-001" ;
+        adms:schemeAgency "DDSS-ID" ;
+        skos:notation "WP08-DDSS-001" ;
   	];
 
     # This property refers to the frequency at which the Dataset is updated.
