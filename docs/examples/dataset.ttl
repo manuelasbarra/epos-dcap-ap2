@@ -51,7 +51,7 @@
     ];
 
     # This property refers to the frequency at which the Dataset is updated.
-  	# The possible types are here: http://purl.org/cld/freq/
+    # The possible types are here: http://purl.org/cld/freq/
     dct:accrualPeriodicity "http://purl.org/cld/freq/continuous"^^xsd:anyURI ;
 
     dct:created "2016-01-01T00:00:00Z"^^xsd:dateTime ;
