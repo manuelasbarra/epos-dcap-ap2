@@ -45,7 +45,7 @@
     ] ;
 
 # Optional properties
-  	adms:identifier [ a adms:Identifier ;
+    adms:identifier [ a adms:Identifier ;
         adms:schemeAgency "DDSS-ID" ;
         skos:notation "WP08-DDSS-001" ;
     ];
