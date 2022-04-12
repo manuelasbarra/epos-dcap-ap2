@@ -24,7 +24,7 @@ var respecConfig = {
     copyrightHolder: "dd",
     copyrightURL: "dddd",
     copyrightStart: "ddd",
-    publishDate: "2022-02-14",
+    publishDate: "2022-04-12",
 
     //specStatus: "ED",
 
@@ -94,6 +94,10 @@ var respecConfig = {
       {
        key: "Contributors:",
        data: [{
+           value: "",
+           href: ""
+       }
+       /*data: [{
            value: "Luca Trani",
            href: "https://orcid.org/0000-0001-7750-7254"
        },
@@ -106,7 +110,7 @@ var respecConfig = {
            href: "https://orcid.org/0000-0001-5805-9337"
        }
     ]
-    },
+    }*/,
     {
       key: "Document status:",
       data: [
