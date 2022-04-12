@@ -93,12 +93,7 @@ var respecConfig = {
     otherLinks: [
       {
        key: "Contributors:",
-       data: [
-         {
-             value: "Valerio Vinciarelli",
-             href: "https://orcid.org/0000-0001-5805-9337"
-         }
-         /*{
+       data: [{
            value: "Luca Trani",
            href: "https://orcid.org/0000-0001-7750-7254"
        },
@@ -109,7 +104,7 @@ var respecConfig = {
        {
            value: "Valerio Vinciarelli",
            href: "https://orcid.org/0000-0001-5805-9337"
-       }*/
+       }
     ]
     },
     {
